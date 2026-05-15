@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Publications — Srinivasulu IFS</title>
+<meta name="description" content="Documents, reports and publications by Srinivasulu IFS across departments including KSPCB, KFD, and Kali Tiger Reserve.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="blog-shared.css">
+<style>
+  /* ── PAGE HERO ─────────────────────────────────────── */
+.page-hero {
+  position: relative;
+  background: var(--cream);
+  background-color:var(--sdg-6);
+  padding: 9rem 5vw 5rem;
+  overflow: hidden;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 5;
+  max-width: 760px;
+  width: 100%;
+}
+/* no use */
+.hero-badge { 
+  display: inline-block;
+  background: rgba(217, 122, 92, 0.1);
+  color: var(--terracotta);
+  padding: 0.45rem 1.2rem;
+  border-radius: 30px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+  border: 1px solid rgba(217, 122, 92, 0.2);
+}
+
+.page-hero h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: rgb(65, 65, 65);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+.page-hero p {
+  color: white;
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* ── Decorative Background ─────────────────────────── */
+.hero-decoration {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Large background circle */
+.hero-decoration::before {
+  content: '';
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 2px solid rgba(15, 76, 92, 0.08);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Books */
+.deco-book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Book 1 */
+.deco-book-1 {
+  width: 110px;
+  height: 145px;
+  background: rgba(15, 76, 92, 0.14);
+  transform: translate(-110px, -50%) rotate(-10deg);
+}
+
+/* Book 2 */
+.deco-book-2 {
+  width: 110px;
+  height: 150px;
+  background: rgba(244, 228, 193, 0.95);
+  border: 2px solid rgba(15, 76, 92, 0.1);
+  transform: translate(-20px, -50%) rotate(2deg);
+}
+
+/* Book 3 */
+.deco-book-3 {
+  width: 110px;
+  height: 145px;
+  background: rgba(217, 122, 92, 0.14);
+  transform: translate(70px, -50%) rotate(10deg);
+}
+
+/* Spine */
+.deco-book::before {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Text lines */
+.deco-book::after {
+  content: '';
+  position: absolute;
+  left: 28px;
+  right: 18px;
+  top: 34px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 12px 0 rgba(255, 255, 255, 0.35),
+    0 24px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* Floating dots */
+.deco-dot-float-1,
+.deco-dot-float-2 {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.deco-dot-float-1 {
+  width: 14px;
+  height: 14px;
+  background: rgba(30, 127, 110, 0.75);
+  top: 28%;
+  left: 58%;
+}
+
+.deco-dot-float-2 {
+  width: 10px;
+  height: 10px;
+  background: rgba(217, 122, 92, 0.75);
+  bottom: 28%;
+  left: 38%;
+}
+
+/* Decorative line */
+.deco-dash {
+  position: absolute;
+  width: 70px;
+  height: 6px;
+  background: rgba(217, 122, 92, 0.18);
+  border-radius: 20px;
+  bottom: 30%;
+  left: 30%;
+  transform: rotate(-18deg);
+}
+
+/* ── Mobile ────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .page-hero {
+    padding: 8rem 5vw 4rem;
+  }
+
+  .page-hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-decoration::before {
+    width: 180px;
+    height: 180px;
+  }
+
+  .deco-book-1,
+  .deco-book-2,
+  .deco-book-3 {
+    width: 80px;
+    height: 110px;
+  }
+
+  .deco-book-1 {
+    transform: translate(-80px, -50%) rotate(-10deg);
+  }
+
+  .deco-book-2 {
+    transform: translate(-10px, -50%) rotate(2deg);
+  }
+
+  .deco-book-3 {
+    transform: translate(60px, -50%) rotate(10deg);
+  }
+}
+
+/* ── Cards Section ─────────────────────────────────── */
+.cards-section {
+  padding: 5rem 0;
+  background: var(--cream);
+}
+
+.dept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.dept-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.dept-card::after {
+  content: '→';
+  position: absolute;
+  bottom: 1rem;
+  right: 1.25rem;
+  color: var(--teal-mid);
+  font-size: 1.1rem;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: 0.3s;
+}
+
+.dept-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.dept-card:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dept-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.dept-card h3 {
+  font-size: 1rem;
+  color: var(--charcoal);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .dept-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .dept-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+<div id="page-loader"><div class="loader-dot"></div><div class="loader-dot"></div><div class="loader-dot"></div></div>
+
+<!-- ── Navigation ── -->
+<div class="nav-wrapper">
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="" style="display: none;">
+        <span class="logo-name">Srinivasulu IFS</span>
+        <span class="logo-sub">Indian Forest Service</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="awards.html">Honours &amp; Awards</a></li>
+      <li class="dropdown">
+        <a href="accomplishments.html">Accomplishments</a>
+        <ul class="dropdown-menu">
+          <li><a href="accomplishments.html?category=kspcb#posts">KSPCB</a></li>
+          <li><a href="accomplishments.html?category=ayush#posts">Ayush</a></li>
+          <li><a href="accomplishments.html?category=karnataka-forest-department#posts">Karnataka Forest Department</a></li>
+          <li><a href="accomplishments.html?category=kali-tiger-reserve#posts">Kali Tiger Reserve</a></li>
+          <li><a href="accomplishments.html?category=nagarhole-national-park#posts">Nagarhole National Park</a></li>
+          <li><a href="accomplishments.html?category=kalaburagi#posts">Kalaburagi</a></li>
+          <li><a href="accomplishments.html?category=chitradurga#posts">Chitradurga</a></li>
+          <li><a href="accomplishments.html?category=shimoga#posts">Shimoga</a></li>
+          <li><a href="accomplishments.html?category=kfcsc#posts">KFCSC</a></li>
+          <li><a href="accomplishments.html?category=academics#posts">Academics</a></li>
+          <li><a href="accomplishments.html?category=adcl#posts">ADCL</a></li>
+          <li><a href="accomplishments.html?category=ecology-environment#posts">Ecology &amp; Environment</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="publications.html">Publications</a>
+        <ul class="dropdown-menu">
+          <li><a href="publications.html?category=kspcb">KSPCB</a></li>
+          <li><a href="publications.html?category=karnataka-forest-department">Karnataka Forest Department</a></li>
+          <li><a href="publications.html?category=kali-tiger-reserve">Kali Tiger Reserve</a></li>
+          <li><a href="publications.html?category=nagarhole-national-park">Nagarhole National Park</a></li>
+          <li><a href="publications.html?category=academics">Academics</a></li>
+          <li><a href="publications.html?category=adcl">ADCL</a></li>
+          <li><a href="publications.html?category=ecology-environment">Ecology &amp; Environment</a></li>
+        </ul>
+      </li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</div>
+<div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="drawer-header">
+    <div class="drawer-logo">
+      <span class="logo-name">Srinivasulu IFS</span>
+      <span class="logo-sub">Indian Forest Service</span>
+    </div>
+    <button class="drawer-close" id="drawer-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="drawer-nav" aria-label="Mobile navigation">
+    <span class="drawer-section-label">Navigation</span>
+    <a href="index.html"><span class="dot"></span>Home</a>
+    <a href="cv.html"><span class="dot"></span>CV</a>
+    <a href="awards.html"><span class="dot"></span>Honours &amp; Awards</a>
+    <a href="accomplishments.html"><span class="dot"></span>Accomplishments</a>
+    <a href="publications.html"><span class="dot"></span>Publications</a>
+    <a href="videos.html"><span class="dot"></span>Videos</a>
+    <a href="photos.html"><span class="dot"></span>Photos</a>
+    <a href="blog.html" class="active"><span class="dot"></span>Blog</a>
+    <a href="contact.html"><span class="dot"></span>Contact</a>
+  </nav>
+</div>
+
+<div class="page-hero">
+  <div class="hero-content">
+    <h1 class="reveal">Research &amp;<br>Publications</h1>
+    <p class="reveal">Documents, reports and official publications spanning ecology, forest governance, wildlife conservation, and environmental policy.</p>
+  </div>
+  <div class="hero-decoration reveal">
+    <div class="deco-book deco-book-1"></div>
+    <div class="deco-book deco-book-2"></div>
+    <div class="deco-book deco-book-3"></div>
+    <div class="deco-dot-float-1"></div>
+    <div class="deco-dot-float-2"></div>
+    <div class="deco-dash"></div>
+  </div>
+</div>
+
+<section class="cards-section">
+  <div class="container">
+    <div class="reveal"><h2 class="section-title">Browse Publications</h2><p class="section-subtitle">Select a department to explore reports, research papers and official publications.</p></div>
+    <div class="dept-grid">
+      <a href="?category=kspcb#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_4ff3108d8f634e838fab62ca56fffc96~mv2.png" alt="KSPCB" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
+        <h3>KSPCB</h3>
+      </a>
+      <a href="?category=ecology-environment#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_62dec11c69ed420589562320bf048c11~mv2.png" alt="Ecology & Environment" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
+        <h3>Ecology &amp; Environment (KFD)</h3>
+      </a>
+      <a href="?category=karnataka-forest-department#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_904ba0f82df1434ea23d4ac439245283~mv2.png" alt="Karnataka Forest Department" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
+        <h3>Karnataka Forest Department</h3>
+      </a>
+      <a href="?category=kali-tiger-reserve#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_b2ee6a64c7b44f0aaf414f6e13d7beee~mv2.png" alt="Kali Tiger Reserve" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1477764250597-debb9487a2f4?w=100'">
+        <h3>Kali Tiger Reserve</h3>
+      </a>
+      <a href="?category=adcl#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_7f56d5d0a9664f56bc7c74743d1a0f55~mv2.png" alt="ADCL" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
+        <h3>ADCL</h3>
+      </a>
+      <a href="?category=academics#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_8affe3ef7ad64ffea272c0980e8981e2~mv2.png" alt="Academics" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
+        <h3>Academics</h3>
+      </a>
+      <a href="?category=shimoga#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_441ae3bd6cdd4bf2a0e8842c7993c960~mv2.png" alt="Shimoga" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
+        <h3>Shimoga</h3>
+      </a>
+      <a href="?category=nagarhole-national-park#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_c96fc0f36f1c41d5bf56dbcf33975446~mv2.jpeg" alt="Nagarhole National Park" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1477764250597-debb9487a2f4?w=100'">
+        <h3>Nagarhole National Park</h3>
+      </a>
+      <a href="?category=kfcsc#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_e08ab165d103428989198955bb9d62f3~mv2.png" alt="KFCSC" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
+        <h3>KFCSC</h3>
+      </a>
+      <a href="?category=kalaburagi#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_1c1354dbeab64557bcc9d5d6ee0096e6~mv2.png" alt="Kalaburagi" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
+        <h3>Kalaburagi</h3>
+      </a>
+      <a href="?category=ayush#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_17e9ae17fcef4f208620014a703c4dd0~mv2.png" alt="Ayush" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=100'">
+        <h3>Ayush</h3>
+      </a>
+      <a href="?category=chitradurga#posts" class="dept-card reveal">
+        <img src="https://static.wixstatic.com/media/f453f3_acd8279650af4b8088840c01285ff8a5~mv2.png" alt="Chitradurga" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
+        <h3>Chitradurga</h3>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Dynamic Blog Posts section ── -->
+<section class="blog-section section" id="posts" style="background:var(--cream);">
+  <div class="container">
+    <div class="section-header-row reveal">
+      <div>
+        <h2 class="section-title">Related Posts</h2>
+        <p class="section-subtitle">Research papers, reports, and publications from the selected department</p>
+      </div>
+      <div class="section-header-tools">
+        <div class="search-wrap">
+          <span class="search-icon" aria-hidden="true">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
+          <input type="search" id="blogSearch" placeholder="Search…" aria-label="Search posts" autocomplete="off">
+        </div>
+        <span class="post-count" id="postCount" aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="filter-bar-scroll">
+      <div class="filter-bar" id="filterBar" role="group" aria-label="Filter by category"></div>
+    </div>
+    <div class="blog-grid" id="blogGrid" aria-live="polite"></div>
+    <div class="pagination" id="pagination" role="navigation" aria-label="Pagination"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Srinivasulu IFS</div>
+        <div class="footer-tagline">Principal Secretary, Ecology &amp; Environment · Karnataka</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Overview</a><a href="cv.html">CV</a><a href="awards.html">Awards</a>
+        <a href="accomplishments.html">Accomplishments</a><a href="publications.html">Publications</a>
+        <a href="videos.html">Videos</a><a href="photos.html">Photos</a><a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.youtube.com/@srinivasifs4051" target="_blank" class="social-btn">▶ YouTube</a>
+      <a href="https://www.facebook.com/srinivasulu.krishnamurthy" target="_blank" class="social-btn">f Facebook</a>
+      <a href="https://www.instagram.com/sriniforest/" target="_blank" class="social-btn">◎ Instagram</a>
+    </div>
+    <div class="footer-bottom">© 2025 Srinivasulu IFS — Maintained by Vanalok</div>
+  </div>
+</footer>
+<script src="main.js"></script>
+<script src="blog-engine.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    BlogEngine.init({
+      gridId:       'blogGrid',
+      filterBarId:  'filterBar',
+      paginationId: 'pagination',
+      counterId:    'postCount',
+      searchId:     'blogSearch',
+      mode:         'section'
+    });
+  });
+
+</script>
+</body>
+</html>
