@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Srinivasulu IFS — Principal Secretary, Ecology &amp; Environment, Karnataka</title>
+<meta name="description" content="Official website of Srinivasulu IFS, Indian Forest Service officer and Principal Secretary of Ecology & Environment, Government of Karnataka.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Hero */
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  padding:7rem 5vw 4rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow:
+    inset 120px 0 120px rgba(15, 76, 92, 0.04),
+    inset -120px 0 120px rgba(217, 122, 92, 0.05);
+}
+.hero{
+  background:
+    linear-gradient(
+      145deg,
+      #FFF7E2 0%,
+      #FDE9C7 40%,
+      #F7DFC0 100%
+    );
+}
+.hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(30,127,110,0.08),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(217,122,92,0.08),
+      transparent 35%
+    );
+
+  pointer-events:none;
+}
+.hero-badge{display:inline-block;background:var(--teal-deep);color:var(--white);font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:.35rem 1rem;border-radius:30px;margin-bottom:1.25rem;}
+.hero h1{font-size:clamp(2.8rem,5vw,4.2rem);color:var(--charcoal);margin-bottom:.5rem;line-height:1.1;}
+.hero-subtitle{font-size:1.1rem;color:var(--terracotta);font-weight:600;margin-bottom:1.5rem;}
+.hero-quote{border-left:3px solid var(--terracotta);padding-left:1rem;font-style:italic;color:var(--slate-light);margin-bottom:2rem;font-size:.95rem;line-height:1.7;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+.hero-right{display:flex;align-items:center;justify-content:center;}
+.hero-right{position:relative;height:70vh;
+  background:url('https://static.wixstatic.com/media/f453f3_8c3c55fa3ba243fb8218f0fcc41bb41d~mv2.jpg') center/cover no-repeat;
+border-radius:32px;
+
+/* Premium layered shadows */
+box-shadow:
+  0 30px 60px rgba(15, 76, 92, 0.18),
+  0 10px 25px rgba(0, 0, 0, 0.10),
+  inset 0 -40px 80px rgba(0, 0, 0, 0.12),
+  inset 0 1px 0 rgba(255,255,255,0.25);
+
+  transition:transform .5s;
+}
+.hero-right:hover{transform:scale(1.01);}
+
+.hero-circle{width:360px;height:360px;background:var(--sand);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;}
+.hero-circle::before{content:'';position:absolute;width:300px;height:300px;border-radius:50%;border:2px dashed rgba(15,76,92,.25);}
+.hero-icon{font-size:7rem;line-height:1;}
+@media(max-width:1000px){
+  .hero-right{height:50vw;}
+}
+/* Stats */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem;}
+.stat-card{background:var(--white);border-radius:var(--radius-md);box-shadow:var(--shadow-md);padding:2rem 1.5rem;text-align:center;transition:transform .3s ease,box-shadow .3s ease;}
+.stat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
+.stat-icon{font-size:2rem;margin-bottom:.75rem;}
+.stat-value{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:800;color:var(--teal-deep);line-height:1;}
+.stat-label{font-size:.8rem;font-weight:700;color:var(--slate);margin:.25rem 0;text-transform:uppercase;letter-spacing:.5px;}
+.stat-desc{font-size:.8rem;color:var(--slate-light);margin-top:.4rem;line-height:1.5;}
+/* Bio */
+.bio-section{background:var(--white);}
+.bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+.bio-text p{color:var(--slate);line-height:1.85;margin-bottom:1rem;font-size:.97rem;}
+/* Testimonial */
+.testimonial-strip{background:var(--teal-deep);padding:5rem 5vw;text-align:center;}
+.testimonial-quote{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.1rem,2.5vw,1.5rem);color:var(--sand);max-width:800px;margin:0 auto;line-height:1.7;}
+.testimonial-quote::before{content:'\201C';font-size:4rem;line-height:0;vertical-align:-.6em;margin-right:.15em;opacity:.5;}
+.testimonial-quote::after{content:'\201D';font-size:4rem;line-height:0;vertical-align:-.64em;margin-right:.15em;opacity:.5;}
+/* Academic cards */
+.acad-card{padding:1.75rem;border-left:4px solid var(--teal-mid);}
+.acad-card h3{font-size:1.1rem;color:var(--teal-deep);margin-bottom:.3rem;}
+.acad-card p{font-size:.875rem;color:var(--slate-light);}
+/* Timeline */
+.timeline-scroll{display:flex;gap:1.5rem;overflow-x:auto;padding:1rem 0 1.5rem;scrollbar-width:thin;scrollbar-color:var(--sand) transparent;}
+.tl-card{min-width:240px;background:var(--white);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-md);flex-shrink:0;border-top:4px solid var(--teal-mid);transition:transform .3s;}
+.tl-card:hover{transform:translateY(-4px);}
+.tl-year{font-size:.75rem;font-weight:700;color:var(--terracotta);text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem;}
+.tl-role{font-family:'Playfair Display',serif;font-size:1rem;color:var(--charcoal);margin-bottom:.4rem;}
+.tl-desc{font-size:.82rem;color:var(--slate-light);}
+/* Logo grid */
+.logo-grid{display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:center;margin-top:2rem;}
+.logo-tile{background:var(--white);border-radius:var(--radius-md);padding:1.25rem 1rem;text-align:center;width:130px;box-shadow:var(--shadow-sm);transition:transform .3s,box-shadow .3s;}
+.logo-tile:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.logo-tile img{width:70px;height:60px;object-fit:contain;margin:0 auto .75rem;}
+.logo-tile span{font-size:.75rem;font-weight:600;color:var(--slate);display:block;}
+/* Blog cards */
+.blog-img{height:200px;overflow:hidden;}
+.blog-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+.card:hover .blog-img img{transform:scale(1.04);}
+.blog-tag{display:inline-block;background:var(--sand);color:var(--teal-deep);font-size:.7rem;font-weight:700;padding:.25rem .65rem;border-radius:20px;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.5px;}
+.blog-body{padding:1.25rem;}
+.blog-body h3{font-size:1rem;margin-bottom:.75rem;color:var(--charcoal);}
+.blog-link{font-size:.85rem;font-weight:600;color:var(--teal-deep);}
+/* Photo grid */
+.photo-grid{columns:3;gap:.75rem;}
+.photo-grid img{width:100%;margin-bottom:.75rem;border-radius:var(--radius-sm);break-inside:avoid;}
+/* CTA strip */
+.cta-strip{background:var(--teal-deep);padding:4rem 5vw;text-align:center;color:var(--white);}
+.cta-strip h2{font-family:'Playfair Display',serif;color:var(--sand);font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:.75rem;}
+.cta-strip a.mailto{display:block;color:rgba(255,255,255,.8);font-size:1rem;margin-bottom:1.5rem;}
+/* Responsive */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding-top:6rem;}
+  .stats-grid{grid-template-columns:repeat(2,1fr);}
+  .bio-grid{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  .stats-grid{grid-template-columns:1fr 1fr;}
+  .photo-grid{columns:2;}
+}
+</style>
+</head>
+<body>
+<div id="page-loader"><div class="loader-dot"></div><div class="loader-dot"></div><div class="loader-dot"></div></div>
+
+<!-- Navigation -->
+<div class="nav-wrapper">
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="" style="display: none;">
+        <span class="logo-name">Srinivasulu IFS</span>
+        <span class="logo-sub">Indian Forest Service</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="awards.html">Honours &amp; Awards</a></li>
+      <li class="dropdown">
+        <a href="accomplishments.html">Accomplishments</a>
+        <ul class="dropdown-menu">
+          <li><a href="accomplishments.html?category=kspcb#posts">KSPCB</a></li>
+          <li><a href="accomplishments.html?category=ayush#posts">Ayush</a></li>
+          <li><a href="accomplishments.html?category=karnataka-forest-department#posts">Karnataka Forest Department</a></li>
+          <li><a href="accomplishments.html?category=kali-tiger-reserve#posts">Kali Tiger Reserve</a></li>
+          <li><a href="accomplishments.html?category=nagarhole-national-park#posts">Nagarhole National Park</a></li>
+          <li><a href="accomplishments.html?category=kalaburagi#posts">Kalaburagi</a></li>
+          <li><a href="accomplishments.html?category=chitradurga#posts">Chitradurga</a></li>
+          <li><a href="accomplishments.html?category=shimoga#posts">Shimoga</a></li>
+          <li><a href="accomplishments.html?category=kfcsc#posts">KFCSC</a></li>
+          <li><a href="accomplishments.html?category=academics#posts">Academics</a></li>
+          <li><a href="accomplishments.html?category=adcl#posts">ADCL</a></li>
+          <li><a href="accomplishments.html?category=ecology-environment#posts">Ecology &amp; Environment</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="publications.html">Publications</a>
+        <ul class="dropdown-menu">
+          <li><a href="publications.html?category=kspcb">KSPCB</a></li>
+          <li><a href="publications.html?category=karnataka-forest-department">Karnataka Forest Department</a></li>
+          <li><a href="publications.html?category=kali-tiger-reserve">Kali Tiger Reserve</a></li>
+          <li><a href="publications.html?category=nagarhole-national-park">Nagarhole National Park</a></li>
+          <li><a href="publications.html?category=academics">Academics</a></li>
+          <li><a href="publications.html?category=adcl">ADCL</a></li>
+          <li><a href="publications.html?category=ecology-environment">Ecology &amp; Environment</a></li>
+        </ul>
+      </li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</div>
+<div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+  <div class="drawer-header">
+    <div class="drawer-logo">
+      <span class="logo-name">Srinivasulu IFS</span>
+      <span class="logo-sub">Indian Forest Service</span>
+    </div>
+    <button class="drawer-close" id="drawer-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="drawer-nav" aria-label="Mobile navigation">
+    <span class="drawer-section-label">Navigation</span>
+    <a href="index.html"><span class="dot"></span>Home</a>
+    <a href="cv.html"><span class="dot"></span>CV</a>
+    <a href="awards.html"><span class="dot"></span>Honours &amp; Awards</a>
+    <a href="accomplishments.html"><span class="dot"></span>Accomplishments</a>
+    <a href="publications.html"><span class="dot"></span>Publications</a>
+    <a href="videos.html"><span class="dot"></span>Videos</a>
+    <a href="photos.html"><span class="dot"></span>Photos</a>
+    <a href="blog.html" class="active"><span class="dot"></span>Blog</a>
+    <a href="contact.html"><span class="dot"></span>Contact</a>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <span class="hero-badge">IFS 1997 Batch · Karnataka</span>
+    <h1>Srinivasulu IFS</h1>
+    <p class="hero-subtitle">Principal Secretary, Ecology &amp; Environment · Govt. of Karnataka</p>
+    <blockquote class="hero-quote">"The solution lies in nature, choose sustainable lifestyle. Be Eco friendly."</blockquote>
+    <div class="hero-btns">
+      <a href="cv.html" class="btn btn-primary">View CV →</a>
+      <a href="accomplishments.html" class="btn btn-outline">Accomplishments →</a>
+    </div>
+  </div>
+  <div class="hero-right"></div>
+</section>
+
+<!-- MILESTONES -->
+<section class="section" style="background:#40c3ff; padding-left: 5vw; padding-right: 5vw;">
+  <div class="reveal">
+    <h2 class="section-title" style="margin-bottom: 2.5rem; text-align: left;">Distinguished Milestones</h2>
+  </div>
+  <div class="highlights-grid">
+    <div class="highlight-card reveal"><div class="highlight-icon">🏅</div><div class="highlight-number">Gold</div><div class="highlight-title">University Medal</div><div class="highlight-desc">University of Agriculture Sciences — top of class distinction</div></div>
+    <div class="highlight-card reveal"><div class="highlight-icon">🌿</div><div class="highlight-number">27+</div><div class="highlight-title">Years of Service</div><div class="highlight-desc">Spanning forests, wildlife, AYUSH and environment policy</div></div>
+    <div class="highlight-card reveal"><div class="highlight-icon">🌍</div><div class="highlight-number">COP21</div><div class="highlight-title">Paris Climate Summit</div><div class="highlight-desc">Documentary featured by PM Modi — Kali Tiger Reserve film</div></div>
+    <div class="highlight-card reveal"><div class="highlight-icon">📊</div><div class="highlight-number">Top 10</div><div class="highlight-title">All India Rank</div><div class="highlight-desc">Molecular Biology &amp; Biotechnology — national academic excellence</div></div>
+  </div>
+</section>
+
+<!-- BIOGRAPHY -->
+<section class="section bio-section" style="background: var(--cream);">
+  <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 5rem; align-items: start;">
+    <div class="reveal">
+      <div style="font-size: 0.65rem; font-weight: 800; color: var(--terracotta); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem;">DISTINGUISHED SERVICE</div>
+      <h2 class="section-title" style="margin-bottom: 1.5rem; text-align: left; font-size: 3rem; line-height: 1.2;">Three Decades<br>of <span style="color: var(--terracotta);">Impact</span></h2>
+      <p style="color: var(--slate-light); margin-bottom: 2rem; font-size: 1.05rem; line-height: 1.7;">Leading forest governance, climate action, and ecological transformation across Karnataka's most critical natural landscapes and environmental policy corridors.</p>
+      <ul style="color: var(--charcoal); font-weight: 500; font-size: 0.95rem; line-height: 1.8;">
+        <li>✓ Currently serving as Principal Secretary</li>
+        <li>✓ 12+ leadership positions across Karnataka</li>
+        <li>✓ Global recognition at COP21 Paris Summit</li>
+      </ul>
+    </div>
+    
+    <div class="timeline-vertical reveal">
+      <div class="timeline-item-v">
+        <div class="timeline-dot"></div>
+        <div class="timeline-tag">Present</div>
+        <h3 class="timeline-role">Principal Secretary — Forest, Ecology &amp; Environment</h3>
+        <p class="timeline-desc">Government of Karnataka. Leading state environmental policy, forest governance, and ecological conservation at the highest administrative level.</p>
+      </div>
+      <div class="timeline-item-v">
+        <div class="timeline-dot"></div>
+        <div class="timeline-tag">Previous Role</div>
+        <h3 class="timeline-role">Commissioner — AYUSH, Karnataka</h3>
+        <p class="timeline-desc">Revolutionized public health systems and traditional medicine frameworks, integrating Ayurveda and Yoga into state health policy.</p>
+      </div>
+      <div class="timeline-item-v">
+        <div class="timeline-dot"></div>
+        <div class="timeline-tag">COP21 Recognition</div>
+        <h3 class="timeline-role">Director — Kali Tiger Reserve, Dandeli</h3>
+        <p class="timeline-desc">Conservation documentary featured by PM Modi at the COP21 Paris Climate Summit. Transformed Dandeli-Anshi into a globally recognized tiger habitat.</p>
+      </div>
+      <div class="timeline-item-v">
+        <div class="timeline-dot"></div>
+        <div class="timeline-tag">Regulation</div>
+        <h3 class="timeline-role">Member Secretary — KSPCB</h3>
+        <p class="timeline-desc">Karnataka State Pollution Control Board. Strengthened environmental regulation frameworks and industrial compliance across the state.</p>
+      </div>
+      <div class="timeline-item-v">
+        <div class="timeline-dot"></div>
+        <div class="timeline-tag">Foundation</div>
+        <h3 class="timeline-role">Divisional Forest Officer — Multiple Divisions</h3>
+        <p class="timeline-desc">Built grassroots forest management expertise across Karnataka's diverse ecological zones, from coastal to high-altitude ecosystems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<div class="testimonial-strip reveal">
+  <p class="testimonial-quote">A distinguished Indian Forest Service(IFS) officer with over two decades of leadership in forestry, wildlife management, environmental governance, and public administration.</p>
+</div>
+
+<!-- ACADEMIC -->
+<section class="section" style="background:#F9F3E8;">
+  <div class="container">
+    <div class="reveal">
+      <h2 class="section-title">
+        <svg xmlns="http://www.w3.org/2000/svg" 
+          width="44" 
+          height="44" 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="currentColor" 
+          stroke-width="2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round">
+          <!-- Graduation Cap -->
+          <path d="M22 10L12 5 2 10l10 5 10-5z"/>
+          <path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/>
+        </svg>
+      Education
+    </h2>
+    </div>
+    <div class="grid-2" style="margin-top:2rem;">
+      <div class="card acad-card reveal"><h3>Gold Medalist</h3><p>University of Agricultural Sciences — top distinction in graduating class</p></div>
+      <div class="card acad-card reveal"><h3>All India 10th Rank</h3><p>Molecular Biology &amp; Biotechnology post-graduation</p></div>
+      <div class="card acad-card reveal"><h3>2nd Rank IARI</h3><p>IARI National Entrance Exam — doctoral-level achievement</p></div>
+      <div class="card acad-card reveal"><h3>IFS Top Rank</h3><p>Indian Forest Service 1997 Batch — civil service entrance</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER TIMELINE -->
+<section class="section" style="background-color: #72b0da;">
+  <div class="container">
+    <div class="reveal">
+      <h2 class="section-title">
+        <svg xmlns="http://www.w3.org/2000/svg"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round">
+
+          <!-- Steps -->
+          <path d="M4 20h4v-4H4v4z"/>
+          <path d="M10 20h4v-8h-4v8z"/>
+          <path d="M16 20h4V8h-4v12z"/>
+
+          <!-- Arrow -->
+          <path d="M5 11l4-4 4 2 6-5"/>
+          <path d="M17 4h2v2"/>
+        </svg>
+        Career Milestones
+      </h2>
+    </div>
+    <div class="slider-wrapper">
+      <button class="slider-btn prev-btn" id="tl-prev" aria-label="Previous">❮</button>
+      <div class="timeline-scroll" id="tl-scroll">
+        <div class="tl-card"><div class="tl-year">Present</div><div class="tl-role">Principal Secretary</div><p class="tl-desc">Forest, Ecology &amp; Environment, Govt. of Karnataka</p></div>
+        <div class="tl-card"><div class="tl-year">Previous</div><div class="tl-role">Commissioner — AYUSH</div><p class="tl-desc">Government of Karnataka</p></div>
+        <div class="tl-card"><div class="tl-year">COP21 Recognition</div><div class="tl-role">Director — Kali Tiger Reserve</div><p class="tl-desc">Dandeli, Documentary featured at Paris Summit</p></div>
+        <div class="tl-card"><div class="tl-year">Regulation</div><div class="tl-role">Member Secretary — KSPCB</div><p class="tl-desc">Karnataka State Pollution Control Board</p></div>
+        <div class="tl-card"><div class="tl-year">Foundation</div><div class="tl-role">Divisional Forest Officer</div><p class="tl-desc">Multiple Divisions across Karnataka</p></div>
+      </div>
+      <button class="slider-btn next-btn" id="tl-next" aria-label="Next">❯</button>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS OF WORK -->
+<section class="section" style="background:#F9F3E8;">
+  <div class="container" style="text-align:center;">
+    <div class="reveal"><h2 class="section-title">Areas of Works</h2></div>
+    
+    <div class="logo-marquee-wrapper" style="margin-top: 2rem;">
+      <!-- First Marquee Track -->
+      <div class="logo-marquee">
+        <div class="logo-tile" title="KFD Wildlife"><img src="https://static.wixstatic.com/media/f453f3_aca3d434c40c4d10b761d578c93bcade~mv2.png" alt="KFD Wildlife" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'"><span>KFD Wildlife</span></div>
+        <div class="logo-tile" title="AYUSH"><img src="https://static.wixstatic.com/media/f453f3_6857d4bb9f364693ad307b5c54e6a015~mv2.jpeg" alt="AYUSH" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=100'"><span>AYUSH</span></div>
+        <div class="logo-tile" title="Karnataka Govt"><img src="https://static.wixstatic.com/media/f453f3_62dec11c69ed420589562320bf048c11~mv2.png" alt="Karnataka Govt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1575505586569-646b2ca898fc?w=100'"><span>Karnataka Govt</span></div>
+        <div class="logo-tile" title="KSPCB"><img src="https://static.wixstatic.com/media/f453f3_4ff3108d8f634e838fab62ca56fffc96~mv2.png" alt="KSPCB" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1575505586569-646b2ca898fc?w=100'"><span>KSPCB</span></div>
+        <div class="logo-tile" title="Wildlife"><img src="https://static.wixstatic.com/media/f453f3_91e9fe50f763480392a67a15ae043bd2~mv2.jpg" alt="Wildlife" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504173010664-32509aeebb62?w=100'"><span>Wildlife</span></div>
+        <div class="logo-tile" title="Kali Tiger Reserve"><img src="https://static.wixstatic.com/media/f453f3_b2ee6a64c7b44f0aaf414f6e13d7beee~mv2.png" alt="Kali Tiger Reserve" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1575505586569-646b2ca898fc?w=100'"><span>Kali Tiger Reserve</span></div>
+        <div class="logo-tile" title="ADCL"><img src="https://static.wixstatic.com/media/f453f3_b88dad99b56146abb0c990b084a6d9b7~mv2.jpg" alt="ADCL" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1477764250597-debb9487a2f4?w=100'"><span>ADCL</span></div>
+      </div>
+      
+      <!-- Duplicate Track for Infinite Loop -->
+      <div class="logo-marquee" aria-hidden="true">
+        <div class="logo-tile" title="KFD Wildlife"><img src="https://static.wixstatic.com/media/f453f3_aca3d434c40c4d10b761d578c93bcade~mv2.png" alt="KFD Wildlife" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'"><span>KFD Wildlife</span></div>
+        <div class="logo-tile" title="AYUSH"><img src="https://static.wixstatic.com/media/f453f3_6857d4bb9f364693ad307b5c54e6a015~mv2.jpeg" alt="AYUSH" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=100'"><span>AYUSH</span></div>
+        <div class="logo-tile" title="Karnataka Govt"><img src="https://static.wixstatic.com/media/f453f3_62dec11c69ed420589562320bf048c11~mv2.png" alt="Karnataka Govt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1575505586569-646b2ca898fc?w=100'"><span>Karnataka Govt</span></div>
+        <div class="logo-tile" title="KSPCB"><img src="https://static.wixstatic.com/media/f453f3_4ff3108d8f634e838fab62ca56fffc96~mv2.png" alt="KSPCB" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1575505586569-646b2ca898fc?w=100'"><span>KSPCB</span></div>
+        <div class="logo-tile" title="Wildlife"><img src="https://static.wixstatic.com/media/f453f3_91e9fe50f763480392a67a15ae043bd2~mv2.jpg" alt="Wildlife" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504173010664-32509aeebb62?w=100'"><span>Wildlife</span></div>
+        <div class="logo-tile" title="Kali Tiger Reserve"><img src="https://static.wixstatic.com/media/f453f3_b2ee6a64c7b44f0aaf414f6e13d7beee~mv2.png" alt="Kali Tiger Reserve" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1575505586569-646b2ca898fc?w=100'"><span>Kali Tiger Reserve</span></div>
+        <div class="logo-tile" title="ADCL"><img src="https://static.wixstatic.com/media/f453f3_b88dad99b56146abb0c990b084a6d9b7~mv2.jpg" alt="ADCL" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1477764250597-debb9487a2f4?w=100'"><span>ADCL</span></div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+<!-- RECENT STORIES -->
+<section class="section" style="background-color: #8d5666;">
+  <div class="container">
+    <div class="reveal"><h2 class="section-title">Recent Stories</h2></div>
+    <div class="grid-3" style="margin-top:2rem;">
+      <div class="card reveal">
+        <div class="blog-img"><img src="https://static.wixstatic.com/media/f453f3_616a34f4ef764e4985addafaac351bd9~mv2.jpg" alt="TEDxABBS" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400'"></div>
+        <div class="blog-body"><span class="blog-tag">TEDxABBS</span><h3>Srinivasulu IFS Takes the TEDx Stage</h3><a href="#" class="blog-link">Read More →</a></div>
+      </div>
+      <div class="card reveal">
+        <div class="blog-img"><img src="https://static.wixstatic.com/media/f453f3_3b10871ede884173a0c1c70b2e3a264a~mv2.jpg" alt="Deccan Herald" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=400'"></div>
+        <div class="blog-body"><span class="blog-tag">Deccan Herald</span><h3>Living Forests, Shared Futures</h3><a href="#" class="blog-link">Read More →</a></div>
+      </div>
+      <div class="card reveal">
+        <div class="blog-img"><img src="https://static.wixstatic.com/media/f453f3_5a52186621e34607be2faf50588f520c~mv2.jpg" alt="Literature Event" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400'"></div>
+        <div class="blog-body"><span class="blog-tag">Literature Event</span><h3>Unveiling of Jvaratimirabhaskarah Book</h3><a href="#" class="blog-link">Read More →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<div class="cta-strip reveal">
+  <h2>Get In Touch</h2>
+  <a href="mailto:sriniforest@gmail.com" class="mailto">sriniforest@gmail.com</a>
+  <a href="contact.html" class="btn btn-white">Contact</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Srinivasulu IFS</div>
+        <div class="footer-tagline">Principal Secretary, Ecology &amp; Environment · Karnataka</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Overview</a>
+        <a href="cv.html">CV</a>
+        <a href="awards.html">Awards</a>
+        <a href="accomplishments.html">Accomplishments</a>
+        <a href="publications.html">Publications</a>
+        <a href="videos.html">Videos</a>
+        <a href="photos.html">Photos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-social">
+      <a href="https://www.youtube.com/@srinivasifs4051" target="_blank" class="social-btn">YouTube</a>
+      <a href="https://www.facebook.com/srinivasulu.krishnamurthy" target="_blank" class="social-btn">Facebook</a>
+      <a href="https://www.instagram.com/sriniforest/" target="_blank" class="social-btn">Instagram</a>
+    </div>
+    <div class="footer-bottom">© 2025 Srinivasulu IFS — Maintained by Vanalok</div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
