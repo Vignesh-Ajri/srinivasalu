@@ -1,0 +1,303 @@
+{
+    "postPage": {
+        "id": "7be4349c-3691-45ea-909c-87f67633d0c7",
+        "post": {
+            "id": "7be4349c-3691-45ea-909c-87f67633d0c7",
+            "title": "ಹಸಿರು ಪರಿಸರ...",
+            "excerpt": "",
+            "firstPublishedDate": "2021-03-13T05:24:17.865Z",
+            "lastPublishedDate": "2021-03-13T05:24:17.865Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/ಹಸ-ರ-ಪರ-ಸರ"
+            },
+            "slug": "ಹಸ-ರ-ಪರ-ಸರ",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "600ba75a-a3e3-45be-8d0b-863a4b5f6e09"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 13
+            },
+            "minutesToRead": 0,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 13,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "IMAGE",
+                        "id": "3mf9",
+                        "nodes": [],
+                        "imageData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "image": {
+                                "src": {
+                                    "id": "f453f3_85e27e21726e4670aed377dbdd7dd229~mv2.jpg"
+                                },
+                                "width": 473,
+                                "height": 255
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "ba2bt",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-05-19T01:45:00.286Z",
+                    "updatedTimestamp": "2024-05-19T01:45:00.286Z",
+                    "id": "8f028919-875d-486a-b599-783091286b85"
+                }
+            },
+            "contentId": "617a4c790250d10016e63a0d",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_85e27e21726e4670aed377dbdd7dd229~mv2.jpg",
+                        "url": "https://static.wixstatic.com/media/f453f3_85e27e21726e4670aed377dbdd7dd229~mv2.jpg",
+                        "height": 255,
+                        "width": 473
+                    }
+                },
+                "displayed": true,
+                "custom": false
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "604c4ba79b18e600157accca",
+            "internalCategoryIds": [
+                "5f685d9f798880001769b5d8"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "600ba75a-a3e3-45be-8d0b-863a4b5f6e09",
+                "label": "KSPCB_publications",
+                "postCount": 42,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/kspcb_publications"
+                },
+                "description": "",
+                "title": "KSPCB_publications",
+                "displayPosition": 22,
+                "language": "en",
+                "slug": "kspcb_publications",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "5e589a06-f89f-4688-8c70-1255c4dd0516",
+                "internalId": "6429158c0cfce0e74e35bae4",
+                "slug": "on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada"
+                },
+                "media": {
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "On duty Officer | Season 01  | Sri. Srinivasulu IFS | Bhima TV Kannada",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "99a00b95-7171-45a5-b4bc-67f2b04c2a51",
+                "internalId": "641546967041e6bb3c281278",
+                "slug": "ಕ-ಳಚ-ನ-ರ-ಳಗ-ದ-ಹ-ಸ-ಅವಕ-ಶ",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/ಕ-ಳಚ-ನ-ರ-ಳಗ-ದ-ಹ-ಸ-ಅವಕ-ಶ"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_6db67c1acd184ba59a08ab0ea2ec4261~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_6db67c1acd184ba59a08ab0ea2ec4261~mv2.jpeg",
+                            "height": 731,
+                            "width": 1024
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "ಕೊಳಚೆ ನೀರೊಳಗಿದೆ ಹೊಸ ಅವಕಾಶ!",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "948284e9-bd63-453c-8a26-46db35150006",
+                "internalId": "6371be49ccabb704aae35a17",
+                "slug": "make-pollution-public-issue-so-it-becomes-an-election-mandate",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/make-pollution-public-issue-so-it-becomes-an-election-mandate"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_3f6262f4109c4f0cb0bac2bad5c139da~mv2.jpg",
+                            "url": "https://static.wixstatic.com/media/f453f3_3f6262f4109c4f0cb0bac2bad5c139da~mv2.jpg",
+                            "height": 960,
+                            "width": 1125
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Make pollution public issue, so it becomes an election mandate",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": "More..."
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

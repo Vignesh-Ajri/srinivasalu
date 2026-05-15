@@ -1,0 +1,345 @@
+{
+    "postPage": {
+        "id": "57287912-8405-43ec-8f1d-c5f02a6d8090",
+        "post": {
+            "id": "57287912-8405-43ec-8f1d-c5f02a6d8090",
+            "title": "Srinivasulu, IFS to the TEDxABBS stage.",
+            "excerpt": "Srinivasulu, Indian Forest Service (IFS) to the TEDxABBS stage. He plays a pivotal role in Forest & Wildlife Conservation, policy making,...",
+            "firstPublishedDate": "2025-08-07T14:38:17.662Z",
+            "lastPublishedDate": "2025-08-07T14:42:52.728Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/srinivasulu-indian-forest-service-ifs-to-the-tedxabbs-stage"
+            },
+            "slug": "srinivasulu-indian-forest-service-ifs-to-the-tedxabbs-stage",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "c9e08f3b-8b9e-4598-8b8f-83a7623cc7ee"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 1,
+                "views": 42
+            },
+            "minutesToRead": 1,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 1,
+                "views": 42,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": [],
+                "settings": {
+                    "preventAutoRedirect": false,
+                    "keywords": []
+                }
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "msyba383",
+                        "nodes": [],
+                        "paragraphData": {}
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "gorh2396",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            }
+                        }
+                    },
+                    {
+                        "type": "IMAGE",
+                        "id": "cxv1j427",
+                        "nodes": [
+                            {
+                                "type": "CAPTION",
+                                "id": "00xnj429",
+                                "nodes": [
+                                    {
+                                        "type": "TEXT",
+                                        "id": "",
+                                        "nodes": [],
+                                        "textData": {
+                                            "text": "Srinivasulu, Indian Forest Service (IFS) to the TEDxABBS stage.",
+                                            "decorations": [
+                                                {
+                                                    "type": "COLOR",
+                                                    "colorData": {
+                                                        "background": "rgb(255, 255, 255)",
+                                                        "foreground": "rgb(0, 0, 0)"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "imageData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "SMALL"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "image": {
+                                "src": {
+                                    "id": "f453f3_cc36868f883d43bf8fd48e86a2dbe8f5~mv2.jpg"
+                                },
+                                "width": 2000,
+                                "height": 1766
+                            },
+                            "caption": "Srinivasulu, Indian Forest Service (IFS) to the TEDxABBS stage."
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "17g9c885",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "He plays a pivotal role in Forest & Wildlife Conservation, policy making, biodiversity management and combat climate challenges with sustainable practices.",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "background": "rgb(255, 255, 255)",
+                                                "foreground": "rgb(0, 0, 0)"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {}
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "tmkms888",
+                        "nodes": [],
+                        "style": {},
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "dzrsw889",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "We’re proud to welcome Srinivasulu - Additional Principal Chief Conservator of Forests, Gok, Indian Forest Service",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "background": "rgb(255, 255, 255)",
+                                                "foreground": "rgb(0, 0, 0)"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {}
+                    }
+                ],
+                "documentStyle": {}
+            },
+            "contentId": "6894baaa979ca91c7c3e20c2",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_616a34f4ef764e4985addafaac351bd9~mv2.jpg",
+                        "url": "https://static.wixstatic.com/media/f453f3_616a34f4ef764e4985addafaac351bd9~mv2.jpg",
+                        "height": 6048,
+                        "width": 4032,
+                        "filename": "NGD_0712.jpg"
+                    }
+                },
+                "displayed": true,
+                "custom": false
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "6894b980979ca91c7c3e1dec",
+            "internalCategoryIds": [
+                "6894a872361afb873d30f5d9"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "c9e08f3b-8b9e-4598-8b8f-83a7623cc7ee",
+                "label": "KFD - Wildlife",
+                "postCount": 2,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/kfd-wildlife-1"
+                },
+                "title": "",
+                "displayPosition": 999,
+                "language": "en",
+                "slug": "kfd-wildlife-1",
+                "seoData": {
+                    "tags": []
+                },
+                "coverImage": {
+                    "id": "f453f3_aca3d434c40c4d10b761d578c93bcade~mv2.png",
+                    "url": "https://static.wixstatic.com/media/f453f3_aca3d434c40c4d10b761d578c93bcade~mv2.png",
+                    "height": 1889,
+                    "width": 2329
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "5b13da97-30d4-40a6-be55-d44e8c25520e",
+                "internalId": "68949dd6ddea84be3de5deb7",
+                "slug": "living-forests-shared-futures-srinivasulu",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/living-forests-shared-futures-srinivasulu"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_3b10871ede884173a0c1c70b2e3a264a~mv2.jpg",
+                            "url": "https://static.wixstatic.com/media/f453f3_3b10871ede884173a0c1c70b2e3a264a~mv2.jpg",
+                            "height": 251,
+                            "width": 312,
+                            "filename": "0331973c-31ce-4e84-9347-cd01c252f1de_edited.jpg"
+                        }
+                    },
+                    "displayed": true,
+                    "custom": true
+                },
+                "title": "Deccan Herald; Living forests, shared futures - Srinivasulu",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": "A number of families still live in acute poverty within protected forests. In the Kali Tiger Reserve (KTR), 71 hamlets are home to nearly..."
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

@@ -1,0 +1,558 @@
+{
+    "postPage": {
+        "id": "ed8e9ec9-29e3-4cd4-b47a-62d20685f3ea",
+        "post": {
+            "id": "ed8e9ec9-29e3-4cd4-b47a-62d20685f3ea",
+            "title": "Gangakalyana",
+            "excerpt": "Gangakalyana is the Flag Ship Programme of Govt. of Karnataka developed a “Mobile App” \"Gangakalyana\" which facilitate unit officers,...",
+            "firstPublishedDate": "2020-09-02T10:00:26.548Z",
+            "lastPublishedDate": "2020-09-02T10:04:09.621Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/gangakalyana"
+            },
+            "slug": "gangakalyana",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "32f0536e-5cbf-4974-8d1c-2870ed67c3b8",
+                "35f6561c-78b7-4c5a-b440-ecbd0ad43a89"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 13
+            },
+            "minutesToRead": 1,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 13,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "1ebsm",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Gangakalyana is the Flag Ship Programme of Govt. of Karnataka developed a “Mobile App” \"Gangakalyana\" which facilitate unit officers, stake holders to document and update the various stages of the implementation. The app established harmonic linkage between Head Office, District Office, Borewell Agencies, Pumpset Suppliers, ESCOMS and beneficiary for seamless communication and co-ordination. ",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "HEADING",
+                        "id": "2muc5",
+                        "nodes": [],
+                        "headingData": {
+                            "level": 2,
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "BLOCKQUOTE",
+                        "id": "dq887",
+                        "nodes": [
+                            {
+                                "type": "PARAGRAPH",
+                                "id": "izfon5411768",
+                                "nodes": [
+                                    {
+                                        "type": "TEXT",
+                                        "id": "",
+                                        "nodes": [],
+                                        "textData": {
+                                            "text": "Developed a Mobile App ",
+                                            "decorations": [
+                                                {
+                                                    "type": "ITALIC",
+                                                    "italicData": true
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "TEXT",
+                                        "id": "",
+                                        "nodes": [],
+                                        "textData": {
+                                            "text": "\"Kalyana\" ",
+                                            "decorations": [
+                                                {
+                                                    "type": "BOLD",
+                                                    "fontWeightValue": 700
+                                                },
+                                                {
+                                                    "type": "ITALIC",
+                                                    "italicData": true
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "TEXT",
+                                        "id": "",
+                                        "nodes": [],
+                                        "textData": {
+                                            "text": "for Social Welfare Department, Govt. of Karnataka, it empowers citizens with information, enable to apply online contact the department through social media and also avail digital citizen services. The app was launched by ",
+                                            "decorations": [
+                                                {
+                                                    "type": "ITALIC",
+                                                    "italicData": true
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "TEXT",
+                                        "id": "",
+                                        "nodes": [],
+                                        "textData": {
+                                            "text": "Shree Rahul Gandhi Ji",
+                                            "decorations": [
+                                                {
+                                                    "type": "BOLD",
+                                                    "fontWeightValue": 700
+                                                },
+                                                {
+                                                    "type": "ITALIC",
+                                                    "italicData": true
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "TEXT",
+                                        "id": "",
+                                        "nodes": [],
+                                        "textData": {
+                                            "text": " on 21st July 2017 during Dr. B.R. Ambedkar International Conference held in Bangalore. ",
+                                            "decorations": [
+                                                {
+                                                    "type": "ITALIC",
+                                                    "italicData": true
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "paragraphData": {
+                                    "textStyle": {
+                                        "textAlignment": "AUTO"
+                                    },
+                                    "indentation": 0
+                                }
+                            }
+                        ],
+                        "blockquoteData": {
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "a02ue",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "GALLERY",
+                        "id": "28t3t",
+                        "nodes": [],
+                        "galleryData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "items": [
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_9acdb15ac34749b1a0e3605871c03869~mv2.jpg"
+                                            },
+                                            "width": 512,
+                                            "height": 250
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_b5b48a2fabd7410eb7407f8c50ccc0f2~mv2.jpg"
+                                            },
+                                            "width": 512,
+                                            "height": 244
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_7c4da20262564238ac5b9449cd7e4fee~mv2.jpg"
+                                            },
+                                            "width": 512,
+                                            "height": 244
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_04e14399d5db4d9b841e17b7dc8f2bdd~mv2.jpeg"
+                                            },
+                                            "width": 176,
+                                            "height": 286
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_9b723790c7244b8d959d500fb11c5992~mv2.jpeg"
+                                            },
+                                            "width": 422,
+                                            "height": 750
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_a07fa02fe432413981313cb28aa3d69c~mv2.jpeg"
+                                            },
+                                            "width": 171,
+                                            "height": 296
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_20d37502cfaa4c0b85b38379c2829dd5~mv2.jpeg"
+                                            },
+                                            "width": 170,
+                                            "height": 297
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_4627f720e19447fea1f8628e9b30c9ea~mv2.jpeg"
+                                            },
+                                            "width": 177,
+                                            "height": 285
+                                        }
+                                    }
+                                }
+                            ],
+                            "options": {
+                                "layout": {
+                                    "type": "MASONRY",
+                                    "horizontalScroll": false,
+                                    "orientation": "ROWS",
+                                    "numberOfColumns": 0
+                                },
+                                "item": {
+                                    "targetSize": 300,
+                                    "crop": "FILL",
+                                    "spacing": 20
+                                },
+                                "thumbnails": {
+                                    "placement": "NONE"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "2po2d",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-05-17T02:33:34.876Z",
+                    "updatedTimestamp": "2024-05-17T02:33:34.876Z",
+                    "id": "208b9be3-0cc8-4f9d-8bcd-2ea5342670cf"
+                }
+            },
+            "contentId": "617a79f8466e4400163c9878",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_9acdb15ac34749b1a0e3605871c03869~mv2.jpg",
+                        "url": "https://static.wixstatic.com/media/f453f3_9acdb15ac34749b1a0e3605871c03869~mv2.jpg",
+                        "height": 250,
+                        "width": 512
+                    }
+                },
+                "displayed": true,
+                "custom": false
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "5f4f6a8e7b940900178ec0ec",
+            "internalCategoryIds": [
+                "5f55f543ac304100173210eb",
+                "5f97fa8fdff7a40017edb91d"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "35f6561c-78b7-4c5a-b440-ecbd0ad43a89",
+                "label": "Accomplishments",
+                "postCount": 37,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/accomplishments"
+                },
+                "title": "",
+                "displayPosition": 3,
+                "language": "en",
+                "slug": "accomplishments",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            },
+            {
+                "id": "32f0536e-5cbf-4974-8d1c-2870ed67c3b8",
+                "label": "Dr B R Ambedkar Development Corp.",
+                "postCount": 4,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/dr-b-r-ambedkar-development-corp"
+                },
+                "description": "",
+                "title": "Dr B R Ambedkar Development Corp.",
+                "displayPosition": 9,
+                "language": "en",
+                "slug": "dr-b-r-ambedkar-development-corp",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "5e589a06-f89f-4688-8c70-1255c4dd0516",
+                "internalId": "6429158c0cfce0e74e35bae4",
+                "slug": "on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada"
+                },
+                "media": {
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "On duty Officer | Season 01  | Sri. Srinivasulu IFS | Bhima TV Kannada",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "1bb38ab7-0145-4100-8653-a685c3dead95",
+                "internalId": "6018d7220f10a40017a45ef1",
+                "slug": "glimpses-of-key-accomplishments-may-2020-jan-2021",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/glimpses-of-key-accomplishments-may-2020-jan-2021"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_67f143b40a034205939cdf4f09855a3c~mv2.png",
+                            "url": "https://static.wixstatic.com/media/f453f3_67f143b40a034205939cdf4f09855a3c~mv2.png",
+                            "height": 401,
+                            "width": 800
+                        }
+                    },
+                    "displayed": true,
+                    "custom": true
+                },
+                "title": "Glimpses of Key Accomplishments May 2020 - Jan 2021",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": "View from the link here: https://drive.google.com/file/d/1uSNbEuF5c5zJgeNWsP4fjbDyDw46f2Bg/view or"
+            },
+            {
+                "id": "43fefab4-d4dd-4cc6-b46c-91c16bb125d8",
+                "internalId": "5fb385f893835400178cb1f4",
+                "slug": "nature-camp-forest-awareness-program",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/nature-camp-forest-awareness-program"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_8d3f83969585483489281f4caccfab62~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_8d3f83969585483489281f4caccfab62~mv2.jpeg",
+                            "height": 1024,
+                            "width": 575
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Nature Camp & Forest Awareness Program",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

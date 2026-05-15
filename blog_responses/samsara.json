@@ -1,0 +1,415 @@
+{
+    "postPage": {
+        "id": "47319b36-5668-473f-8560-946f98e3d049",
+        "post": {
+            "id": "47319b36-5668-473f-8560-946f98e3d049",
+            "title": "Samsara",
+            "excerpt": "Produced a two minute zingle showcasing the beauty and grandeur of Kali Tiger Reserve.",
+            "firstPublishedDate": "2020-09-02T09:48:02.773Z",
+            "lastPublishedDate": "2020-09-02T09:48:02.773Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/samsara"
+            },
+            "slug": "samsara",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "35f6561c-78b7-4c5a-b440-ecbd0ad43a89",
+                "b42a7f3c-659e-4e09-97cf-a7646a017187"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 6
+            },
+            "minutesToRead": 1,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 6,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "1ebsm",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Produced a two minute zingle showcasing the beauty and grandeur of Kali Tiger Reserve. ",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "VIDEO",
+                        "id": "346ol",
+                        "nodes": [],
+                        "videoData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "video": {
+                                "src": {
+                                    "url": "https://youtu.be/7kcu1nr2jLO"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "acipl",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "88d4a",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "762p2",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "47imc",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "6rfob",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "cvvr2",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "8jr7g",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "lq6u",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "1tfr0",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-06-03T14:12:42.448Z",
+                    "updatedTimestamp": "2024-06-03T14:12:42.448Z",
+                    "id": "bc82c9ff-89a4-4af0-bdad-9d0a4bfd0e6d"
+                }
+            },
+            "contentId": "617a79f8466e4400163c9876",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "displayed": false,
+                "custom": false
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "5f4f69efe164df00171b1bca",
+            "internalCategoryIds": [
+                "5f97fa8fdff7a40017edb91d",
+                "5f55f55ba82e030017925d50"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "35f6561c-78b7-4c5a-b440-ecbd0ad43a89",
+                "label": "Accomplishments",
+                "postCount": 37,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/accomplishments"
+                },
+                "title": "",
+                "displayPosition": 3,
+                "language": "en",
+                "slug": "accomplishments",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            },
+            {
+                "id": "b42a7f3c-659e-4e09-97cf-a7646a017187",
+                "label": "Kali Tiger Reserve",
+                "postCount": 10,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/kali-tiger-reserve"
+                },
+                "description": "",
+                "title": "Kali Tiger Reserve",
+                "displayPosition": 17,
+                "language": "en",
+                "slug": "kali-tiger-reserve",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "5e589a06-f89f-4688-8c70-1255c4dd0516",
+                "internalId": "6429158c0cfce0e74e35bae4",
+                "slug": "on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada"
+                },
+                "media": {
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "On duty Officer | Season 01  | Sri. Srinivasulu IFS | Bhima TV Kannada",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "1bb38ab7-0145-4100-8653-a685c3dead95",
+                "internalId": "6018d7220f10a40017a45ef1",
+                "slug": "glimpses-of-key-accomplishments-may-2020-jan-2021",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/glimpses-of-key-accomplishments-may-2020-jan-2021"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_67f143b40a034205939cdf4f09855a3c~mv2.png",
+                            "url": "https://static.wixstatic.com/media/f453f3_67f143b40a034205939cdf4f09855a3c~mv2.png",
+                            "height": 401,
+                            "width": 800
+                        }
+                    },
+                    "displayed": true,
+                    "custom": true
+                },
+                "title": "Glimpses of Key Accomplishments May 2020 - Jan 2021",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": "View from the link here: https://drive.google.com/file/d/1uSNbEuF5c5zJgeNWsP4fjbDyDw46f2Bg/view or"
+            },
+            {
+                "id": "43fefab4-d4dd-4cc6-b46c-91c16bb125d8",
+                "internalId": "5fb385f893835400178cb1f4",
+                "slug": "nature-camp-forest-awareness-program",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/nature-camp-forest-awareness-program"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_8d3f83969585483489281f4caccfab62~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_8d3f83969585483489281f4caccfab62~mv2.jpeg",
+                            "height": 1024,
+                            "width": 575
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Nature Camp & Forest Awareness Program",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

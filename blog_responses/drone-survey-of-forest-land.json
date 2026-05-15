@@ -1,0 +1,330 @@
+{
+    "postPage": {
+        "id": "b8f22427-5b39-48e0-a6f1-eaf5242fd925",
+        "post": {
+            "id": "b8f22427-5b39-48e0-a6f1-eaf5242fd925",
+            "title": "Drone Survey of Forest Land",
+            "excerpt": "Survey by Srinivas IFS",
+            "firstPublishedDate": "2021-02-02T07:21:51.323Z",
+            "lastPublishedDate": "2021-02-02T07:49:45.287Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/drone-survey-of-forest-land"
+            },
+            "slug": "drone-survey-of-forest-land",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "a9284d35-41e5-484b-92e0-a4c6ede81d0e"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 33
+            },
+            "minutesToRead": 1,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 33,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Survey by Srinivas IFS",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        },
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#777777"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "HTML",
+                        "id": "bekfp",
+                        "nodes": [],
+                        "htmlData": {
+                            "containerData": {
+                                "width": {
+                                    "custom": "740"
+                                },
+                                "alignment": "CENTER",
+                                "height": {
+                                    "custom": "488"
+                                },
+                                "textWrap": true
+                            },
+                            "html": "<iframe src=\"https://www.google.com/maps/d/embed?mid=1051USN48kWfgT3K_x9gidLpOpUZWpP6K&hl=en\" width=\"640\" height=\"480\"></iframe>",
+                            "source": "HTML"
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "f6as7",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-05-24T09:32:45.939Z",
+                    "updatedTimestamp": "2024-05-24T09:32:45.939Z",
+                    "id": "b5f22df4-cb0d-41d8-9b87-2fbf9c5ff280"
+                }
+            },
+            "contentId": "617a4c790250d10016e63a09",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_9f439c48bc3a41d9a3d1c7fd7307b5c3~mv2.jpg",
+                        "url": "https://static.wixstatic.com/media/f453f3_9f439c48bc3a41d9a3d1c7fd7307b5c3~mv2.jpg",
+                        "height": 289,
+                        "width": 514
+                    }
+                },
+                "displayed": true,
+                "custom": true
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "6018fd839d7f66002dab3dc0",
+            "internalCategoryIds": [
+                "5f55f5abc8940c001755f2ee"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "a9284d35-41e5-484b-92e0-a4c6ede81d0e",
+                "label": "Forest Department - Shimogga",
+                "postCount": 4,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/forest-department-shimogga"
+                },
+                "description": "",
+                "title": "Forest Department - Shimogga",
+                "displayPosition": 14,
+                "language": "en",
+                "slug": "forest-department-shimogga",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "43fefab4-d4dd-4cc6-b46c-91c16bb125d8",
+                "internalId": "5fb385f893835400178cb1f4",
+                "slug": "nature-camp-forest-awareness-program",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/nature-camp-forest-awareness-program"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_8d3f83969585483489281f4caccfab62~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_8d3f83969585483489281f4caccfab62~mv2.jpeg",
+                            "height": 1024,
+                            "width": 575
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Nature Camp & Forest Awareness Program",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "e55f49c9-0f1f-4367-8098-5325609d88f0",
+                "internalId": "5fb3857756e46300186a413b",
+                "slug": "kalarava-2020-birding-event",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/kalarava-2020-birding-event"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_dab283bf936642b889cb1da5762469dc~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_dab283bf936642b889cb1da5762469dc~mv2.jpeg",
+                            "height": 1024,
+                            "width": 342
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Kalarava 2020 - Birding Event",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "ee13b190-a5bd-438b-860a-815a752d6f10",
+                "internalId": "5fb384f6340abe0017c6eaee",
+                "slug": "vanasevaka-workshop",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/vanasevaka-workshop"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_2b912616c3404c07a0089be6c9eda25c~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_2b912616c3404c07a0089be6c9eda25c~mv2.jpeg",
+                            "height": 1024,
+                            "width": 723
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Vanasevaka - Workshop",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": "Topic: Western Ghat Biodiversity, Significance & Conservation"
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

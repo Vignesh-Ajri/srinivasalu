@@ -1,0 +1,277 @@
+{
+    "postPage": {
+        "id": "1a9327c4-907e-430c-8c6b-0bdd0afc09aa",
+        "post": {
+            "id": "1a9327c4-907e-430c-8c6b-0bdd0afc09aa",
+            "title": "ಆರೋಗ್ಯ ಕ್ರಾಂತಿ | ಆರೋಗ್ಯಕರ ಕರ್ನಾಟಕಕ್ಕಾಗಿ | AROGYA KRANTI",
+            "excerpt": "",
+            "firstPublishedDate": "2024-06-09T03:19:54.924Z",
+            "lastPublishedDate": "2024-06-09T03:19:54.924Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/ಆರ-ಗ-ಯ-ಕ-ರ-ತ-ಆರ-ಗ-ಯಕರ-ಕರ-ನ-ಟಕಕ-ಕ-ಗ-arogya-kranti"
+            },
+            "slug": "ಆರ-ಗ-ಯ-ಕ-ರ-ತ-ಆರ-ಗ-ಯಕರ-ಕರ-ನ-ಟಕಕ-ಕ-ಗ-arogya-kranti",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "b89254d8-368a-47ba-912b-30831f076b36"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 1,
+                "views": 69
+            },
+            "minutesToRead": 0,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 1,
+                "views": 69,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": [],
+                "settings": {
+                    "preventAutoRedirect": false,
+                    "keywords": []
+                }
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "uhco4127",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "VIDEO",
+                        "id": "5ojph126",
+                        "nodes": [],
+                        "videoData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "video": {
+                                "src": {
+                                    "url": "https://www.youtube.com/watch?v=DvN7Ix_nyjY"
+                                },
+                                "duration": 1566
+                            },
+                            "thumbnail": {
+                                "src": {
+                                    "url": "https://i.ytimg.com/vi/DvN7Ix_nyjY/maxresdefault.jpg"
+                                },
+                                "width": 1280,
+                                "height": 720
+                            },
+                            "title": "ಆರೋಗ್ಯ ಕ್ರಾಂತಿ | ಆರೋಗ್ಯಕರ ಕರ್ನಾಟಕಕ್ಕಾಗಿ | AROGYA KRANTI Mon to Fri @ 7PM | Live program @ Ayush TV"
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "fhe3h128",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-06-09T03:19:54.942Z",
+                    "updatedTimestamp": "2024-06-09T03:19:54.942Z",
+                    "id": "65a6fbc6-5dc6-43f7-b3d7-37f72e59f7c9"
+                },
+                "documentStyle": {}
+            },
+            "contentId": "68879e3e065ca46efaea6d89",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "embedMedia": {
+                    "thumbnail": {
+                        "url": "https://i.ytimg.com/vi/DvN7Ix_nyjY/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    },
+                    "video": {
+                        "url": "https://www.youtube.com/watch?v=DvN7Ix_nyjY",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "displayed": true,
+                "custom": false
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "66651f419777ceb7db1273b9",
+            "internalCategoryIds": [
+                "65b526619dd3756237b9b7ee"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "b89254d8-368a-47ba-912b-30831f076b36",
+                "label": "Ayush",
+                "postCount": 2,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/ayush"
+                },
+                "title": "",
+                "displayPosition": 26,
+                "language": "en",
+                "slug": "ayush",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "4d3f2237-8d33-44ea-a286-4a9225beeacd",
+                "internalId": "68879efb65e042dc24884e92",
+                "slug": "unveiling-of-jvaratimirabhaskarah-book",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/unveiling-of-jvaratimirabhaskarah-book"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_5a52186621e34607be2faf50588f520c~mv2.jpg",
+                            "url": "https://static.wixstatic.com/media/f453f3_5a52186621e34607be2faf50588f520c~mv2.jpg",
+                            "height": 4016,
+                            "width": 6016,
+                            "filename": "ANP_6230.JPG"
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Unveiling of Jvaratimirabhaskarah Book",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

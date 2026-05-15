@@ -1,0 +1,334 @@
+{
+    "postPage": {
+        "id": "4df1b874-0c50-49d3-962d-295ecb62fee8",
+        "post": {
+            "id": "4df1b874-0c50-49d3-962d-295ecb62fee8",
+            "title": "Hello Geleyare | Live Phone In | ಪರಿಸರ ಸ್ನೇಹಿ ದೀಪಾವಳಿ",
+            "excerpt": "",
+            "firstPublishedDate": "2022-10-29T18:28:07.348Z",
+            "lastPublishedDate": "2022-10-29T18:28:07.348Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/hello-geleyare-live-phone-in-ಪರ-ಸರ-ಸ-ನ-ಹ-ದ-ಪ-ವಳ"
+            },
+            "slug": "hello-geleyare-live-phone-in-ಪರ-ಸರ-ಸ-ನ-ಹ-ದ-ಪ-ವಳ",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "600ba75a-a3e3-45be-8d0b-863a4b5f6e09",
+                "5d0ad358-02f4-4cc7-914b-26d6c356da5c"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 1,
+                "views": 28
+            },
+            "minutesToRead": 0,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 1,
+                "views": 28,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "VIDEO",
+                        "id": "6eo2f",
+                        "nodes": [],
+                        "videoData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "video": {
+                                "src": {
+                                    "url": "https://www.youtube.com/watch?v=GsjaaS_UNDk"
+                                },
+                                "duration": 3331
+                            },
+                            "thumbnail": {
+                                "src": {
+                                    "url": "https://i.ytimg.com/vi/GsjaaS_UNDk/maxresdefault.jpg"
+                                },
+                                "width": 1280,
+                                "height": 720
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "383vq",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-06-03T18:41:14.911Z",
+                    "updatedTimestamp": "2024-06-03T18:41:14.911Z",
+                    "id": "7f62b783-7fc8-4d17-ba9c-a0ed37092b6a"
+                },
+                "documentStyle": {}
+            },
+            "contentId": "635d70b7d995eabe12881e4d",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "embedMedia": {
+                    "thumbnail": {
+                        "url": "https://i.ytimg.com/vi/GsjaaS_UNDk/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    },
+                    "video": {
+                        "url": "https://www.youtube.com/watch?v=GsjaaS_UNDk",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "displayed": true,
+                "custom": false
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "635d70b0914c9183243cef5b",
+            "internalCategoryIds": [
+                "5f685d9f798880001769b5d8",
+                "5f55f4804fa8d200183c946f"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "5d0ad358-02f4-4cc7-914b-26d6c356da5c",
+                "label": "KSPCB",
+                "postCount": 36,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/kspcb"
+                },
+                "description": "",
+                "title": "KSPCB",
+                "displayPosition": 20,
+                "language": "en",
+                "slug": "kspcb",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            },
+            {
+                "id": "600ba75a-a3e3-45be-8d0b-863a4b5f6e09",
+                "label": "KSPCB_publications",
+                "postCount": 42,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/kspcb_publications"
+                },
+                "description": "",
+                "title": "KSPCB_publications",
+                "displayPosition": 22,
+                "language": "en",
+                "slug": "kspcb_publications",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "5e589a06-f89f-4688-8c70-1255c4dd0516",
+                "internalId": "6429158c0cfce0e74e35bae4",
+                "slug": "on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada"
+                },
+                "media": {
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "On duty Officer | Season 01  | Sri. Srinivasulu IFS | Bhima TV Kannada",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "99a00b95-7171-45a5-b4bc-67f2b04c2a51",
+                "internalId": "641546967041e6bb3c281278",
+                "slug": "ಕ-ಳಚ-ನ-ರ-ಳಗ-ದ-ಹ-ಸ-ಅವಕ-ಶ",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/ಕ-ಳಚ-ನ-ರ-ಳಗ-ದ-ಹ-ಸ-ಅವಕ-ಶ"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_6db67c1acd184ba59a08ab0ea2ec4261~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_6db67c1acd184ba59a08ab0ea2ec4261~mv2.jpeg",
+                            "height": 731,
+                            "width": 1024
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "ಕೊಳಚೆ ನೀರೊಳಗಿದೆ ಹೊಸ ಅವಕಾಶ!",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "20052750-9ae1-4711-889a-bc61eb6f2d82",
+                "internalId": "63a86153a30846e801bdc438",
+                "slug": "online-photo-album-of-handmade-sculptures-guinness-world-records",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/online-photo-album-of-handmade-sculptures-guinness-world-records"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_69b52b1ded3249b4a17033a5b48d36e0~mv2.jpg",
+                            "url": "https://static.wixstatic.com/media/f453f3_69b52b1ded3249b4a17033a5b48d36e0~mv2.jpg",
+                            "height": 3090,
+                            "width": 2217
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Guinness World Records",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

@@ -1,0 +1,491 @@
+{
+    "postPage": {
+        "id": "192b7c89-f6db-4a1f-8fb8-dad5adbbb1ea",
+        "post": {
+            "id": "192b7c89-f6db-4a1f-8fb8-dad5adbbb1ea",
+            "title": "Roadside Monitoring for Population Distribution of Major Herbivores in Nagarahole National Park",
+            "excerpt": "ABSTRACT National parks and Sanctuaries are centers· of wildlife conservation for eternity. Scientific management of wildlife essentially...",
+            "firstPublishedDate": "2020-09-28T11:41:26.155Z",
+            "lastPublishedDate": "2020-09-28T11:41:26.155Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/roadside-monitoring-for-population-distribution-of-major-herbivores-in-nagarahole-national-park"
+            },
+            "slug": "roadside-monitoring-for-population-distribution-of-major-herbivores-in-nagarahole-national-park",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "0b1acb15-783c-4142-afec-4bd1d866a23b",
+                "904214d6-8c2f-4e39-ad35-71b678818502"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 22
+            },
+            "minutesToRead": 1,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 22,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "ABSTRACT ",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "4t6lv",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "dnrso",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "National parks and Sanctuaries are centers· of wildlife conservation for eternity. Scientific management of wildlife essentially depends on base, line information on population distribution. Census is a extensive operation done periodically. Monitoring the trends in population distribution on regular basis in National Park will enable us in finding out strategically important habitats and locations. Such a study in Nagarahole National Park between Nagarahole and Murkal has been reported here. Nagarahole Fire watch tower, Nagaraja road junction, Nagarahole tourism campus, Kallahalla Range head quarter, Karmad junction, Chikkapala and Chirathe bande are locations where Spotted Deer Barking Deer, and Gaur are found. Seasonal migration of Barking Deer between Ka!lahalla and Nagarahole, impact view lines on herbivores, importance of hadius and waterholes on population distribution, impact of view lines burning and cutting on herbivore sightings, etc., have been discussed. ",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "3uq6p",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "77i59",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Key Word: Population distribution, View lines. ",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "3n3h1",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "6b6am",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "INTRODUCTION ",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "5mg6k",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "d5s53",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Forest play an important role in helping to sustain environment and various ecosystems. Forests and their fauna are under increasing pressure to meet the resource needs of growing human population. Herbivores are particular1y difficult to conserve in this context, because of their relatively low population densities, unique _habitat needs, crop raiding tendencies, and their consumption by local people. However their conservation is crucial, because large herbivores directly or indirectly affect forest structure, regeneration and other animal species. Wild life management through National Parks and sanctuaries has contributed for substantive conservation. Quantitative information on number of animals, their distribution and seasonal migration is very essential for wildlife management. A brief study of generating such information in Nagarahole National Park has been presented. ",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "djv8v",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "FILE",
+                        "id": "3bua9",
+                        "nodes": [],
+                        "fileData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "src": {
+                                "id": "f453f3_5f096854af7048558706552be1b76f83.pdf"
+                            },
+                            "name": "Roadside Monitoring.pdf",
+                            "type": "pdf",
+                            "size": 7165786,
+                            "mimeType": "document",
+                            "path": "f453f3_5f096854af7048558706552be1b76f83.pdf"
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "emmfq",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-06-08T18:46:18.812Z",
+                    "updatedTimestamp": "2024-06-08T18:46:18.812Z",
+                    "id": "06f27e1c-d378-4837-9409-5c9841801aeb"
+                }
+            },
+            "contentId": "617a4c790250d10016e639fc",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_d99473cc71cc4d01a14e536db830d680~mv2.jpeg",
+                        "url": "https://static.wixstatic.com/media/f453f3_d99473cc71cc4d01a14e536db830d680~mv2.jpeg",
+                        "height": 196,
+                        "width": 257
+                    }
+                },
+                "displayed": true,
+                "custom": true
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "5f71cad6fea2c50017a48a93",
+            "internalCategoryIds": [
+                "5f71c99d8ba8ed001735f4ae",
+                "5f5f154de296c30017f48bd5"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "0b1acb15-783c-4142-afec-4bd1d866a23b",
+                "label": "Nagarhole_publications",
+                "postCount": 3,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/nagarhole_publications"
+                },
+                "description": "",
+                "title": "Nagarhole_publications",
+                "displayPosition": 24,
+                "language": "en",
+                "slug": "nagarhole_publications",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            },
+            {
+                "id": "904214d6-8c2f-4e39-ad35-71b678818502",
+                "label": "Publications",
+                "postCount": 15,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/publications"
+                },
+                "description": "",
+                "title": "Publications",
+                "displayPosition": 25,
+                "language": "en",
+                "slug": "publications",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "9944ecfa-0426-4857-b22e-f641f37365db",
+                "internalId": "5fb38496340abe0017c6e9dd",
+                "slug": "arishina-ganesha-kannadaprabha-article",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/arishina-ganesha-kannadaprabha-article"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_0507b8e5194440ce9c366507bf265997~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_0507b8e5194440ce9c366507bf265997~mv2.jpeg",
+                            "height": 1259,
+                            "width": 1052
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Arishina Ganesha - KannadaPrabha Article",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "fe33de46-65d0-418d-a0bf-2ee84129c562",
+                "internalId": "5fb383408ff8e00017ae9e73",
+                "slug": "hitech-adcl-article",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/hitech-adcl-article"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_bfef00d3d0484d5091f720d9567e0adb~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_bfef00d3d0484d5091f720d9567e0adb~mv2.jpeg",
+                            "height": 1024,
+                            "width": 809
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Hitech ADCL - Article",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "34c1344c-661f-4998-ad7b-e2bdf7ce6965",
+                "internalId": "5fb3778f1abdc9001753f5f5",
+                "slug": "green-crackers-kannadaprabha",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/green-crackers-kannadaprabha"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_e9e9708694e64aa09409b3875e73f15c~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_e9e9708694e64aa09409b3875e73f15c~mv2.jpeg",
+                            "height": 1154,
+                            "width": 947
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Green Crackers  - Kannadaprabha",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

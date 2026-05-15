@@ -1,0 +1,567 @@
+{
+    "postPage": {
+        "id": "1ea9772f-943c-4434-b8ed-99e3e0e1aae2",
+        "post": {
+            "id": "1ea9772f-943c-4434-b8ed-99e3e0e1aae2",
+            "title": "Dynamics in Tiger Sighting in Nagarahole National Park",
+            "excerpt": "ABSTRACT Wildlife tourism involves travelling to naturally pristine areas to appreciate scenic beauty and experience wilderness...",
+            "firstPublishedDate": "2020-09-14T07:09:16.972Z",
+            "lastPublishedDate": "2020-09-14T07:09:16.972Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/dynamics-in-tiger-sighting-in-nagarahole-national-park"
+            },
+            "slug": "dynamics-in-tiger-sighting-in-nagarahole-national-park",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "904214d6-8c2f-4e39-ad35-71b678818502",
+                "0b1acb15-783c-4142-afec-4bd1d866a23b"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 8
+            },
+            "minutesToRead": 2,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 8,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "ABSTRACT ",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "4t6lv",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "eb8kd",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Wildlife tourism involves travelling to naturally pristine areas to appreciate scenic beauty and experience wilderness experience. Apart from generating revenue it is most important in spreading the message of cause of conservation. It provides great opportunity in educating people about biodiversity and its essentiality in the very survival of human kind. Tiger in its wilderness is the reason for which many tourists visit Nagarahole National Park. Though sighting tiger is a chance factor it also depend upon density of tiger population, season, disturbance, time of excursion etc., Information available on visitors and sighting reports in Nagarahole tourism complex has been analyzed and reported here. 180 excursions per month is the threshold limit unto which sighting reports increase with increase in number of excursions. 17 excursions are needed for a tiger sighting in tourism season. In June and July when the undergrowth is thick, the sighting comes down drastically. Impact of season, tourist pressure, Visibility of forest etc., on tiger sighting has been discussed here. ",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "7kcji",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "7nt1f",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Key words- Ecotourism, Tiger sighting, View lines, Threshold limit ",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "294rv",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "8e55f",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "40tlt",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "INTRODUCTION ",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "4vkff",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "b8tmj",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Wild life tourism involves travelling to relatively undisturbed natural areas with specific object of studying, admiring and enjoying the scenic beauty and wild animals. It is a comprehensive activity that provide wilderness experience to visitors and economic benefit to local community. But its importance lies in strengthening the cause of conservation by providing the general public a cross sectional view of protected areas, create awareness about bio-diversity and educate them about essentiality of forest and wildlife for the very survival of human kind. Tiger (Pan",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "GALLERY",
+                        "id": "djv8v",
+                        "nodes": [],
+                        "galleryData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "items": [
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_9b10d0d36fe6454aace477e45ea58cd0~mv2.jpg"
+                                            },
+                                            "width": 1685,
+                                            "height": 2330
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_f504d1da4f7f40259bffaedea269483a~mv2.jpg"
+                                            },
+                                            "width": 1685,
+                                            "height": 2310
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_02fc863c2da34286a98901229f1004c7~mv2.jpg"
+                                            },
+                                            "width": 1680,
+                                            "height": 2330
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_f6345b2250de42e891c3057c4370aff1~mv2.jpg"
+                                            },
+                                            "width": 1633,
+                                            "height": 2279
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_dc9d8f7656f64ffc8d05aa6a2f89e6b7~mv2.jpg"
+                                            },
+                                            "width": 1671,
+                                            "height": 2291
+                                        }
+                                    }
+                                }
+                            ],
+                            "options": {
+                                "layout": {
+                                    "type": "GRID",
+                                    "horizontalScroll": false,
+                                    "orientation": "ROWS"
+                                },
+                                "item": {
+                                    "targetSize": 300,
+                                    "ratio": 1,
+                                    "crop": "FILL",
+                                    "spacing": 20
+                                },
+                                "thumbnails": {
+                                    "placement": "BOTTOM",
+                                    "spacing": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "agcsk",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "thera tigris) is the key stone species of management in Nagarahole National Park. When tiger population is healthy the forest and habitat for all other animals is ecologically robust. Sight of tiger in wilderness is the reason for which many tourists visit the park. ",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-05-17T02:44:27.460Z",
+                    "updatedTimestamp": "2024-05-17T02:44:27.460Z",
+                    "id": "b161ca8a-04d4-46e2-8ff5-9ad1c31e8acb"
+                }
+            },
+            "contentId": "617a4c790250d10016e639f0",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_d99473cc71cc4d01a14e536db830d680~mv2.jpeg",
+                        "url": "https://static.wixstatic.com/media/f453f3_d99473cc71cc4d01a14e536db830d680~mv2.jpeg",
+                        "height": 196,
+                        "width": 257
+                    }
+                },
+                "displayed": true,
+                "custom": true
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "5f5f16a00da6b8001749284c",
+            "internalCategoryIds": [
+                "5f5f154de296c30017f48bd5",
+                "5f71c99d8ba8ed001735f4ae"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "0b1acb15-783c-4142-afec-4bd1d866a23b",
+                "label": "Nagarhole_publications",
+                "postCount": 3,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/nagarhole_publications"
+                },
+                "description": "",
+                "title": "Nagarhole_publications",
+                "displayPosition": 24,
+                "language": "en",
+                "slug": "nagarhole_publications",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            },
+            {
+                "id": "904214d6-8c2f-4e39-ad35-71b678818502",
+                "label": "Publications",
+                "postCount": 15,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/publications"
+                },
+                "description": "",
+                "title": "Publications",
+                "displayPosition": 25,
+                "language": "en",
+                "slug": "publications",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "9944ecfa-0426-4857-b22e-f641f37365db",
+                "internalId": "5fb38496340abe0017c6e9dd",
+                "slug": "arishina-ganesha-kannadaprabha-article",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/arishina-ganesha-kannadaprabha-article"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_0507b8e5194440ce9c366507bf265997~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_0507b8e5194440ce9c366507bf265997~mv2.jpeg",
+                            "height": 1259,
+                            "width": 1052
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Arishina Ganesha - KannadaPrabha Article",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "fe33de46-65d0-418d-a0bf-2ee84129c562",
+                "internalId": "5fb383408ff8e00017ae9e73",
+                "slug": "hitech-adcl-article",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/hitech-adcl-article"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_bfef00d3d0484d5091f720d9567e0adb~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_bfef00d3d0484d5091f720d9567e0adb~mv2.jpeg",
+                            "height": 1024,
+                            "width": 809
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Hitech ADCL - Article",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "34c1344c-661f-4998-ad7b-e2bdf7ce6965",
+                "internalId": "5fb3778f1abdc9001753f5f5",
+                "slug": "green-crackers-kannadaprabha",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/green-crackers-kannadaprabha"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_e9e9708694e64aa09409b3875e73f15c~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_e9e9708694e64aa09409b3875e73f15c~mv2.jpeg",
+                            "height": 1154,
+                            "width": 947
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Green Crackers  - Kannadaprabha",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

@@ -1,0 +1,1242 @@
+{
+    "postPage": {
+        "id": "2013c537-8570-4cad-a8b8-8015efa770a6",
+        "post": {
+            "id": "2013c537-8570-4cad-a8b8-8015efa770a6",
+            "title": "Andu Indu - Chitradurga",
+            "excerpt": "Then (left) and now (right)",
+            "firstPublishedDate": "2020-10-27T16:59:29.289Z",
+            "lastPublishedDate": "2020-10-27T16:59:29.289Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/andu-indu-chitradurga"
+            },
+            "slug": "andu-indu-chitradurga",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "446e1bf4-db43-4b47-8711-81ab1a0c7ce8",
+                "35f6561c-78b7-4c5a-b440-ecbd0ad43a89"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 33
+            },
+            "minutesToRead": 1,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 33,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Then (left) and now (right)",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "GALLERY",
+                        "id": "ekmj3",
+                        "nodes": [],
+                        "galleryData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "items": [
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_d4bcae35f07b46baaed7c92e076a9fdb~mv2.jpg"
+                                            },
+                                            "width": 3561,
+                                            "height": 2368
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_29dbecc15ec64041a1ff4ed134ae26f5~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_eec68239b41e4617af0fb1b4bede6cd4~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_0b034b1e85d64c5b9232fd0492310857~mv2.jpg"
+                                            },
+                                            "width": 3552,
+                                            "height": 2344
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_714df2e93dca49b4b7b4279e36fa18b6~mv2.jpg"
+                                            },
+                                            "width": 3560,
+                                            "height": 2368
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_dfdf864bb2c54135bf17dfe16da08750~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_9d32fc8cd89142ada02a732f5edf0ad4~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_dc15594488a34f79af30e0167799428c~mv2.jpg"
+                                            },
+                                            "width": 3553,
+                                            "height": 2336
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_b1df279b478f44e1999ae0ff2fcdb5b0~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_ba3fb5ee3ea8443abef1a33e778bb63e~mv2.jpg"
+                                            },
+                                            "width": 3570,
+                                            "height": 2410
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_dcd67f0eec0948ebbe4ca0e21cc98f82~mv2.jpg"
+                                            },
+                                            "width": 3560,
+                                            "height": 2360
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_0a76c46cf0264caf90687851b856683c~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_f5d32df5265d4e88884b9768c9af69de~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_960c4acde92f4f4da379f7748b948250~mv2.jpg"
+                                            },
+                                            "width": 3554,
+                                            "height": 2361
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_b8fd12950c134e78ab7dda620b56e0a6~mv2.jpg"
+                                            },
+                                            "width": 3569,
+                                            "height": 2329
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_cbdd482716e54d7f8115d622bb83b1df~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_0b01ce817f2847cb9886b35f7ebd9f69~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_7ece0b75cd1a45589255074d58bf024f~mv2.jpg"
+                                            },
+                                            "width": 3681,
+                                            "height": 2424
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_3848a02042234743a5657dca454a5c3e~mv2.jpg"
+                                            },
+                                            "width": 3553,
+                                            "height": 2353
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_6a30870ed71e4666a8820fd98193c5ee~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                }
+                            ],
+                            "options": {
+                                "layout": {
+                                    "type": "COLLAGE",
+                                    "horizontalScroll": false,
+                                    "orientation": "COLUMNS"
+                                },
+                                "item": {
+                                    "targetSize": 300,
+                                    "crop": "FILL",
+                                    "spacing": 20
+                                },
+                                "thumbnails": {
+                                    "placement": "NONE"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "4isse",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "GALLERY",
+                        "id": "8gk0j",
+                        "nodes": [],
+                        "galleryData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "items": [
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_cdf8790500d445659e9e8930991146f2~mv2.jpg"
+                                            },
+                                            "width": 3552,
+                                            "height": 2328
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_18d7ecb67d854e9d90e08b8829edae19~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_6050b95d71ca4ad9966a9f364b17b40a~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_c7ef45045cef4030b4672fc4e1738ef6~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_f49b8a7c1f0144de80443d6451ce2b34~mv2.jpg"
+                                            },
+                                            "width": 3576,
+                                            "height": 2360
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_a8ff4fdbe40140ca8a9c59fbaf159b67~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_363966b7f20e4d1c8cc420d1beef1a8f~mv2.jpg"
+                                            },
+                                            "width": 3568,
+                                            "height": 2368
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_1728d029f9eb4bac872d4b787eccde5d~mv2.jpg"
+                                            },
+                                            "width": 3552,
+                                            "height": 2320
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_8e0b681385e242deb73347f35148d8ec~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_4f41acd46b9e4951a410096bf96cd78d~mv2.jpg"
+                                            },
+                                            "width": 3561,
+                                            "height": 2433
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_f9ecb657a44344ba9a2d60b29aeb7e6e~mv2.jpg"
+                                            },
+                                            "width": 3560,
+                                            "height": 2344
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_58b74f1ff1b241bf8b4b25c9b85d3ed7~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_f2e515a7685040be83d278c0ba485f4d~mv2.jpg"
+                                            },
+                                            "width": 3264,
+                                            "height": 2448
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_c7a1163eb3f5405b81a343b80445cd53~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_c1a9ce634cd24ab792f208acad145870~mv2.jpg"
+                                            },
+                                            "width": 3568,
+                                            "height": 2328
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_8a1c53cf30bc4f5b9b57185025e5a30b~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_30942a1135d94b36a7f8db57c1beca56~mv2.jpg"
+                                            },
+                                            "width": 3545,
+                                            "height": 2361
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_d6acb0d387a34aabb3f22ac9e0f4369d~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_174ad82bdafb4af2b3610f377413b52d~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_3b3ced4e956645abbe6dd9f722a9641c~mv2.jpg"
+                                            },
+                                            "width": 3640,
+                                            "height": 2432
+                                        }
+                                    }
+                                }
+                            ],
+                            "options": {
+                                "layout": {
+                                    "type": "COLLAGE",
+                                    "horizontalScroll": false,
+                                    "orientation": "COLUMNS"
+                                },
+                                "item": {
+                                    "targetSize": 300,
+                                    "ratio": 1,
+                                    "crop": "FILL",
+                                    "spacing": 20
+                                },
+                                "thumbnails": {
+                                    "placement": "NONE",
+                                    "spacing": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "11a10",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "GALLERY",
+                        "id": "akppj",
+                        "nodes": [],
+                        "galleryData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "items": [
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_0f9d0c99265d43e09833fed7534a4d4d~mv2.jpg"
+                                            },
+                                            "width": 2960,
+                                            "height": 2056
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_8b86cb1c5147463da3aa40eaf5b16dce~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_26656fe08ed8498f9fad3ffd7d0ce784~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_e2caab0fac8d43bdb83f55459ced6128~mv2.jpg"
+                                            },
+                                            "width": 3576,
+                                            "height": 2440
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_3fc7758762c24e9d8f9d8831619bdbb4~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_2a0d097b9fa142aaa5962753ed1d1484~mv2.jpg"
+                                            },
+                                            "width": 3561,
+                                            "height": 2368
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_656ae9e5c70d4734a07273c1c312d1e9~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_6f67aef14c29478d986fb731e421efd1~mv2.jpg"
+                                            },
+                                            "width": 3560,
+                                            "height": 2360
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_7c6fe427d0894a3f917c529c8b341775~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_fac0dd99ca6d463dbe1826d9ee180ba7~mv2.jpg"
+                                            },
+                                            "width": 3568,
+                                            "height": 2480
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_4b3494516c6a4075855a137e60f894ae~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_93d22553a53641bdb298dd826933ce81~mv2.jpg"
+                                            },
+                                            "width": 3544,
+                                            "height": 2376
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_5a2b8fe0ae3945bdbe7ebe0a03f311e2~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_484737908daa48fda41e11d8d6fa4052~mv2.jpg"
+                                            },
+                                            "width": 3584,
+                                            "height": 2344
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_472fea67182543cda204b1f5f73457e8~mv2.jpg"
+                                            },
+                                            "width": 3568,
+                                            "height": 2464
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_fa329ba8d1024ede918a75f7e6166c1a~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_f6362b8ac2ab49cc883e64d24ad0d7de~mv2.jpg"
+                                            },
+                                            "width": 3568,
+                                            "height": 2472
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_e681fac4a6a04f899c4ea8e93229e85f~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                }
+                            ],
+                            "options": {
+                                "layout": {
+                                    "type": "COLLAGE",
+                                    "horizontalScroll": false,
+                                    "orientation": "COLUMNS"
+                                },
+                                "item": {
+                                    "targetSize": 300,
+                                    "ratio": 1,
+                                    "crop": "FILL",
+                                    "spacing": 20
+                                },
+                                "thumbnails": {
+                                    "placement": "NONE",
+                                    "spacing": 0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "db1oj",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "GALLERY",
+                        "id": "3nf1e",
+                        "nodes": [],
+                        "galleryData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "items": [
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_1abfc1eaa6e74787ae81017699da124c~mv2.jpg"
+                                            },
+                                            "width": 3560,
+                                            "height": 2352
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_b3aa34349eb042cb9a072a5cca47d612~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_aba964b4033f48e0a06342e169ddb5a1~mv2.jpg"
+                                            },
+                                            "width": 3568,
+                                            "height": 2368
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_071e01dfb3e54772ba51a22c0d83de8e~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_3127992f8ad3463c9fee37f133a4fb4b~mv2.jpg"
+                                            },
+                                            "width": 3568,
+                                            "height": 2288
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_4b0beff445494c9bbe6bfff52c609b0e~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_cd51d2d472484f2abc38ed37c2283195~mv2.jpg"
+                                            },
+                                            "width": 3554,
+                                            "height": 2385
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_d120fed3513549428ef30cf568acb6fe~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_7b9c7f31957241d2a60a26ad1a68c11d~mv2.jpg"
+                                            },
+                                            "width": 3552,
+                                            "height": 2368
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_6e609d5d1eab484d92f9a227d81fc978~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_3b6b4fcc30644a84bbc5aacef0489573~mv2.jpg"
+                                            },
+                                            "width": 3560,
+                                            "height": 2368
+                                        }
+                                    }
+                                },
+                                {
+                                    "image": {
+                                        "media": {
+                                            "src": {
+                                                "url": "f453f3_3c32e4c1f1d745e199b120b659f0bc35~mv2.jpg"
+                                            },
+                                            "width": 3008,
+                                            "height": 2000
+                                        }
+                                    }
+                                }
+                            ],
+                            "options": {
+                                "layout": {
+                                    "type": "COLLAGE",
+                                    "horizontalScroll": false,
+                                    "orientation": "COLUMNS"
+                                },
+                                "item": {
+                                    "targetSize": 300,
+                                    "crop": "FILL",
+                                    "spacing": 20
+                                },
+                                "thumbnails": {
+                                    "placement": "NONE"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "bcoc1",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-06-08T18:46:18.842Z",
+                    "updatedTimestamp": "2024-06-08T18:46:18.842Z",
+                    "id": "2951595e-d6fe-4bab-9dcc-e52ecb04ff14"
+                }
+            },
+            "contentId": "617a4c790250d10016e639fe",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_d4bcae35f07b46baaed7c92e076a9fdb~mv2.jpg",
+                        "url": "https://static.wixstatic.com/media/f453f3_d4bcae35f07b46baaed7c92e076a9fdb~mv2.jpg",
+                        "height": 2368,
+                        "width": 3561
+                    }
+                },
+                "displayed": true,
+                "custom": false
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "5f97fee59b10c10017b7afd0",
+            "internalCategoryIds": [
+                "5f55f5d45ab2290017dc1d1b",
+                "5f97fa8fdff7a40017edb91d"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "35f6561c-78b7-4c5a-b440-ecbd0ad43a89",
+                "label": "Accomplishments",
+                "postCount": 37,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/accomplishments"
+                },
+                "title": "",
+                "displayPosition": 3,
+                "language": "en",
+                "slug": "accomplishments",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            },
+            {
+                "id": "446e1bf4-db43-4b47-8711-81ab1a0c7ce8",
+                "label": "Forest Department - Chitradurga",
+                "postCount": 2,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/forest-department-chitradurga"
+                },
+                "description": "",
+                "title": "Forest Department - Chitradurga",
+                "displayPosition": 11,
+                "language": "en",
+                "slug": "forest-department-chitradurga",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "5e589a06-f89f-4688-8c70-1255c4dd0516",
+                "internalId": "6429158c0cfce0e74e35bae4",
+                "slug": "on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada"
+                },
+                "media": {
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "On duty Officer | Season 01  | Sri. Srinivasulu IFS | Bhima TV Kannada",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "1bb38ab7-0145-4100-8653-a685c3dead95",
+                "internalId": "6018d7220f10a40017a45ef1",
+                "slug": "glimpses-of-key-accomplishments-may-2020-jan-2021",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/glimpses-of-key-accomplishments-may-2020-jan-2021"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_67f143b40a034205939cdf4f09855a3c~mv2.png",
+                            "url": "https://static.wixstatic.com/media/f453f3_67f143b40a034205939cdf4f09855a3c~mv2.png",
+                            "height": 401,
+                            "width": 800
+                        }
+                    },
+                    "displayed": true,
+                    "custom": true
+                },
+                "title": "Glimpses of Key Accomplishments May 2020 - Jan 2021",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": "View from the link here: https://drive.google.com/file/d/1uSNbEuF5c5zJgeNWsP4fjbDyDw46f2Bg/view or"
+            },
+            {
+                "id": "43fefab4-d4dd-4cc6-b46c-91c16bb125d8",
+                "internalId": "5fb385f893835400178cb1f4",
+                "slug": "nature-camp-forest-awareness-program",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/nature-camp-forest-awareness-program"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_8d3f83969585483489281f4caccfab62~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_8d3f83969585483489281f4caccfab62~mv2.jpeg",
+                            "height": 1024,
+                            "width": 575
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Nature Camp & Forest Awareness Program",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

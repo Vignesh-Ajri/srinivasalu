@@ -1,0 +1,334 @@
+{
+    "postPage": {
+        "id": "df885db6-f216-4912-8b1c-13f120dd02c3",
+        "post": {
+            "id": "df885db6-f216-4912-8b1c-13f120dd02c3",
+            "title": "Covid 19 Waste Management",
+            "excerpt": "",
+            "firstPublishedDate": "2021-05-14T16:02:19.795Z",
+            "lastPublishedDate": "2021-05-14T16:02:19.795Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/covid-19-waste-management"
+            },
+            "slug": "covid-19-waste-management",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "5d0ad358-02f4-4cc7-914b-26d6c356da5c"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 2
+            },
+            "minutesToRead": 0,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 2,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "VIDEO",
+                        "id": "141vl",
+                        "nodes": [],
+                        "videoData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "video": {
+                                "src": {
+                                    "id": "video/f453f3_f035145b210c42e3ae167f82ebb4ada3/480p/mp4/file.mp4"
+                                }
+                            },
+                            "thumbnail": {
+                                "src": {
+                                    "id": "media/f453f3_f035145b210c42e3ae167f82ebb4ada3f000.jpg"
+                                },
+                                "width": 848,
+                                "height": 480
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "23fbg",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-05-12T18:56:27.326Z",
+                    "updatedTimestamp": "2024-05-12T18:56:27.326Z",
+                    "id": "82dbcbe0-eb44-47f4-a06d-c237a102c9d6"
+                }
+            },
+            "contentId": "617a79f8466e4400163c9899",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "videoV2": {
+                        "id": "f453f3_f035145b210c42e3ae167f82ebb4ada3",
+                        "url": "",
+                        "resolutions": [
+                            {
+                                "url": "https://video.wixstatic.com/video/f453f3_f035145b210c42e3ae167f82ebb4ada3/480p/mp4/file.mp4",
+                                "height": 480,
+                                "width": 640,
+                                "format": "mp4"
+                            }
+                        ],
+                        "posters": [
+                            {
+                                "id": "f453f3_f035145b210c42e3ae167f82ebb4ada3f000.jpg",
+                                "url": "https://static.wixstatic.com/media/f453f3_f035145b210c42e3ae167f82ebb4ada3f000.jpg/v1/fit/w_640%2Ch_480%2Cal_c%2Cq_80/file.jpg",
+                                "height": 480,
+                                "width": 640
+                            }
+                        ]
+                    }
+                },
+                "displayed": true,
+                "custom": false
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "609e9f07e0058e00153cad99",
+            "internalCategoryIds": [
+                "5f55f4804fa8d200183c946f"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "5d0ad358-02f4-4cc7-914b-26d6c356da5c",
+                "label": "KSPCB",
+                "postCount": 36,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/kspcb"
+                },
+                "description": "",
+                "title": "KSPCB",
+                "displayPosition": 20,
+                "language": "en",
+                "slug": "kspcb",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "20052750-9ae1-4711-889a-bc61eb6f2d82",
+                "internalId": "63a86153a30846e801bdc438",
+                "slug": "online-photo-album-of-handmade-sculptures-guinness-world-records",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/online-photo-album-of-handmade-sculptures-guinness-world-records"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_69b52b1ded3249b4a17033a5b48d36e0~mv2.jpg",
+                            "url": "https://static.wixstatic.com/media/f453f3_69b52b1ded3249b4a17033a5b48d36e0~mv2.jpg",
+                            "height": 3090,
+                            "width": 2217
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Guinness World Records",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "4df1b874-0c50-49d3-962d-295ecb62fee8",
+                "internalId": "635d70b0914c9183243cef5b",
+                "slug": "hello-geleyare-live-phone-in-ಪರ-ಸರ-ಸ-ನ-ಹ-ದ-ಪ-ವಳ",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/hello-geleyare-live-phone-in-ಪರ-ಸರ-ಸ-ನ-ಹ-ದ-ಪ-ವಳ"
+                },
+                "media": {
+                    "embedMedia": {
+                        "thumbnail": {
+                            "url": "https://i.ytimg.com/vi/GsjaaS_UNDk/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        },
+                        "video": {
+                            "url": "https://www.youtube.com/watch?v=GsjaaS_UNDk",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Hello Geleyare | Live Phone In | ಪರಿಸರ ಸ್ನೇಹಿ ದೀಪಾವಳಿ",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "abdd65f4-73df-4ecf-aa50-07e940759561",
+                "internalId": "62a35e13d54999cd6ab926df",
+                "slug": "kspcb-accomplishment-since-2021",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/kspcb-accomplishment-since-2021"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_8281b2d3f9e2422291cce5e58b704820~mv2.jpg",
+                            "url": "https://static.wixstatic.com/media/f453f3_8281b2d3f9e2422291cce5e58b704820~mv2.jpg",
+                            "height": 747,
+                            "width": 589
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "KSPCB Accomplishment since 2020",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

@@ -1,0 +1,369 @@
+{
+    "postPage": {
+        "id": "5f580092-6b0b-4bbe-81a9-3f8086d783ec",
+        "post": {
+            "id": "5f580092-6b0b-4bbe-81a9-3f8086d783ec",
+            "title": "Age of e-waste: Some solutions to manage a toxic problem",
+            "excerpt": "Electronic waste (e-waste) is generated when electronic and electrical equipment and appliances are unfit to use or have crossed the...",
+            "firstPublishedDate": "2022-01-10T05:59:31.212Z",
+            "lastPublishedDate": "2022-01-13T12:37:53.487Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/age-of-e-waste-some-solutions-to-manage-a-toxic-problem"
+            },
+            "slug": "age-of-e-waste-some-solutions-to-manage-a-toxic-problem",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "600ba75a-a3e3-45be-8d0b-863a4b5f6e09"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 2,
+                "views": 69
+            },
+            "minutesToRead": 1,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 2,
+                "views": 69,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "IMAGE",
+                        "id": "cebdf",
+                        "nodes": [],
+                        "imageData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "image": {
+                                "src": {
+                                    "id": "f453f3_ff2f2feb35b84f1c9a97e0eccb90dd3a~mv2.jpeg"
+                                },
+                                "width": 1283,
+                                "height": 629
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "2ds8n",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "1cdej",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Electronic waste (e-waste) is generated when electronic and electrical equipment and appliances are unfit to use or have crossed the expiry date. Fast replacement of electronic and electrical goods due to rapid technological advancements, increased p...",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "buvfo",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Read more",
+                                    "decorations": [
+                                        {
+                                            "type": "LINK",
+                                            "linkData": {
+                                                "link": {
+                                                    "url": "https://www.deccanherald.com/opinion/panorama/age-of-e-waste-some-solutions-to-manage-a-toxic-problem-1069583.html",
+                                                    "target": "BLANK"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "UNDERLINE",
+                                            "underlineData": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": " ",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-05-12T18:56:27.302Z",
+                    "updatedTimestamp": "2024-05-12T18:56:27.302Z",
+                    "id": "54a17760-19ad-42bb-984b-80e04294a1ab"
+                },
+                "documentStyle": {}
+            },
+            "contentId": "61e01d217eb2c90016bf36a3",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_ff2f2feb35b84f1c9a97e0eccb90dd3a~mv2.jpeg",
+                        "url": "https://static.wixstatic.com/media/f453f3_ff2f2feb35b84f1c9a97e0eccb90dd3a~mv2.jpeg",
+                        "height": 629,
+                        "width": 1283
+                    }
+                },
+                "displayed": true,
+                "custom": false
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "61dbc9e2ba20150016f55579",
+            "internalCategoryIds": [
+                "5f685d9f798880001769b5d8"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "600ba75a-a3e3-45be-8d0b-863a4b5f6e09",
+                "label": "KSPCB_publications",
+                "postCount": 42,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/kspcb_publications"
+                },
+                "description": "",
+                "title": "KSPCB_publications",
+                "displayPosition": 22,
+                "language": "en",
+                "slug": "kspcb_publications",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "5e589a06-f89f-4688-8c70-1255c4dd0516",
+                "internalId": "6429158c0cfce0e74e35bae4",
+                "slug": "on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/on-duty-officer-season-01-ep-01-sri-srinivasulu-ifs-bhima-tv-kannada"
+                },
+                "media": {
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "On duty Officer | Season 01  | Sri. Srinivasulu IFS | Bhima TV Kannada",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "99a00b95-7171-45a5-b4bc-67f2b04c2a51",
+                "internalId": "641546967041e6bb3c281278",
+                "slug": "ಕ-ಳಚ-ನ-ರ-ಳಗ-ದ-ಹ-ಸ-ಅವಕ-ಶ",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/ಕ-ಳಚ-ನ-ರ-ಳಗ-ದ-ಹ-ಸ-ಅವಕ-ಶ"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_6db67c1acd184ba59a08ab0ea2ec4261~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_6db67c1acd184ba59a08ab0ea2ec4261~mv2.jpeg",
+                            "height": 731,
+                            "width": 1024
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "ಕೊಳಚೆ ನೀರೊಳಗಿದೆ ಹೊಸ ಅವಕಾಶ!",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "948284e9-bd63-453c-8a26-46db35150006",
+                "internalId": "6371be49ccabb704aae35a17",
+                "slug": "make-pollution-public-issue-so-it-becomes-an-election-mandate",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/make-pollution-public-issue-so-it-becomes-an-election-mandate"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_3f6262f4109c4f0cb0bac2bad5c139da~mv2.jpg",
+                            "url": "https://static.wixstatic.com/media/f453f3_3f6262f4109c4f0cb0bac2bad5c139da~mv2.jpg",
+                            "height": 960,
+                            "width": 1125
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Make pollution public issue, so it becomes an election mandate",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": "More..."
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

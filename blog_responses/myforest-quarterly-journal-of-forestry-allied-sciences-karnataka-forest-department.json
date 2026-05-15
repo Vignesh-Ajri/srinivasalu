@@ -1,0 +1,638 @@
+{
+    "postPage": {
+        "id": "c995c037-ace9-49da-91a0-bb01e71d44b1",
+        "post": {
+            "id": "c995c037-ace9-49da-91a0-bb01e71d44b1",
+            "title": "MyForest - Quarterly Journal of Forestry & Allied Sciences, Karnataka Forest Department",
+            "excerpt": "My Forest – March-December 2014 Vol. 50, Page 65-73 CAMERA TRAP STUDY ON MELANISTIC LEOPARD POPULATION IN DANDELI – ANSHI TIGER RESERVE -...",
+            "firstPublishedDate": "2020-09-18T07:34:47.201Z",
+            "lastPublishedDate": "2020-09-18T07:34:47.201Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/myforest-quarterly-journal-of-forestry-allied-sciences-karnataka-forest-department"
+            },
+            "slug": "myforest-quarterly-journal-of-forestry-allied-sciences-karnataka-forest-department",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "904214d6-8c2f-4e39-ad35-71b678818502",
+                "2efd41e6-6a7e-4532-8445-67959a610f6d"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 211
+            },
+            "minutesToRead": 1,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 211,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "My Forest – March-December 2014",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "21p3v",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Vol. 50, Page 65-73",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "m61",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "6qq0p",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "CAMERA TRAP STUDY ON MELANISTIC LEOPARD POPULATION",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "fj4hj",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "IN DANDELI – ANSHI TIGER RESERVE",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "d01fj",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "- By Srinivasulu, IFS",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "1f46n",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "mp8m",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Published by Karnataka Forest Department",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "20d5n",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Registered under Registrar of Newspapers for India",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "64a08",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "No. R. N. 13275/65",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "fbbvq",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "bbu94",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": " ",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "4cvqg",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Download complete Publication here:",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "ervli",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "FILE",
+                        "id": "8loqq",
+                        "nodes": [],
+                        "fileData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "src": {
+                                "id": "f453f3_914e3606c7014f41a61bc22f7072c3c1.pdf"
+                            },
+                            "name": "My Forest Journal-Page65.pdf",
+                            "type": "pdf",
+                            "size": 18003886,
+                            "mimeType": "document",
+                            "path": "f453f3_914e3606c7014f41a61bc22f7072c3c1.pdf"
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "7eos9",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "9ciph",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "2ujof",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "3i483",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-06-03T08:26:00.097Z",
+                    "updatedTimestamp": "2024-06-03T08:26:00.097Z",
+                    "id": "87e3f2f6-317f-429d-9d51-3583389e060a"
+                }
+            },
+            "contentId": "617a4c790250d10016e639f4",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_3ca3f8a491fa42f9b49f11ea4635681a~mv2.png",
+                        "url": "https://static.wixstatic.com/media/f453f3_3ca3f8a491fa42f9b49f11ea4635681a~mv2.png",
+                        "height": 574,
+                        "width": 600
+                    }
+                },
+                "displayed": true,
+                "custom": true
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "5f64608fd7f90900171b81a6",
+            "internalCategoryIds": [
+                "5f5f154de296c30017f48bd5",
+                "5f685e54e559920017e23d71"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "2efd41e6-6a7e-4532-8445-67959a610f6d",
+                "label": "Karnataka Forest Department_publica",
+                "postCount": 2,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/karnataka-forest-department_publica"
+                },
+                "description": "",
+                "title": "Karnataka Forest Department_publications",
+                "displayPosition": 19,
+                "language": "en",
+                "slug": "karnataka-forest-department_publica",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            },
+            {
+                "id": "904214d6-8c2f-4e39-ad35-71b678818502",
+                "label": "Publications",
+                "postCount": 15,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/publications"
+                },
+                "description": "",
+                "title": "Publications",
+                "displayPosition": 25,
+                "language": "en",
+                "slug": "publications",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "9944ecfa-0426-4857-b22e-f641f37365db",
+                "internalId": "5fb38496340abe0017c6e9dd",
+                "slug": "arishina-ganesha-kannadaprabha-article",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/arishina-ganesha-kannadaprabha-article"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_0507b8e5194440ce9c366507bf265997~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_0507b8e5194440ce9c366507bf265997~mv2.jpeg",
+                            "height": 1259,
+                            "width": 1052
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Arishina Ganesha - KannadaPrabha Article",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "fe33de46-65d0-418d-a0bf-2ee84129c562",
+                "internalId": "5fb383408ff8e00017ae9e73",
+                "slug": "hitech-adcl-article",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/hitech-adcl-article"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_bfef00d3d0484d5091f720d9567e0adb~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_bfef00d3d0484d5091f720d9567e0adb~mv2.jpeg",
+                            "height": 1024,
+                            "width": 809
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Hitech ADCL - Article",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "34c1344c-661f-4998-ad7b-e2bdf7ce6965",
+                "internalId": "5fb3778f1abdc9001753f5f5",
+                "slug": "green-crackers-kannadaprabha",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/green-crackers-kannadaprabha"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_e9e9708694e64aa09409b3875e73f15c~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_e9e9708694e64aa09409b3875e73f15c~mv2.jpeg",
+                            "height": 1154,
+                            "width": 947
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Green Crackers  - Kannadaprabha",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

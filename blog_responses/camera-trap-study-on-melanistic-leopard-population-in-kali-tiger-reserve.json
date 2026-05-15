@@ -1,0 +1,1248 @@
+{
+    "postPage": {
+        "id": "2a1fd1dd-00b0-4965-9910-2df2c5a99d35",
+        "post": {
+            "id": "2a1fd1dd-00b0-4965-9910-2df2c5a99d35",
+            "title": "Camera Trap Study on Melanistic Leopard Population in Kali Tiger Reserve",
+            "excerpt": "Indian Forester, 142 (10) : 923-927, 2016 http://www.indianforester.co.in ISSN No. 0019-4816 (Print) ISSN No. 2321-094X (Online) - By...",
+            "firstPublishedDate": "2020-09-18T07:23:55.296Z",
+            "lastPublishedDate": "2020-11-17T11:29:10.288Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/camera-trap-study-on-melanistic-leopard-population-in-kali-tiger-reserve"
+            },
+            "slug": "camera-trap-study-on-melanistic-leopard-population-in-kali-tiger-reserve",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "904214d6-8c2f-4e39-ad35-71b678818502",
+                "fa79efd9-cb44-4c66-b892-81b10ec7bf40"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 93
+            },
+            "minutesToRead": 2,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 93,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Indian Forester, ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        },
+                                        {
+                                            "type": "ITALIC",
+                                            "italicData": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "142 ",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        },
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "(10) : 923-927, 2016 ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "fjgcq",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "http://www.indianforester.co.in",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        },
+                                        {
+                                            "type": "LINK",
+                                            "linkData": {
+                                                "link": {
+                                                    "url": "http://www.indianforester.co.in/",
+                                                    "target": "BLANK"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "cte82",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "ISSN No. 0019-4816 (Print) ",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "7dnij",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "ISSN No. 2321-094X (Online)",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "8q4t",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "6g20k",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "- By ",
+                                    "decorations": []
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Srinivasulu. I.F.S.",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "bj14c",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "4c8p8",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "ABSTRACT",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        },
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "8kogp",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "3k6d2",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Animal monitoring is the key tool in the hands of park managers to effectively manage the forests and wildlife. Advances in the field of Wildlife science provide scope in this regard. Elusive Melanistic leopards or Black Panthers are more commonly found in the Dandeli-Anshi Tiger Reserve (Now renamed as Kali Tiger Reserve) as compared to other protected areas of Karnataka. Camera trap survey was conducted in the forest ranges of Kulgi, Phansoli, Gund and Anshi during January to June 2015. In this study an effort has been made to estimate the percentage of melanistic individuals in total leopard population. 94 pairs of Camera traps were placed covering 763 Km2 area for 49 days in two blocks. Based on the image data the percentage of Melanistic animals in total leopard population has been derived.",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "dna54",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "bqomp",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Key words: ",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        },
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        },
+                                        {
+                                            "type": "ITALIC",
+                                            "italicData": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Camera trap survey, Protected areas, Melanistic leopards, Sightings, Encounters.",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "4v262",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "fk4p7",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Introduction",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        },
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "erach",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "\n",
+                                    "decorations": []
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Kali tiger reserve is located in Western Ghats of Karnataka in Uttar Kannada district. The tiger reserve comprises of two important protected areas of the region ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "viz., ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        },
+                                        {
+                                            "type": "ITALIC",
+                                            "italicData": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Dandeli Wildlife Sanctuary and Anshi National Park covering  an",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "  ",
+                                    "decorations": []
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "area  of",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "  ",
+                                    "decorations": []
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "1345  Km2",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "  ",
+                                    "decorations": []
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "(Map",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "  ",
+                                    "decorations": []
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "1)  Both",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "  ",
+                                    "decorations": []
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "protected areas are contiguous to each other and are a home for large carnivores like Tigers ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "(Panthera tigris)",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        },
+                                        {
+                                            "type": "ITALIC",
+                                            "italicData": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": ", Leopards (",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Panthera pardus",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        },
+                                        {
+                                            "type": "ITALIC",
+                                            "italicData": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "), Dhole ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "(Cuon alpinus) ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        },
+                                        {
+                                            "type": "ITALIC",
+                                            "italicData": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "and Sloth Bears ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "(Melursus ursinus) ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        },
+                                        {
+                                            "type": "ITALIC",
+                                            "italicData": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "and others. Leopards have highest distribution among all wild cats found. They show a great diversity in coat colour and rosette patterns. Individual Leopards can be distinctly identified based on their rosette pattern. Melanistic leopard commonly called ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Black Panther",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        },
+                                        {
+                                            "type": "ITALIC",
+                                            "italicData": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": " is found in these forests. ",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Melanism",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        },
+                                        {
+                                            "type": "ITALIC",
+                                            "italicData": true
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": " is more common in denser and humid forests as compared to dry forests. It provides additional advantage of being camouflaged with darker environment. Melanism is a development of dark-coloured pigment \"melanin\" in the skin or its appendages and is the opposite of albinism. It is inherited as single recessive gene trait relative to its spotted form. The degree of melanism also varies between different melanistic individuals from jet black colour to light black where rosettes are also visible. The camera trap survey conducted to monitor large mammals inside the tiger reserve has showed the presence of both forms of leopards. Melanistic forms cannot be distinguished individually and hence based on photographs the percentage of melanistic forms as against total leopard population is calculated. Since normal leopards could be individually identified and their density can be calculated using different statistical methods melanistic leopard densities could also be derived relatively.",
+                                    "decorations": [
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "\n",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "4esm5",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "ddguk",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "The present study, using modern tools of Camera Trapping, revealed statistical and quantitative estimation of melanism as 14 % of total leopard encounters in the study area.",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        },
+                                        {
+                                            "type": "COLOR",
+                                            "colorData": {
+                                                "foreground": "#1e1916"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "fbbvq",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "bbu94",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": " ",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "4cvqg",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "Download complete report here:",
+                                    "decorations": [
+                                        {
+                                            "type": "BOLD",
+                                            "fontWeightValue": 700
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "FILE",
+                        "id": "ervli",
+                        "nodes": [],
+                        "fileData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "src": {
+                                "id": "f453f3_bf5a79a7fa2249a59cc17088b8fc7a8a.pdf"
+                            },
+                            "name": "1_SRINIVASULU.pdf",
+                            "type": "pdf",
+                            "size": 423205,
+                            "mimeType": "document",
+                            "path": "f453f3_bf5a79a7fa2249a59cc17088b8fc7a8a.pdf"
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "9ciph",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "2ujof",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "3i483",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-06-04T00:06:17.907Z",
+                    "updatedTimestamp": "2024-06-04T00:06:17.907Z",
+                    "id": "364a7622-92af-47e3-9bb0-15e3987281e5"
+                }
+            },
+            "contentId": "617a4c790250d10016e639f3",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_996c5d0e45c64e0999991af0694905b1~mv2.jpg",
+                        "url": "https://static.wixstatic.com/media/f453f3_996c5d0e45c64e0999991af0694905b1~mv2.jpg",
+                        "height": 772,
+                        "width": 800
+                    }
+                },
+                "displayed": true,
+                "custom": true
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "5f645e0a7c5d89001720aeef",
+            "internalCategoryIds": [
+                "5f5f154de296c30017f48bd5",
+                "5f685e7ce559920017e23da4"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "fa79efd9-cb44-4c66-b892-81b10ec7bf40",
+                "label": "Kali Tiger Reserve_publications",
+                "postCount": 3,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/kali-tiger-reserve_publications"
+                },
+                "description": "",
+                "title": "Kali Tiger Reserve_publications",
+                "displayPosition": 18,
+                "language": "en",
+                "slug": "kali-tiger-reserve_publications",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            },
+            {
+                "id": "904214d6-8c2f-4e39-ad35-71b678818502",
+                "label": "Publications",
+                "postCount": 15,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/publications"
+                },
+                "description": "",
+                "title": "Publications",
+                "displayPosition": 25,
+                "language": "en",
+                "slug": "publications",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "fd1c17b0-ffeb-4d81-a3ea-104c82236731",
+                "internalId": "6038bddad2f66d0017b2f91a",
+                "slug": "birds-of-attiveri",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/birds-of-attiveri"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_404923db2a474ad68e2630816951e30a~mv2.jpg",
+                            "url": "https://static.wixstatic.com/media/f453f3_404923db2a474ad68e2630816951e30a~mv2.jpg",
+                            "height": 576,
+                            "width": 432
+                        }
+                    },
+                    "displayed": true,
+                    "custom": true
+                },
+                "title": "Birds Of Attiveri",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "9944ecfa-0426-4857-b22e-f641f37365db",
+                "internalId": "5fb38496340abe0017c6e9dd",
+                "slug": "arishina-ganesha-kannadaprabha-article",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/arishina-ganesha-kannadaprabha-article"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_0507b8e5194440ce9c366507bf265997~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_0507b8e5194440ce9c366507bf265997~mv2.jpeg",
+                            "height": 1259,
+                            "width": 1052
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Arishina Ganesha - KannadaPrabha Article",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "fe33de46-65d0-418d-a0bf-2ee84129c562",
+                "internalId": "5fb383408ff8e00017ae9e73",
+                "slug": "hitech-adcl-article",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/hitech-adcl-article"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_bfef00d3d0484d5091f720d9567e0adb~mv2.jpeg",
+                            "url": "https://static.wixstatic.com/media/f453f3_bfef00d3d0484d5091f720d9567e0adb~mv2.jpeg",
+                            "height": 1024,
+                            "width": 809
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Hitech ADCL - Article",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}

@@ -1,0 +1,326 @@
+{
+    "postPage": {
+        "id": "0734faba-3c8a-450c-a8bb-07201643b639",
+        "post": {
+            "id": "0734faba-3c8a-450c-a8bb-07201643b639",
+            "title": "Effluent Vehicle Tracking System",
+            "excerpt": "The effluent collected from individual industries will be transported to CETP for final treatment & disposal. However, there are...",
+            "firstPublishedDate": "2021-02-05T15:30:07.333Z",
+            "lastPublishedDate": "2021-02-05T15:30:07.333Z",
+            "url": {
+                "base": "https://www.srinivasifs.com",
+                "path": "/post/effluent-vehicle-tracking-system"
+            },
+            "slug": "effluent-vehicle-tracking-system",
+            "featured": false,
+            "pinned": false,
+            "categoryIds": [
+                "5d0ad358-02f4-4cc7-914b-26d6c356da5c"
+            ],
+            "memberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "hashtags": [],
+            "commentingEnabled": true,
+            "postCountInfo": {
+                "comments": 0,
+                "likes": 0,
+                "views": 8
+            },
+            "minutesToRead": 1,
+            "tagIds": [],
+            "relatedPostIds": [],
+            "pricingPlanIds": [],
+            "language": "en",
+            "metrics": {
+                "comments": 0,
+                "likes": 0,
+                "views": 8,
+                "totalRatings": 0,
+                "averageRating": 0
+            },
+            "seoData": {
+                "tags": []
+            },
+            "richContent": {
+                "nodes": [
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "foo",
+                        "nodes": [
+                            {
+                                "type": "TEXT",
+                                "id": "",
+                                "nodes": [],
+                                "textData": {
+                                    "text": "The effluent collected from individual industries will be transported to CETP for final treatment & disposal. However, there are incidences of illegal discharge in the water body/low-lying areas. This app helps to track the exact location & movement of vehicles from generation point to CETP",
+                                    "decorations": []
+                                }
+                            }
+                        ],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "JUSTIFY",
+                                "lineHeight": "1.2"
+                            },
+                            "indentation": 0
+                        }
+                    },
+                    {
+                        "type": "IMAGE",
+                        "id": "bklfj",
+                        "nodes": [],
+                        "imageData": {
+                            "containerData": {
+                                "width": {
+                                    "size": "CONTENT"
+                                },
+                                "alignment": "CENTER",
+                                "textWrap": true
+                            },
+                            "image": {
+                                "src": {
+                                    "id": "f453f3_cd910553dffc4cacba02a51e0712af57~mv2.jpg"
+                                },
+                                "width": 1906,
+                                "height": 846
+                            }
+                        }
+                    },
+                    {
+                        "type": "PARAGRAPH",
+                        "id": "bnpqa",
+                        "nodes": [],
+                        "paragraphData": {
+                            "textStyle": {
+                                "textAlignment": "AUTO"
+                            },
+                            "indentation": 0
+                        }
+                    }
+                ],
+                "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2024-05-15T06:50:15.333Z",
+                    "updatedTimestamp": "2024-05-15T06:50:15.333Z",
+                    "id": "15058c15-35f8-49b1-a137-6f542c740b3f"
+                }
+            },
+            "contentId": "617a79f8466e4400163c9895",
+            "mostRecentContributorId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+            "media": {
+                "wixMedia": {
+                    "image": {
+                        "id": "f453f3_cd910553dffc4cacba02a51e0712af57~mv2.jpg",
+                        "url": "https://static.wixstatic.com/media/f453f3_cd910553dffc4cacba02a51e0712af57~mv2.jpg",
+                        "height": 846,
+                        "width": 1906
+                    }
+                },
+                "displayed": true,
+                "custom": false
+            },
+            "translations": [],
+            "customExcerpt": false,
+            "internalId": "601d64309c5d8c0017ed3bd7",
+            "internalCategoryIds": [
+                "5f55f4804fa8d200183c946f"
+            ],
+            "internalRelatedPostIds": [],
+            "isLiked": false,
+            "isSubscribed": false,
+            "owner": {
+                "activityStatus": "UNKNOWN",
+                "contactId": "47771a5e-8348-4d09-965b-5cc09012410f",
+                "id": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "image": {
+                    "id": "",
+                    "url": "https://graph.facebook.com/3191009841011756/picture?type=large",
+                    "height": 0,
+                    "width": 0
+                },
+                "name": "sriniforest",
+                "privacyStatus": "UNKNOWN",
+                "siteMemberId": "f453f3b8-30e5-448e-80db-7da2150ab909",
+                "slug": "sriniforest",
+                "status": "UNKNOWN",
+                "isBlocked": false,
+                "isOwner": false,
+                "appStore": {
+                    "14bcded7-0066-7c35-14d7-466cb3f09103": {
+                        "permissions": {
+                            "role": "writer"
+                        }
+                    }
+                }
+            },
+            "preview": false
+        },
+        "blog": {
+            "settings": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true,
+                "allPosts": "All Posts"
+            },
+            "translations": {
+                "en": "All Posts"
+            },
+            "blogSettingsV2": {
+                "ampEnabled": false,
+                "allPostsFeedLabel": "All Posts",
+                "comments": {
+                    "enabled": true,
+                    "anonymousEnabled": false,
+                    "ratingsEnabled": false,
+                    "ratingsMandatory": false
+                },
+                "revision": {
+                    "low": 2,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "blocksPostPage": false,
+                "liveSiteEditingDeprecated": false,
+                "useBlogLikeService": true
+            }
+        },
+        "categories": [
+            {
+                "id": "5d0ad358-02f4-4cc7-914b-26d6c356da5c",
+                "label": "KSPCB",
+                "postCount": 36,
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/blog/categories/kspcb"
+                },
+                "description": "",
+                "title": "KSPCB",
+                "displayPosition": 20,
+                "language": "en",
+                "slug": "kspcb",
+                "seoData": {
+                    "tags": []
+                },
+                "translations": []
+            }
+        ],
+        "tags": [],
+        "relatedPosts": [
+            {
+                "id": "20052750-9ae1-4711-889a-bc61eb6f2d82",
+                "internalId": "63a86153a30846e801bdc438",
+                "slug": "online-photo-album-of-handmade-sculptures-guinness-world-records",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/online-photo-album-of-handmade-sculptures-guinness-world-records"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_69b52b1ded3249b4a17033a5b48d36e0~mv2.jpg",
+                            "url": "https://static.wixstatic.com/media/f453f3_69b52b1ded3249b4a17033a5b48d36e0~mv2.jpg",
+                            "height": 3090,
+                            "width": 2217
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Guinness World Records",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "4df1b874-0c50-49d3-962d-295ecb62fee8",
+                "internalId": "635d70b0914c9183243cef5b",
+                "slug": "hello-geleyare-live-phone-in-ಪರ-ಸರ-ಸ-ನ-ಹ-ದ-ಪ-ವಳ",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/hello-geleyare-live-phone-in-ಪರ-ಸರ-ಸ-ನ-ಹ-ದ-ಪ-ವಳ"
+                },
+                "media": {
+                    "embedMedia": {
+                        "thumbnail": {
+                            "url": "https://i.ytimg.com/vi/GsjaaS_UNDk/maxresdefault.jpg",
+                            "width": 1280,
+                            "height": 720
+                        },
+                        "video": {
+                            "url": "https://www.youtube.com/watch?v=GsjaaS_UNDk",
+                            "width": 1280,
+                            "height": 720
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "Hello Geleyare | Live Phone In | ಪರಿಸರ ಸ್ನೇಹಿ ದೀಪಾವಳಿ",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            },
+            {
+                "id": "abdd65f4-73df-4ecf-aa50-07e940759561",
+                "internalId": "62a35e13d54999cd6ab926df",
+                "slug": "kspcb-accomplishment-since-2021",
+                "url": {
+                    "base": "https://www.srinivasifs.com",
+                    "path": "/post/kspcb-accomplishment-since-2021"
+                },
+                "media": {
+                    "wixMedia": {
+                        "image": {
+                            "id": "f453f3_8281b2d3f9e2422291cce5e58b704820~mv2.jpg",
+                            "url": "https://static.wixstatic.com/media/f453f3_8281b2d3f9e2422291cce5e58b704820~mv2.jpg",
+                            "height": 747,
+                            "width": 589
+                        }
+                    },
+                    "displayed": true,
+                    "custom": false
+                },
+                "title": "KSPCB Accomplishment since 2020",
+                "liked": false,
+                "subscribed": false,
+                "excerpt": ""
+            }
+        ],
+        "appData": {
+            "ampEnabled": false,
+            "menuLabel": "All Posts",
+            "language": "en",
+            "postPageEnabled": true
+        },
+        "blogSettingsV2": {
+            "ampEnabled": false,
+            "allPostsFeedLabel": "All Posts",
+            "comments": {
+                "enabled": true,
+                "anonymousEnabled": false,
+                "ratingsEnabled": false,
+                "ratingsMandatory": false
+            },
+            "revision": {
+                "low": 2,
+                "high": 0,
+                "unsigned": false
+            },
+            "blocksPostPage": false,
+            "liveSiteEditingDeprecated": false,
+            "useBlogLikeService": true
+        }
+    }
+}
