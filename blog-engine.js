@@ -3,7 +3,7 @@
  * Communicates with the Express API at http://localhost:3000
  */
 
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = 'https://srinivasulu-api.onrender.com/api';
 
 const BlogEngine = (function () {
   let state = {
@@ -106,7 +106,6 @@ const BlogEngine = (function () {
       if (!response.ok) {
         throw new Error('Failed to fetch posts');
       }
-
       const data = await response.json();
       
       // Client-side search filtering (since the provided API doesn't seem to have a search param)
