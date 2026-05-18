@@ -1,8 +1,6 @@
 /**
  * Blog Engine - Handles fetching, filtering, and pagination for blog posts.
- * Communicates with the Express API at http://localhost:3000
  */
-
 const API_BASE = 'https://srinivasulu-api.onrender.com/api';
 
 const BlogEngine = (function () {
