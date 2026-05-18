@@ -1,7 +1,7 @@
 /**
  * Blog Engine - Handles fetching, filtering, and pagination for blog posts.
  */
-const API_BASE = 'https://srinivasulu-api.onrender.com/api';
+const API_BASE = 'https://srinivasalu-api.onrender.com/api';
 
 const BlogEngine = (function () {
   let state = {
