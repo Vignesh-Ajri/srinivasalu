@@ -7,39 +7,70 @@
 <meta name="description" content="Curriculum Vitae of Srinivasulu IFS, 27-year career in forest governance, ecology, and public service.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <style>
-/* ── CV Hero Section ───────────────────────────────────── */
+/* ── CSS Variables ─────────────────────────── */
+:root {
+  --forest:     #2a556e;
+  --forest-mid: #1a6b3c;
+  --forest-lt:  #2d8a55;
+  --sdg-2:      rgb(221, 166, 58);
+  --gold:       rgb(191, 136, 28);
+  --gold-lt:    rgb(221, 166, 58);
+  --amber:      #e07b39;
+  --cream:      #f4faf6;
+  --cream-dk:   #e8f5ed;
+  --slate:      #2c3e30;
+  --slate-lt:   #5a7a62;
+  --white:      #ffffff;
+  --shadow:     0 4px 24px rgba(13,61,32,0.13);
+  --shadow-lg:  0 12px 40px rgba(13,61,32,0.20);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--slate);
+  line-height: 1.7;
+  background-image:
+    url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=80'),
+    linear-gradient(180deg, rgba(13,61,32,0.06) 0%, transparent 600px);
+  background-size: cover, auto;
+  background-attachment: fixed, scroll;
+  background-blend-mode: overlay;
+}
+
 .page-hero {
   position: relative;
-  background: var(--cream);
   background-color: var(--sdg-2);
+  /* background: url('./images/cv_bg.jpeg') center/cover no-repeat; */
   padding: 9rem 5vw 5rem;
   text-align: center;
-  color: var(--charcoal);
+  color: var(--white);
   overflow: hidden;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
   margin-bottom: 2rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 52vh;
+  border-bottom: 4px solid var(--sdg-2);
 }
-
-/* Content */
 .hero-content {
   position: relative;
   z-index: 5;
   max-width: 760px;
   width: 100%;
+  text-align: center;
 }
-
 .hero-badge {
   display: inline-block;
-  background: rgba(217, 122, 92, 0.1);
-  color: var(--terracotta);
+  background: rgba(221, 166, 58, 0.18);
+  color: var(--sdg-2);
   padding: 0.45rem 1.2rem;
   border-radius: 30px;
   font-size: 0.78rem;
@@ -47,151 +78,330 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 1.4rem;
-  border: 1px solid rgba(217, 122, 92, 0.2);
+  border: 1px solid rgba(221, 166, 58, 0.35);
 }
-
 .page-hero h1 {
+  font-family: 'Cormorant Garamond', serif;
   font-size: clamp(3rem, 6vw, 5rem);
-  color: black;
+  color: #ffffff;
   margin-bottom: 1rem;
   line-height: 1.1;
+  font-weight: 700;
 }
-
 .page-hero p {
-  color: black;
+  color: rgba(255,255,255,0.82);
   max-width: 650px;
-  margin: 0 auto;
+  margin: 0 auto 1.5rem;
   font-size: 1.08rem;
   line-height: 1.8;
 }
+.hero-meta {
+  display: flex; gap: 0.75rem; flex-wrap: wrap;
+  justify-content: center; margin-top: 1.5rem;
+}
+.hero-meta-item {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(221,166,58,0.3);
+  color: rgba(255,255,255,0.9); font-size: 0.78rem; font-weight: 600;
+  padding: 0.35rem 0.9rem; border-radius: 30px;
+}
 
-/* ── Decorative Background Shapes ─────────────────────── */
+/* ── Geometric Shapes ──────────────────────── */
 .geometric-shapes {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
 }
-
-.shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(1px);
-}
-
-/* Large soft circle */
+.shape { position: absolute; border-radius: 50%; filter: blur(1px); }
 .shape-circle-blue {
-  width: 240px;
-  height: 240px;
-  background: rgba(59, 76, 202, 0.12);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 240px; height: 240px;
+  background: rgba(45, 138, 85, 0.18);
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
 }
-
-/* Top left shape */
 .shape-triangle-orange {
-  width: 140px;
-  height: 140px;
-  background: rgba(255, 140, 97, 0.14);
-  top: 18%;
-  left: 28%;
-  border-radius: 35px;
-  transform: rotate(18deg);
+  width: 140px; height: 140px;
+  background: rgba(221, 166, 58, 0.16);
+  top: 18%; left: 28%; border-radius: 35px; transform: rotate(18deg);
 }
-
-/* Bottom right shape */
 .shape-rect-orange {
-  width: 120px;
-  height: 120px;
-  background: rgba(255, 140, 97, 0.12);
-  bottom: 18%;
-  right: 28%;
-  border-radius: 28px;
-  transform: rotate(-12deg);
+  width: 120px; height: 120px;
+  background: rgba(221, 166, 58, 0.13);
+  bottom: 18%; right: 28%; border-radius: 28px; transform: rotate(-12deg);
 }
-
-/* Dotted grid */
 .shape-dots {
-  width: 120px;
-  height: 120px;
-  background-image: radial-gradient(
-    rgba(59, 76, 202, 0.35) 2px,
-    transparent 2px
-  );
+  width: 120px; height: 120px;
+  background-image: radial-gradient(rgba(221,166,58,0.45) 2px, transparent 2px);
   background-size: 18px 18px;
-  top: 20%;
-  right: 24%;
-  opacity: 0.5;
+  top: 20%; right: 24%; opacity: 0.6; border-radius: 0;
 }
-
-/* Circle outline */
 .shape-circle-outline {
-  width: 180px;
-  height: 180px;
-  border: 2px solid rgba(59, 76, 202, 0.12);
+  width: 180px; height: 180px;
+  border: 2px solid rgba(45,138,85,0.25);
   border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
 }
-
-/* Small dots */
 .shape-dot-small-1 {
-  width: 16px;
-  height: 16px;
-  background: rgba(255, 140, 97, 0.8);
-  top: 28%;
-  left: 58%;
+  width: 16px; height: 16px;
+  background: rgba(221, 166, 58, 0.9);
+  top: 28%; left: 58%;
 }
-
 .shape-dot-small-2 {
-  width: 10px;
-  height: 10px;
-  background: rgba(59, 76, 202, 0.8);
-  bottom: 28%;
-  left: 40%;
+  width: 10px; height: 10px;
+  background: rgba(45, 138, 85, 0.95);
+  bottom: 28%; left: 40%;
+}
+@media(max-width:900px){
+  .page-hero { padding: 8rem 5vw 4rem; }
+  .page-hero h1 { font-size: 3rem; }
+  .shape-circle-blue { width: 180px; height: 180px; }
+  .shape-circle-outline { width: 140px; height: 140px; }
+  .shape-triangle-orange, .shape-rect-orange { width: 90px; height: 90px; }
+  .shape-dots { width: 90px; height: 90px; }
 }
 
-/* ── Mobile ───────────────────────────────────────────── */
-@media (max-width: 900px) {
-  .page-hero {
-    padding: 8rem 5vw 4rem;
-  }
-
-  .page-hero h1 {
-    font-size: 3rem;
-  }
-
-  .shape-circle-blue {
-    width: 180px;
-    height: 180px;
-  }
-
-  .shape-circle-outline {
-    width: 140px;
-    height: 140px;
-  }
-
-  .shape-triangle-orange,
-  .shape-rect-orange {
-    width: 90px;
-    height: 90px;
-  }
-
-  .shape-dots {
-    width: 90px;
-    height: 90px;
-  }
+/* ── Download Bar ──────────────────────────── */
+.download-bar {
+  background: linear-gradient(90deg, var(--forest) 0%, var(--forest-mid) 100%);
+  border-bottom: 2px solid rgba(201,146,10,0.3);
+  padding: 1rem 5vw;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem;
 }
-.cv-section{padding:4rem 0;}
-.cv-card{background:var(--white);border-radius:var(--radius-md);box-shadow:var(--shadow-md);padding:2.5rem;max-width:900px;margin:0 auto;}
-.cv-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;margin-bottom:2.5rem;}
-.cv-frame{width:100%;height:800px;border:none;border-radius:var(--radius-md);display:block;}
-.cv-note{text-align:center;font-size:.82rem;color:var(--slate-light);margin-top:1rem;}
+.download-bar p { color: #a8dfc0; font-size: 0.85rem; }
+.download-bar p strong { color: var(--gold-lt); }
+.btn-dl {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: linear-gradient(135deg, var(--gold), var(--gold-lt));
+  color: var(--forest); font-weight: 800; font-size: 0.85rem;
+  padding: 0.6rem 1.4rem; border-radius: 30px; text-decoration: none;
+  box-shadow: 0 4px 16px rgba(201,146,10,0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-dl:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,146,10,0.5); }
+
+/* ── Layout ────────────────────────────────── */
+.cv-main {
+  max-width: 1400px; margin: 0 auto;
+  padding: 3rem 5vw 5rem;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 3rem;
+  align-items: start;
+}
+@media(max-width:900px) { .cv-main { grid-template-columns: 1fr; } }
+
+/* ── Section Titles ────────────────────────── */
+.cv-section { margin-bottom: 3rem; }
+.section-label {
+  display: flex; align-items: center; gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+.section-label-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--forest), var(--forest-mid));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(13,61,32,0.25);
+}
+.section-label h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem; font-weight: 700;
+  color: var(--forest); line-height: 1.1;
+}
+.section-label h2 em { color: var(--gold); font-style: normal; }
+.section-divider {
+  height: 3px; margin-bottom: 2rem; border-radius: 2px;
+  background: linear-gradient(90deg, var(--forest-mid), var(--gold-lt), transparent);
+}
+
+/* ── Experience Timeline ───────────────────── */
+.timeline { position: relative; padding-left: 2rem; }
+.timeline::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--forest-mid), var(--gold-lt), transparent);
+  border-radius: 2px;
+}
+.tl-item {
+  position: relative; margin-bottom: 1.75rem;
+  padding: 1.4rem 1.5rem 1.4rem 1.75rem;
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--forest-lt);
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+.tl-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-lg);
+  border-left-color: var(--gold);
+}
+.tl-item::before {
+  content: ''; position: absolute;
+  left: -2.35rem; top: 1.4rem;
+  width: 13px; height: 13px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 3px solid var(--white);
+  box-shadow: 0 0 0 2px var(--forest-mid);
+}
+.tl-item.present { border-left-color: var(--gold); }
+.tl-item.present::before { background: var(--gold-lt); box-shadow: 0 0 0 2px var(--gold), 0 0 12px rgba(240,180,41,0.5); }
+.tl-period {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--forest), var(--forest-mid));
+  color: var(--gold-lt); font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 0.2rem 0.7rem; border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+.tl-role {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem; font-weight: 700;
+  color: var(--forest); line-height: 1.25; margin-bottom: 0.2rem;
+}
+.tl-org { font-size: 0.83rem; color: var(--slate-lt); font-weight: 500; }
+.tl-org strong { color: var(--amber); font-weight: 600; }
+
+/* ── Cards (sidebar + research) ───────────── */
+.card-stack { display: flex; flex-direction: column; gap: 1.25rem; }
+
+.info-card {
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.info-card-head {
+  background: linear-gradient(135deg, #c9e7d2 0%, #dfeaee 100%);
+  padding: 1rem 1.25rem;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.info-card-head h3 {
+  color: var(--gold-lt); font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem; font-weight: 700;
+}
+.info-card-head .icon { font-size: 1.2rem; }
+.info-card-body { padding: 1.25rem; }
+
+/* Achievement list */
+.ach-list { list-style: none; }
+.ach-list li {
+  display: flex; gap: 0.75rem; align-items: flex-start;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(13,61,32,0.07);
+  font-size: 0.875rem; color: var(--slate); line-height: 1.55;
+}
+.ach-list li:last-child { border-bottom: none; }
+.ach-list li::before {
+  content: '✦'; color: var(--gold); font-size: 0.7rem;
+  margin-top: 0.3rem; flex-shrink: 0;
+}
+
+/* Award cards */
+.award-card {
+  background: var(--white); border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  border-left: 5px solid var(--gold);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.award-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.award-badge {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--gold), var(--gold-lt));
+  color: var(--forest); font-size: 0.66rem; font-weight: 800;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 0.2rem 0.65rem; border-radius: 20px; margin-bottom: 0.5rem;
+}
+.award-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-weight: 700; color: var(--forest);
+  margin-bottom: 0.3rem; line-height: 1.3;
+}
+.award-desc { font-size: 0.83rem; color: var(--slate-lt); line-height: 1.55; }
+
+/* Research items */
+.research-item {
+  background: var(--white); border-radius: 14px;
+  box-shadow: var(--shadow); padding: 1.4rem;
+  border-top: 4px solid var(--forest-mid);
+  transition: transform 0.25s;
+}
+.research-item:hover { transform: translateY(-3px); }
+.research-tag {
+  display: inline-block;
+  background: rgba(13,61,32,0.08); color: var(--forest-mid);
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase; padding: 0.2rem 0.65rem;
+  border-radius: 20px; margin-bottom: 0.6rem;
+}
+.research-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem; font-weight: 700; color: var(--forest);
+  line-height: 1.4; margin-bottom: 0.35rem;
+}
+.research-journal { font-size: 0.78rem; color: var(--amber); font-weight: 600; }
+
+/* Accomplishment cards */
+.acc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media(max-width:600px) { .acc-grid { grid-template-columns: 1fr; } }
+.acc-card {
+  background: var(--white); border-radius: 14px;
+  box-shadow: var(--shadow); padding: 1.3rem;
+  border-bottom: 4px solid var(--forest-lt);
+  transition: transform 0.25s, border-color 0.25s;
+}
+.acc-card:hover { transform: translateY(-4px); border-bottom-color: var(--gold); }
+.acc-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
+.acc-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; font-weight: 700; color: var(--forest);
+  margin-bottom: 0.3rem;
+}
+.acc-desc { font-size: 0.8rem; color: var(--slate-lt); line-height: 1.5; }
+
+/* Contact card */
+.contact-card {
+  background: linear-gradient(135deg, var(--forest) 0%, var(--forest-mid) 100%);
+  border-radius: 16px; padding: 1.5rem;
+  box-shadow: var(--shadow-lg);
+}
+.contact-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--gold-lt); font-size: 1.2rem; margin-bottom: 1rem;
+}
+.contact-row {
+  display: flex; align-items: center; gap: 0.75rem;
+  color: #c8ecd8; font-size: 0.85rem; margin-bottom: 0.75rem;
+}
+.contact-row a { color: var(--gold-lt); text-decoration: none; font-weight: 600; }
+.contact-row a:hover { text-decoration: underline; }
+.contact-row .icon { font-size: 1.1rem; flex-shrink: 0; }
+
+/* Stats strip */
+.stats-strip {
+  background: linear-gradient(135deg, var(--forest), var(--forest-mid));
+  border-radius: 20px; padding: 2rem;
+  margin-bottom: 3rem;
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 1rem; text-align: center;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(201,146,10,0.2);
+}
+@media(max-width:700px) { .stats-strip { grid-template-columns: repeat(2,1fr); } }
+.stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem; font-weight: 800;
+  color: var(--gold-lt); line-height: 1;
+}
+.stat-lbl { font-size: 0.72rem; color: #a8dfc0; font-weight: 600; letter-spacing: 0.5px; margin-top: 0.25rem; text-transform: uppercase; }
+
+/* Reveal animation */
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
 </style>
 </head>
 <body>
+
 <div id="page-loader"><div class="loader-dot"></div><div class="loader-dot"></div><div class="loader-dot"></div></div>
 
 <!-- Navigation -->
@@ -249,7 +459,7 @@
 <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
   <div class="drawer-header">
-    <div class="drawer-logo">
+    <div class="drawer-logo" style="display: none;">
       <span class="logo-name">Srinivasulu IFS</span>
       <span class="logo-sub">Indian Forest Service</span>
     </div>
@@ -271,11 +481,17 @@
   </nav>
 </div>
 
+<!-- HERO -->
 <div class="page-hero geometric-hero">
   <div class="hero-content">
     <span class="hero-badge reveal">Professional Journey</span>
     <h1 class="reveal">Curriculum Vitae</h1>
-    <p class="reveal">Explore the comprehensive professional background, academic achievements, and distinguished service records of Srinivasulu IFS.</p>
+    <p class="reveal">A distinguished Indian Forest Service officer with over two decades of leadership in forestry, wildlife management, environmental governance, and public administration — recognized for integrating conservation, technology, and sustainable development.</p>
+    <div class="hero-meta reveal">
+      <div class="hero-meta-item"><span class="pill-icon">🏅</span> IFS 1997 Batch · Karnataka Cadre</div>
+      <div class="hero-meta-item"><span class="pill-icon">🌿</span> 27+ Years of Distinguished Service</div>
+      <div class="hero-meta-item"><span class="pill-icon">🌍</span> COP21 Paris Recognition</div>
+    </div>
   </div>
   <div class="geometric-shapes reveal">
     <div class="shape shape-triangle-orange"></div>
@@ -288,19 +504,328 @@
   </div>
 </div>
 
-<section class="cv-section">
-  <div class="container">
-    <div class="cv-btns reveal">
-      <a href="assets/cv.pdf" download class="btn btn-primary">⬇ Download CV (PDF)</a>
-      <a href="assets/cv.pdf" target="_blank" class="btn btn-outline">👁 View CV</a>
-    </div>
-    <div class="cv-card reveal">
-      <iframe class="cv-frame" src="assets/Resume_Sirninvas_21102025.pdf" title="Srinivasulu IFS Curriculum Vitae"></iframe>
-      <p class="cv-note">If the PDF doesn't load, click <strong>Download CV</strong> above.</p>
-    </div>
-  </div>
-</section>
+<!-- DOWNLOAD BAR -->
+<div class="download-bar">
+  <p>Download the complete CV as a PDF — <strong>Srinivasulu IFS, Principal Secretary, Ecology &amp; Environment, Karnataka</strong></p>
+  <a href="assets/Resume_Sirninvas_21102025.pdf" download class="btn-dl">⬇ Download CV (PDF)</a>
+</div>
 
+<!-- MAIN CONTENT -->
+<div class="cv-main">
+
+  <!-- LEFT COLUMN -->
+  <div class="cv-left">
+
+    <!-- Stats Strip -->
+    <div class="stats-strip reveal">
+      <div><div class="stat-num">27+</div><div class="stat-lbl">Years Service</div></div>
+      <div><div class="stat-num">12+</div><div class="stat-lbl">Leadership Roles</div></div>
+      <div><div class="stat-num">2</div><div class="stat-lbl">Guinness Records</div></div>
+      <div><div class="stat-num">COP21</div><div class="stat-lbl">Paris Summit</div></div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="cv-section reveal">
+      <div class="section-label">
+        <div class="section-label-icon">🌳</div>
+        <h2>Professional <em>Experience</em></h2>
+      </div>
+      <div class="section-divider"></div>
+
+      <div class="timeline">
+        <div class="tl-item present">
+          <div class="tl-period">2025 – Present</div>
+          <div class="tl-role">Principal Secretary, Ecology and Environment</div>
+          <div class="tl-org"><strong>Government of Karnataka</strong> · Bangalore</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2025</div>
+          <div class="tl-role">Additional Principal Chief Conservator of Forests (Wildlife)</div>
+          <div class="tl-org"><strong>Karnataka Forest Department</strong> · Bangalore</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2024</div>
+          <div class="tl-role">Commissioner, AYUSH Karnataka</div>
+          <div class="tl-org"><strong>Government of Karnataka</strong> · Bangalore</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2023</div>
+          <div class="tl-role">Managing Director, KSFC</div>
+          <div class="tl-org"><strong>Karnataka State Financial Corporation</strong> · Bangalore</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2020 – 2023</div>
+          <div class="tl-role">Member Secretary, KSPCB</div>
+          <div class="tl-org"><strong>Karnataka State Pollution Control Board</strong> · Bangalore</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2019 – 2020</div>
+          <div class="tl-role">Chief Conservator of Forests, Shivamogga</div>
+          <div class="tl-org"><strong>Karnataka Forest Department</strong> · Shivamogga</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2016 – 2019</div>
+          <div class="tl-role">Managing Director, Dr. B.R. Ambedkar Development Corporation Limited</div>
+          <div class="tl-org"><strong>Government of Karnataka</strong> · Bangalore</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2014 – 2016</div>
+          <div class="tl-role">Field Director, Kali Tiger Reserve</div>
+          <div class="tl-org"><strong>Karnataka Forest Department</strong> · Dandeli</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2012 – 2014</div>
+          <div class="tl-role">Conservator of Forests, Project Formulation &amp; Planning</div>
+          <div class="tl-org"><strong>Karnataka Forest Department</strong> · Bangalore</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2008 – 2012</div>
+          <div class="tl-role">Deputy Conservator of Forest</div>
+          <div class="tl-org"><strong>Chitradurga Division</strong> · Chitradurga</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2007 – 2008</div>
+          <div class="tl-role">District Conservator of Forest (DCF)</div>
+          <div class="tl-org"><strong>Karnataka Forest Department</strong> · Koppal Region</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2006 – 2007</div>
+          <div class="tl-role">District Conservator of Forest (DCF)</div>
+          <div class="tl-org"><strong>Karnataka Forest Department</strong> · Gulbarga Region</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2003 – 2006</div>
+          <div class="tl-role">District Conservator of Forest (DCF)</div>
+          <div class="tl-org"><strong>Karnataka Forest Department</strong> · Mysore</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2002 – 2003</div>
+          <div class="tl-role">Deputy Conservator of Forests</div>
+          <div class="tl-org"><strong>Karnataka Forest Department</strong> · Bangalore Rural</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-period">2001 – 2002</div>
+          <div class="tl-role">Assistant Conservator of Forest (ACF)</div>
+          <div class="tl-org"><strong>Nagarahole National Park</strong> · Mysore</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AWARDS -->
+    <div class="cv-section reveal">
+      <div class="section-label">
+        <div class="section-label-icon">🏆</div>
+        <h2>Honours &amp; <em>Awards</em></h2>
+      </div>
+      <div class="section-divider"></div>
+
+      <div class="card-stack">
+        <div class="award-card">
+          <div class="award-badge">🌟 Guinness World Records — 2022</div>
+          <div class="award-title">Largest Online Photo Album of Handmade Turmeric Ganesha Sculptures</div>
+          <div class="award-desc">Awarded for the creation of the largest online photo album of handmade sculptures of Turmeric Ganesha — 10,048 photos achieved jointly with KSPCB, 3 August 2022.</div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge">🌟 Guinness World Records — 2023</div>
+          <div class="award-title">Most People Sculpting with Ganesha Clay Modelling Simultaneously</div>
+          <div class="award-desc">World record for the most people sculpting Ganesha with clay modelling simultaneously, promoting eco-friendly festival practices.</div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge">📖 Asia Book of Records — 2021</div>
+          <div class="award-title">Largest Number of Eco-Friendly Turmeric Ganesha Creations</div>
+          <div class="award-desc">Awarded for KSPCB's initiative to promote an eco-friendly Ganesh festival and recognizing the creation of the largest number of eco-friendly turmeric Ganesh idols.</div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge">🌱 H. V. Muniswamy Gowda Environment Award — 2022</div>
+          <div class="award-title">Outstanding Contribution to Environmental Protection</div>
+          <div class="award-desc">Awarded for performing efficiently at KSPCB and contributing immensely towards environmental protection and regulation in Karnataka.</div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge">🌿 State Environment Award — 2016</div>
+          <div class="award-title">State Environment Award — Govt. of Karnataka</div>
+          <div class="award-desc">Conferred by the Honourable Chief Minister of Karnataka on June 5th, World Environment Day 2016, for exceptional contributions to ecological conservation.</div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge">🏕 FKCCI — 2016</div>
+          <div class="award-title">Best Tourism Award — Federation of Karnataka Chambers of Commerce &amp; Industry</div>
+          <div class="award-desc">Presented by the Honourable Tourism Minister for outstanding contributions to promoting tourism at Dandeli and Kali Tiger Reserve.</div>
+        </div>
+        <div class="award-card">
+          <div class="award-badge">🐯 TOFT Tigers &amp; HolidayIQ — 2016</div>
+          <div class="award-title">Dr. Chuck McDougal Memorial Award (Runner-Up) &amp; HolidayIQ Award</div>
+          <div class="award-desc">Recognized for excellence in creating a visitor-friendly wildlife destination at Kali Tiger Reserve and outstanding tourism and hospitality as its Director.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESEARCH & PUBLICATIONS -->
+    <div class="cv-section reveal">
+      <div class="section-label">
+        <div class="section-label-icon">📚</div>
+        <h2>Research &amp; <em>Publications</em></h2>
+      </div>
+      <div class="section-divider"></div>
+
+      <div class="card-stack">
+        <div class="research-item">
+          <div class="research-tag">Wildlife Research · MY FOREST Journal</div>
+          <div class="research-title">Dynamics of Tiger Sighting in Nagarhole National Park</div>
+          <div class="research-journal">Published in MY FOREST journal — tiger population and behaviour studies</div>
+        </div>
+        <div class="research-item">
+          <div class="research-tag">Wildlife Research · MY FOREST Journal</div>
+          <div class="research-title">Roadside Monitoring for Population Distribution of Major Herbivores in Nagarhole National Park</div>
+          <div class="research-journal">Published in MY FOREST journal</div>
+        </div>
+        <div class="research-item">
+          <div class="research-tag">Wildlife Research · MY FOREST Journal</div>
+          <div class="research-title">Monitoring of Tiger and Associated Species, Kali Tiger Reserve, Dandeli</div>
+          <div class="research-journal">Published in MY FOREST journal</div>
+        </div>
+        <div class="research-item">
+          <div class="research-tag">Wildlife Research · MY FOREST Journal</div>
+          <div class="research-title">Camera Trap Study on Molecular Leopard Population in Dandeli-Anshi Tiger Reserve</div>
+          <div class="research-journal">Published in MY FOREST journal — core zone population and behaviour study</div>
+        </div>
+        <div class="research-item">
+          <div class="research-tag">Biotechnology · International Journal</div>
+          <div class="research-title">Liquid Selection System for Basmati — Transgenic Rice Research</div>
+          <div class="research-journal">Published in BIOTECHNOLOGY QUARTERLY — particle gun bombardment, gene cloning, genetic engineering and tissue culture research at IARI, New Delhi</div>
+        </div>
+        <div class="research-item">
+          <div class="research-tag">GIS &amp; Forest Management</div>
+          <div class="research-title">Spatial Database of Reserve Forests — Chitradurga Forest Division</div>
+          <div class="research-journal">One lakh hectares of reserved forest lands geo-referenced using GIS &amp; spatial technologies — detailed booklet and user-friendly maps produced for forest land resource management</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KEY ACCOMPLISHMENTS -->
+    <div class="cv-section reveal">
+      <div class="section-label">
+        <div class="section-label-icon">⚡</div>
+        <h2>Key <em>Accomplishments</em></h2>
+      </div>
+      <div class="section-divider"></div>
+
+      <div class="acc-grid">
+        <div class="acc-card">
+          <div class="acc-icon">📱</div>
+          <div class="acc-title">KSPCB Mobile App</div>
+          <div class="acc-desc">Developed a common platform addressing pollution control and resource conservation for industries, stakeholders, and the public across Karnataka.</div>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon">🚛</div>
+          <div class="acc-title">CETP Effluent Vehicle Tracking System</div>
+          <div class="acc-desc">App to track exact location and movement of effluent transport vehicles from industrial generation points to CETP, preventing illegal discharge.</div>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon">🦠</div>
+          <div class="acc-title">Covid-19 Waste Management System</div>
+          <div class="acc-desc">Web and mobile application to track covid bio-medical waste generated by hospitals and quarantine centres across districts, managing CBMWTF disposal.</div>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon">💧</div>
+          <div class="acc-title">Effluent Tracking App (Industrial &amp; CETP)</div>
+          <div class="acc-desc">Software to quantify trade effluent generated by industries and track quantity transported and treated at CETP, ensuring regulatory compliance.</div>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon">📊</div>
+          <div class="acc-title">E-VARADHI Progress Report System</div>
+          <div class="acc-desc">Progress Report Management System for receiving, compiling, and communicating monthly progress reports from district offices of the industrial &amp; training section.</div>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon">📲</div>
+          <div class="acc-title">Kalyana Mobile App — Social Welfare</div>
+          <div class="acc-desc">App for Social Welfare Dept., Govt. of Karnataka empowering citizens with information and digital services. Launched by Shri Rahul Gandhi Ji at Dr. B.R. Ambedkar International Conference, Bangalore (July 2017).</div>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon">🌊</div>
+          <div class="acc-title">Gangakalyana Mobile App — ADCL</div>
+          <div class="acc-desc">Flagship programme app for Govt. of Karnataka facilitating unit officers and stakeholders to document stages of implementation, with seamless linkage between Head Office, District Offices, and beneficiaries.</div>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon">🎤</div>
+          <div class="acc-title">TEDx Talk — Nature, Forest &amp; Wildlife</div>
+          <div class="acc-desc">Delivered a TEDxABBS talk on the protection of Nature, Forest, and Wildlife, spreading awareness on conservation and sustainable living.</div>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon">🎬</div>
+          <div class="acc-title">Kali Tiger Reserve Documentary</div>
+          <div class="acc-desc">"Shanthi Samsara" — documentary on climate change and clean energy featuring Kali Tiger Reserve footage, released by the Honourable Prime Minister at COP21 Paris Summit, winning two international awards.</div>
+        </div>
+        <div class="acc-card">
+          <div class="acc-icon">🛸</div>
+          <div class="acc-title">Drone Survey — Shivamogga</div>
+          <div class="acc-desc">Conducted aerial drone surveys of forest lands in Shivamogga region using advanced geospatial technologies for precise forest mapping and encroachment monitoring.</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end cv-left -->
+
+  <!-- RIGHT COLUMN (sidebar) -->
+  <div class="cv-right">
+
+    <!-- Contact -->
+    <div class="contact-card reveal" style="margin-bottom:1.25rem;">
+      <h3>Get in Touch</h3>
+      <div class="contact-row"><span class="icon">✉️</span><a href="mailto:sriniforest@gmail.com">sriniforest@gmail.com</a></div>
+      <div class="contact-row"><span class="icon">📍</span>Bangalore, Karnataka</div>
+      <div class="contact-row"><span class="icon">🏛</span>IFS 1997 Batch · Karnataka Cadre</div>
+    </div>
+
+    <!-- Academic Achievements -->
+    <div class="info-card reveal" style="margin-bottom:1.25rem;">
+      <div class="info-card-head"><span class="icon">🎓</span><h3>Education &amp; Academic Honours</h3></div>
+      <div class="info-card-body">
+        <ul class="ach-list">
+          <li>Gold Medal &amp; Revolving Shield for highest CGPA and aggregate marks, B.Sc. Agriculture — University of Agricultural Sciences, Dharwad (1992)</li>
+          <li>2nd Rank All India — IARI Entrance Exam (1993)</li>
+          <li>Master of Science in Molecular Biology &amp; Biotechnology — IARI, New Delhi (under Prof. V.L. Chopra)</li>
+          <li>1st Rank All India — Ph.D. Entrance (1995), research on genetically male-sterile lines in mustard</li>
+          <li>Recipient of JRF Merit Scholarships from CSIR, ICAR, and IARI</li>
+          <li>2nd Rank — ICAR Agricultural Research Scientist (ARS) Exam (1996); served as Agricultural Scientist at IARI, New Delhi</li>
+          <li>10th Rank All India — Indian Forest Service (IFS) Examination (1997)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Areas of Expertise -->
+    <div class="info-card reveal" style="margin-bottom:1.25rem;">
+      <div class="info-card-head"><span class="icon">🌿</span><h3>Areas of Expertise</h3></div>
+      <div class="info-card-body">
+        <ul class="ach-list">
+          <li>Forest Governance &amp; Wildlife Management</li>
+          <li>Environmental Policy &amp; Regulation</li>
+          <li>Biodiversity Conservation</li>
+          <li>Digital Transformation in Environmental Governance</li>
+          <li>Public Administration &amp; Social Welfare</li>
+          <li>Climate Change Action &amp; Eco-Restoration</li>
+          <li>GIS &amp; Spatial Technology Applications</li>
+          <li>Traditional Medicine (AYUSH) Administration</li>
+          <li>Corporate Governance (KSFC, ADCL)</li>
+          <li>Science Communication &amp; Documentary Filmmaking</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Videos link -->
+    <div class="info-card reveal">
+      <div class="info-card-head"><span class="icon">🎥</span><h3>Videos &amp; Documentaries</h3></div>
+      <div class="info-card-body">
+        <p style="font-size:0.875rem;color:var(--slate-lt);margin-bottom:1rem;line-height:1.6;">Produced multiple award-winning documentaries on Kali Tiger Reserve, forest conservation, climate change, and wildlife — including footage featured at COP21 Paris Summit by the Prime Minister.</p>
+        <a href="videos.html" style="display:inline-flex;align-items:center;gap:0.5rem;background:linear-gradient(135deg,var(--forest),var(--forest-mid));color:var(--gold-lt);padding:0.6rem 1.2rem;border-radius:30px;font-size:0.82rem;font-weight:700;text-decoration:none;">
+          ▶ View All Videos →
+        </a>
+      </div>
+    </div>
+
+  </div><!-- end cv-right -->
+
+</div><!-- end cv-main -->
+
+<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -322,6 +847,38 @@
     <div class="footer-bottom">© 2025 Srinivasulu IFS — Maintained by Vanalok</div>
   </div>
 </footer>
-<script src="main.js"></script>
+
+<script>
+// Loader
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const l = document.getElementById('page-loader');
+    if (l) { l.style.opacity = '0'; l.style.transition = 'opacity 0.5s'; setTimeout(() => l.remove(), 500); }
+  }, 400);
+});
+
+// Reveal on scroll
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 60);
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+revealEls.forEach(el => observer.observe(el));
+
+// Mobile menu
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const menuOverlay = document.getElementById('menu-overlay');
+const drawerClose = document.getElementById('drawer-close');
+function openMenu() { mobileMenu.classList.add('open'); menuOverlay.classList.add('open'); }
+function closeMenu() { mobileMenu.classList.remove('open'); menuOverlay.classList.remove('open'); }
+if (hamburger) hamburger.addEventListener('click', openMenu);
+if (drawerClose) drawerClose.addEventListener('click', closeMenu);
+if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+</script>
 </body>
 </html>
