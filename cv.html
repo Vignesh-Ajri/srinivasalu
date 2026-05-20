@@ -19,7 +19,7 @@
   --gold:       rgb(191, 136, 28);
   --gold-lt:    rgb(221, 166, 58);
   --amber:      #e07b39;
-  --cream:      #f4faf6;
+  --cream:      #a1a38d;
   --cream-dk:   #e8f5ed;
   --slate:      #2c3e30;
   --slate-lt:   #5a7a62;
@@ -28,11 +28,25 @@
   --shadow-lg:  0 12px 40px rgba(13,61,32,0.20);
 }
 
+:root{
+  --hero-bg: #f6f1e8;
+  --hero-card: rgba(255,255,255,0.72);
+  --forest-dark: #17352c;
+  --forest: #2f5d50;
+  --forest-light: #5f8b7e;
+  --gold: #c59a5c;
+  --gold-soft: #e7d2ae;
+
+  --text-dark: #1f2a24;
+  --text-soft: #5c6b63;
+
+  --line: rgba(47,93,80,0.12);
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   font-family: 'DM Sans', sans-serif;
-  background: var(--cream);
   color: var(--slate);
   line-height: 1.7;
   background-image:
@@ -41,69 +55,277 @@ body {
   background-size: cover, auto;
   background-attachment: fixed, scroll;
   background-blend-mode: overlay;
+  background: rgba(207, 183, 203, 0.72);
 }
 
-.page-hero {
+/* HERO WRAPPER */
+.page-hero{
   position: relative;
-  background-color: var(--sdg-2);
-  /* background: url('./images/cv_bg.jpeg') center/cover no-repeat; */
-  padding: 9rem 5vw 5rem;
-  text-align: center;
-  color: var(--white);
   overflow: hidden;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  margin-bottom: 2rem;
-  display: flex;
+
+  padding: 8rem 5vw 5rem;
+  background:
+    radial-gradient(circle at top left, rgba(197,154,92,0.14), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(47,93,80,0.10), transparent 28%),
+    var(--hero-bg);
+
+  border-bottom-left-radius: 42px;
+  border-bottom-right-radius: 42px;
+
+  margin-bottom: 3rem;
+}
+
+/* MAIN CONTAINER */
+.hero-container{
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
-  justify-content: center;
-  min-height: 52vh;
-  border-bottom: 4px solid var(--sdg-2);
-}
-.hero-content {
+  gap: 4rem;
+
   position: relative;
-  z-index: 5;
-  max-width: 760px;
-  width: 100%;
-  text-align: center;
+  z-index: 2;
 }
-.hero-badge {
-  display: inline-block;
-  background: rgba(221, 166, 58, 0.18);
-  color: var(--sdg-2);
-  padding: 0.45rem 1.2rem;
-  border-radius: 30px;
-  font-size: 0.78rem;
+
+/* LEFT SIDE */
+.hero-content{
+  max-width: 620px;
+}
+
+.hero-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(197,154,92,0.12);
+  border: 1px solid rgba(197,154,92,0.25);
+  border-radius: 100px;
+  color: var(--forest);
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
   text-transform: uppercase;
-  margin-bottom: 1.4rem;
-  border: 1px solid rgba(221, 166, 58, 0.35);
+  margin-bottom: 1.5rem;
 }
-.page-hero h1 {
+
+.page-hero h1{
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3rem, 6vw, 5rem);
-  color: #ffffff;
-  margin-bottom: 1rem;
-  line-height: 1.1;
-  font-weight: 700;
+  font-size: clamp(3.5rem, 7vw, 5.8rem);
+  line-height: 0.95;
+  letter-spacing: -2px;
+
+  color: var(--forest-dark);
+
+  margin-bottom: 1.2rem;
 }
-.page-hero p {
-  color: rgba(255,255,255,0.82);
-  max-width: 650px;
-  margin: 0 auto 1.5rem;
-  font-size: 1.08rem;
-  line-height: 1.8;
+
+.page-hero p{
+  font-size: 1.02rem;
+  line-height: 1.9;
+
+  color: var(--text-soft);
+
+  max-width: 560px;
+  margin-bottom: 2rem;
 }
-.hero-meta {
-  display: flex; gap: 0.75rem; flex-wrap: wrap;
-  justify-content: center; margin-top: 1.5rem;
+
+/* META PILLS */
+.hero-meta{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
-.hero-meta-item {
-  display: inline-flex; align-items: center; gap: 0.4rem;
-  background: rgba(255,255,255,0.1); border: 1px solid rgba(221,166,58,0.3);
-  color: rgba(255,255,255,0.9); font-size: 0.78rem; font-weight: 600;
-  padding: 0.35rem 0.9rem; border-radius: 30px;
+
+.hero-meta-item{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.7rem 1rem;
+
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid var(--line);
+
+  border-radius: 100px;
+
+  color: var(--forest-dark);
+
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+/* RIGHT SIDE */
+.hero-visual{
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGE CARD */
+.hero-image-card{
+  position: relative;
+
+  width: 320px;
+  height: 400px;
+
+  border-radius: 28px;
+  overflow: hidden;
+
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.5);
+
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.10),
+    0 10px 30px rgba(47,93,80,0.08);
+
+  z-index: 3;
+}
+
+.hero-image-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FLOATING SHAPES */
+.hero-shape{
+  position: absolute;
+  border-radius: 30px;
+  z-index: 1;
+}
+
+.shape-1{
+  width: 180px;
+  height: 180px;
+
+  background: rgba(197,154,92,0.14);
+
+  top: -20px;
+  right: 30px;
+
+  transform: rotate(12deg);
+}
+
+.shape-2{
+  width: 140px;
+  height: 140px;
+
+  border: 1px dashed rgba(47,93,80,0.25);
+
+  bottom: 10px;
+  left: 40px;
+
+  border-radius: 50%;
+}
+
+.shape-3{
+  width: 70px;
+  height: 70px;
+
+  background: rgba(47,93,80,0.10);
+
+  border-radius: 18px;
+
+  bottom: 40px;
+  right: 20px;
+
+  transform: rotate(-15deg);
+}
+
+/* SMALL FLOATING CARD */
+.hero-floating-card{
+  position: absolute;
+
+  bottom: 30px;
+  left: -40px;
+
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(10px);
+
+  border-radius: 18px;
+
+  padding: 1rem 1.1rem;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+
+  border: 1px solid rgba(255,255,255,0.7);
+
+  z-index: 4;
+}
+
+.hero-floating-card strong{
+  display: block;
+  color: var(--forest-dark);
+  font-size: 0.9rem;
+}
+
+.hero-floating-card span{
+  color: var(--text-soft);
+  font-size: 0.78rem;
+}
+
+/* MOBILE */
+@media(max-width: 980px){
+
+  .hero-container{
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .hero-content{
+    margin: 0 auto;
+  }
+
+  .hero-meta{
+    justify-content: center;
+  }
+
+  .hero-visual{
+    order: -1;
+  }
+
+  .hero-image-card{
+    width: 280px;
+    height: 340px;
+  }
+
+  .hero-floating-card{
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+  }
+}
+
+@media(max-width: 600px){
+
+  .page-hero{
+    padding: 7rem 1.5rem 4rem;
+  }
+
+  .page-hero h1{
+    font-size: 3rem;
+  }
+
+  .hero-image-card{
+    width: 240px;
+    height: 300px;
+  }
+
+  .hero-meta-item{
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* ── Geometric Shapes ──────────────────────── */
@@ -159,25 +381,25 @@ body {
 
 /* ── Download Bar ──────────────────────────── */
 .download-bar {
-  background: linear-gradient(90deg, var(--forest) 0%, var(--forest-mid) 100%);
+  background: rgba(99, 76, 44, 0.479);
   border-bottom: 2px solid rgba(201,146,10,0.3);
   padding: 1rem 5vw;
   display: flex; align-items: center; justify-content: space-between;
   flex-wrap: wrap; gap: 1rem;
 }
-.download-bar p { color: #a8dfc0; font-size: 0.85rem; }
-.download-bar p strong { color: var(--gold-lt); }
+.download-bar p { color: #f8f4ee; font-size: 0.85rem; }
+.download-bar p strong { color: #413526; }
 .btn-dl {
   display: inline-flex; align-items: center; gap: 0.5rem;
-  background: linear-gradient(135deg, var(--gold), var(--gold-lt));
-  color: var(--forest); font-weight: 800; font-size: 0.85rem;
+  background: #d9b47a;
+  color: white; font-weight: 800; font-size: 0.85rem;
   padding: 0.6rem 1.4rem; border-radius: 30px; text-decoration: none;
   box-shadow: 0 4px 16px rgba(201,146,10,0.35);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .btn-dl:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,146,10,0.5); }
 
-/* ── Layout ────────────────────────────────── */
+/* ── Layout ─── */
 .cv-main {
   max-width: 1400px; margin: 0 auto;
   padding: 3rem 5vw 5rem;
@@ -188,7 +410,7 @@ body {
 }
 @media(max-width:900px) { .cv-main { grid-template-columns: 1fr; } }
 
-/* ── Section Titles ────────────────────────── */
+/* ── Section Titles ─── */
 .cv-section { margin-bottom: 3rem; }
 .section-label {
   display: flex; align-items: center; gap: 0.75rem;
@@ -204,9 +426,9 @@ body {
 .section-label h2 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.8rem; font-weight: 700;
-  color: var(--forest); line-height: 1.1;
+  color: var(--teal-deep); line-height: 1.1;
 }
-.section-label h2 em { color: var(--gold); font-style: normal; }
+.section-label h2 em { color: #ff0000; font-style: normal; }
 .section-divider {
   height: 3px; margin-bottom: 2rem; border-radius: 2px;
   background: linear-gradient(90deg, var(--forest-mid), var(--gold-lt), transparent);
@@ -277,7 +499,7 @@ body {
 }
 .info-card-head h3 {
   color: var(--gold-lt); font-family: 'Cormorant Garamond', serif;
-  font-size: 1.15rem; font-weight: 700;
+  font-size: 1.35rem; font-weight: 700;
 }
 .info-card-head .icon { font-size: 1.2rem; }
 .info-card-body { padding: 1.25rem; }
@@ -308,9 +530,9 @@ body {
 .award-badge {
   display: inline-block;
   background: linear-gradient(90deg, var(--gold), var(--gold-lt));
-  color: var(--forest); font-size: 0.66rem; font-weight: 800;
+  color: var(--forest); font-size: 0.68rem; font-weight: 800;
   letter-spacing: 1.5px; text-transform: uppercase;
-  padding: 0.2rem 0.65rem; border-radius: 20px; margin-bottom: 0.5rem;
+  padding: 0.25rem 0.7rem; border-radius: 20px; margin-bottom: 0.5rem;
 }
 .award-title {
   font-family: 'Cormorant Garamond', serif;
@@ -482,27 +704,51 @@ body {
 </div>
 
 <!-- HERO -->
-<div class="page-hero geometric-hero">
-  <div class="hero-content">
-    <span class="hero-badge reveal">Professional Journey</span>
-    <h1 class="reveal">Curriculum Vitae</h1>
-    <p class="reveal">A distinguished Indian Forest Service officer with over two decades of leadership in forestry, wildlife management, environmental governance, and public administration — recognized for integrating conservation, technology, and sustainable development.</p>
-    <div class="hero-meta reveal">
-      <div class="hero-meta-item"><span class="pill-icon">🏅</span> IFS 1997 Batch · Karnataka Cadre</div>
-      <div class="hero-meta-item"><span class="pill-icon">🌿</span> 27+ Years of Distinguished Service</div>
-      <div class="hero-meta-item"><span class="pill-icon">🌍</span> COP21 Paris Recognition</div>
+<section class="page-hero">
+  <div class="hero-container">
+    <!-- LEFT -->
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        🌿 Indian Forest Service
+      </div>
+      <h1>
+        Curriculum<br>
+        Vitae
+      </h1>
+      <p>
+        Leadership in forestry, ecology, wildlife conservation,
+        environmental governance, and sustainable development.
+      </p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          🏅 IFS 1997 Batch
+        </div>
+        <div class="hero-meta-item">
+          🌍 COP21 Recognition
+        </div>
+        <div class="hero-meta-item">
+          🌿 27+ Years Service
+        </div>
+      </div>
+    </div>
+    <!-- RIGHT -->
+    <div class="hero-visual reveal">
+      <!-- shapes -->
+      <div class="hero-shape shape-1"></div>
+      <div class="hero-shape shape-2"></div>
+      <div class="hero-shape shape-3"></div>
+      <!-- image -->
+      <div class="hero-image-card">
+        <img src="./images/cv_bg.jpeg" alt="Srinivasulu IFS">
+      </div>
+      <!-- floating card -->
+      <div class="hero-floating-card">
+        <strong>Ecology & Environment</strong>
+        <span>Government of Karnataka</span>
+      </div>
     </div>
   </div>
-  <div class="geometric-shapes reveal">
-    <div class="shape shape-triangle-orange"></div>
-    <div class="shape shape-circle-blue"></div>
-    <div class="shape shape-rect-orange"></div>
-    <div class="shape shape-dots"></div>
-    <div class="shape shape-circle-outline"></div>
-    <div class="shape shape-dot-small-1"></div>
-    <div class="shape shape-dot-small-2"></div>
-  </div>
-</div>
+</section>
 
 <!-- DOWNLOAD BAR -->
 <div class="download-bar">
@@ -528,7 +774,7 @@ body {
     <div class="cv-section reveal">
       <div class="section-label">
         <div class="section-label-icon">🌳</div>
-        <h2>Professional <em>Experience</em></h2>
+        <h2>Professional <em style="color: var(--terracotta);">Experience</em></h2>
       </div>
       <div class="section-divider"></div>
 

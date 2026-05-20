@@ -1,588 +1,1183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Honours &amp; Awards — Srinivasulu IFS</title>
-<meta name="description" content="Awards and recognitions received by Srinivasulu IFS including Guinness World Records, Asia Book of Records, and state honours.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<style>
-/* ── Hero Section ───────────────────────────────────── */
-.page-hero {
-  position: relative;
-  background: var(--cream);
-  background-color: var(--sdg-3);
-  padding: 9rem 5vw 5rem;
-  overflow: hidden;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  margin-bottom: 2rem;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Honours &amp; Awards — Srinivasulu IFS</title>
+    <meta
+      name="description"
+      content="Awards and recognitions received by Srinivasulu IFS including Guinness World Records, Asia Book of Records, and state honours."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ── Awards Section ────────────────────────────────── */
+      .awards-section {
+        padding: 5rem 0;
+        background: var(--cream);
+      }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+      .award-item {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        gap: 2rem;
+        align-items: start;
+        margin-bottom: 2.5rem;
+      }
 
-/* Content */
-.hero-content {
-  position: relative;
-  z-index: 5;
-  max-width: 760px;
-  width: 100%;
-}
+      .year-badge {
+        background: var(--teal-deep);
+        color: var(--white);
+        font-family: "Playfair Display", serif;
+        font-size: 1.1rem;
+        font-weight: 700;
+        border-radius: var(--radius-md);
+        padding: 1rem 0.75rem;
+        text-align: center;
+        line-height: 1.2;
+        position: sticky;
+        top: 6rem;
+      }
 
-.hero-badge {
-  display: inline-block;
-  background: rgba(217, 122, 92, 0.1);
-  color: var(--terracotta);
-  padding: 0.45rem 1.2rem;
-  border-radius: 30px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 1.4rem;
-  border: 1px solid rgba(217, 122, 92, 0.2);
-}
+      .award-card {
+        background: var(--white);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-md);
+        overflow: hidden;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
 
-.page-hero h1 {
-  font-size: clamp(3rem, 6vw, 5rem);
-  color: #fff;
-  margin-bottom: 1rem;
-  line-height: 1.1;
-}
+      .award-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-lg);
+      }
 
-.page-hero p {
-  color: #ffffff;
-  max-width: 650px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
+      .award-card-inner {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: start;
+        gap: 1rem;
+        padding: 1.75rem;
+      }
 
-/* ── Decorative Background ─────────────────────────── */
-.hero-decoration {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-}
+      .award-img {
+        width: 140px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: var(--radius-sm);
+      }
 
-/* Large center ring */
-.deco-ring-lg {
-  position: absolute;
-  width: 260px;
-  height: 260px;
-  border: 2px solid rgba(15, 76, 92, 0.1);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+      .award-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.15rem;
+        color: var(--charcoal);
+        margin-bottom: 0.5rem;
+      }
 
-/* Soft inner ring */
-.deco-ring-md {
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  border: 2px dashed rgba(217, 122, 92, 0.18);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: spin-slow 30s linear infinite;
-}
+      .award-desc {
+        font-size: 0.9rem;
+        color: var(--slate-light);
+        line-height: 1.7;
+      }
 
-/* Main soft blob */
-.deco-star {
-  position: absolute;
-  width: 170px;
-  height: 170px;
-  background: rgba(217, 122, 92, 0.12);
-  border-radius: 38% 62% 55% 45%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(12deg);
-  filter: blur(1px);
-}
+      .award-badge-label {
+        display: inline-block;
+        background: var(--sand);
+        color: var(--teal-deep);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding: 0.25rem 0.65rem;
+        border-radius: 20px;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+      }
 
-/* Decorative dots */
-.deco-dot-1,
-.deco-dot-2,
-.deco-dot-3 {
-  position: absolute;
-  border-radius: 50%;
-}
+      /* Mobile Cards */
+      @media (max-width: 700px) {
+        .award-item {
+          grid-template-columns: 1fr;
+        }
 
-.deco-dot-1 {
-  width: 16px;
-  height: 16px;
-  background: rgba(217, 122, 92, 0.8);
-  top: 28%;
-  left: 58%;
-}
+        .year-badge {
+          position: static;
+          width: 80px;
+        }
 
-.deco-dot-2 {
-  width: 12px;
-  height: 12px;
-  background: rgba(30, 127, 110, 0.8);
-  bottom: 28%;
-  left: 38%;
-}
+        .award-card-inner {
+          grid-template-columns: 1fr;
+        }
 
-.deco-dot-3 {
-  width: 8px;
-  height: 8px;
-  background: rgba(15, 76, 92, 0.8);
-  top: 24%;
-  left: 36%;
-}
+        .award-img {
+          width: 100%;
+          height: 180px;
+        }
+      }
+    </style>
+    <style>
+      :root {
+        --aw-ink: #14110d;
+        --aw-ink-soft: #1f1b15;
+        --aw-gold: #b8965e;
+        --aw-gold-deep: #8a6f3e;
+        --aw-gold-light: #d4b783;
+        --aw-parchment: #f4ecd8;
+        --aw-paper: #faf6ec;
+        --aw-paper-2: #f1e9d5;
+        --aw-burgundy: #6e2230;
+        --aw-forest: #1f3d2b;
+        --aw-shadow: rgba(20, 17, 13, 0.14);
+      }
 
-/* Small decorative bars */
-.deco-bar-1,
-.deco-bar-2 {
-  position: absolute;
-  border-radius: 20px;
-}
+      body {
+        font-family: "Newsreader", Georgia, serif;
+        background: var(--aw-paper);
+        background-image:
+          radial-gradient(
+            circle at 10% 5%,
+            rgba(184, 150, 94, 0.07) 0%,
+            transparent 35%
+          ),
+          radial-gradient(
+            circle at 95% 60%,
+            rgba(110, 34, 48, 0.04) 0%,
+            transparent 40%
+          );
+        background-attachment: fixed;
+        color: #2a2520;
+        font-weight: 380;
+        font-size: 17px;
+        line-height: 1.65;
+      }
 
-.deco-bar-1 {
-  width: 70px;
-  height: 8px;
-  background: rgba(244, 228, 193, 0.9);
-  bottom: 30%;
-  left: 28%;
-  transform: rotate(-18deg);
-}
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Fraunces", Georgia, serif;
+        font-variation-settings:
+          "opsz" 144,
+          "SOFT" 30;
+        letter-spacing: -0.02em;
+        color: var(--aw-ink);
+      }
+      /* ── DIVIDER ────────────────────────────────────────── */
+      .section-divider {
+        background: var(--aw-paper);
+        padding: 1rem 5vw;
+        border-bottom: 1px solid rgba(20, 17, 13, 0.08);
+      }
 
-.deco-bar-2 {
-  width: 50px;
-  height: 6px;
-  background: rgba(217, 122, 92, 0.25);
-  top: 30%;
-  right: 30%;
-  transform: rotate(22deg);
-}
+      .section-divider-inner {
+        max-width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--aw-gold-deep);
+      }
 
-/* Animation */
-@keyframes spin-slow {
-  to {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
-}
+      .section-divider-inner .dash {
+        width: 60px;
+        height: 1px;
+        background: var(--aw-gold-deep);
+        opacity: 0.5;
+      }
 
-/* ── Mobile ────────────────────────────────────────── */
-@media (max-width: 900px) {
-  .page-hero {
-    padding: 8rem 5vw 4rem;
-  }
+      /* ── AWARDS TIMELINE ──────────────────────────────── */
+      .awards-section {
+        padding: 6rem 5vw 5rem;
+        background: var(--aw-paper);
+        position: relative;
+      }
 
-  .page-hero h1 {
-    font-size: 3rem;
-  }
+      .awards-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: repeating-linear-gradient(
+          45deg,
+          transparent 0,
+          transparent 60px,
+          rgba(184, 150, 94, 0.025) 60px,
+          rgba(184, 150, 94, 0.025) 61px
+        );
+        pointer-events: none;
+      }
 
-  .deco-ring-lg {
-    width: 190px;
-    height: 190px;
-  }
+      .awards-inner {
+        position: relative;
+        max-width: 1080px;
+        margin: 0 auto;
+      }
 
-  .deco-ring-md {
-    width: 130px;
-    height: 130px;
-  }
+      /* Awards group header */
+      .awards-section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
 
-  .deco-star {
-    width: 120px;
-    height: 120px;
-  }
-}
+      .awards-section-header .marker {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--aw-burgundy);
+        margin-bottom: 1.2rem;
+      }
 
-/* ── Awards Section ────────────────────────────────── */
-.awards-section {
-  padding: 5rem 0;
-  background: var(--cream);
-}
+      .awards-section-header h2 {
+        font-family: "Fraunces", Georgia, serif;
+        font-variation-settings:
+          "opsz" 144,
+          "wght" 420,
+          "SOFT" 50;
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: 0.75rem;
+        color: var(--aw-ink);
+      }
+      .awards-section-header h2 em {
+        font-style: italic;
+        color: var(--aw-burgundy);
+        font-variation-settings:
+          "opsz" 144,
+          "wght" 420,
+          "SOFT" 80,
+          "WONK" 1;
+      }
+      .awards-section-header p {
+        font-family: "Newsreader", Georgia, serif;
+        font-size: 1.05rem;
+        color: #5a5248;
+        max-width: 580px;
+        margin: 0 auto;
+        font-weight: 380;
+      }
 
-.award-item {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 2rem;
-  align-items: start;
-  margin-bottom: 2.5rem;
-}
+      /* Year section heading (decade label) */
+      .year-section-label {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin: 4rem 0 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(184, 150, 94, 0.4);
+      }
 
-.year-badge {
-  background: var(--teal-deep);
-  color: var(--white);
-  font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  font-weight: 700;
-  border-radius: var(--radius-md);
-  padding: 1rem 0.75rem;
-  text-align: center;
-  line-height: 1.2;
-  position: sticky;
-  top: 6rem;
-}
+      .year-section-label-num {
+        font-family: "Fraunces", Georgia, serif;
+        font-variation-settings:
+          "opsz" 144,
+          "wght" 320,
+          "SOFT" 80;
+        font-style: italic;
+        font-size: 3.5rem;
+        font-weight: 320;
+        color: var(--aw-gold-deep);
+        line-height: 1;
+        letter-spacing: -0.03em;
+      }
 
-.award-card {
-  background: var(--white);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
+      .year-section-label-text {
+        display: flex;
+        flex-direction: column;
+      }
+      .year-section-label-text .meta {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.65rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--aw-gold-deep);
+      }
+      .year-section-label-text .count {
+        font-family: "Fraunces", Georgia, serif;
+        font-size: 1.1rem;
+        color: var(--aw-ink);
+        font-weight: 500;
+      }
 
-.award-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
-}
+      /* Individual award entry */
+      .award-entry {
+        display: grid;
+        grid-template-columns: 96px 1fr;
+        gap: 2rem;
+        padding: 2.25rem 0;
+        border-top: 1px dotted rgba(20, 17, 13, 0.15);
+        position: relative;
+      }
+      .award-entry:first-of-type {
+        border-top: none;
+        padding-top: 1rem;
+      }
 
-.award-card-inner {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: start;
-  gap: 1rem;
-  padding: 1.75rem;
-}
+      /* Year column with seal */
+      .award-year-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: sticky;
+        top: 7rem;
+        align-self: start;
+      }
 
-.award-img {
-  width: 140px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: var(--radius-sm);
-}
+      .award-year-seal {
+        width: 88px;
+        height: 88px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Fraunces", Georgia, serif;
+        font-variation-settings:
+          "opsz" 36,
+          "wght" 500,
+          "SOFT" 30;
+        font-size: 1.45rem;
+        font-weight: 500;
+        color: var(--aw-ink);
+        background: var(--aw-paper-2);
+        border: 1px solid var(--aw-gold);
+        border-radius: 50%;
+      }
 
-.award-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.15rem;
-  color: var(--charcoal);
-  margin-bottom: 0.5rem;
-}
+      .award-year-seal::before {
+        content: "";
+        position: absolute;
+        inset: 4px;
+        border: 1px dashed rgba(184, 150, 94, 0.5);
+        border-radius: 50%;
+      }
 
-.award-desc {
-  font-size: 0.9rem;
-  color: var(--slate-light);
-  line-height: 1.7;
-}
+      .award-year-seal::after {
+        content: "";
+        position: absolute;
+        inset: -8px;
+        border: 1px solid rgba(184, 150, 94, 0.25);
+        border-radius: 50%;
+        pointer-events: none;
+      }
 
-.award-badge-label {
-  display: inline-block;
-  background: var(--sand);
-  color: var(--teal-deep);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 0.25rem 0.65rem;
-  border-radius: 20px;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-}
+      /* Award content card */
+      .award-content {
+        background: linear-gradient(180deg, #ffffff 0%, var(--aw-paper) 100%);
+        border: 1px solid rgba(184, 150, 94, 0.35);
+        padding: 1.75rem 2rem;
+        position: relative;
+        transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
 
-/* Mobile Cards */
-@media (max-width: 700px) {
-  .award-item {
-    grid-template-columns: 1fr;
-  }
+      /* Decorative corner brackets */
+      .award-content::before,
+      .award-content::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border: 1px solid var(--aw-gold);
+        transition: all 0.3s;
+      }
+      .award-content::before {
+        top: -1px;
+        left: -1px;
+        border-right: none;
+        border-bottom: none;
+      }
+      .award-content::after {
+        bottom: -1px;
+        right: -1px;
+        border-left: none;
+        border-top: none;
+      }
 
-  .year-badge {
-    position: static;
-    width: 80px;
-  }
+      .award-content:hover {
+        transform: translateX(4px);
+        box-shadow: -6px 6px 0 rgba(184, 150, 94, 0.35);
+        border-color: var(--aw-gold-deep);
+      }
+      .award-content:hover::before {
+        width: 20px;
+        height: 20px;
+        border-color: var(--aw-burgundy);
+      }
+      .award-content:hover::after {
+        width: 20px;
+        height: 20px;
+        border-color: var(--aw-burgundy);
+      }
 
-  .award-card-inner {
-    grid-template-columns: 1fr;
-  }
+      .award-inner {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1.75rem;
+        align-items: start;
+      }
 
-  .award-img {
-    width: 100%;
-    height: 180px;
-  }
-}
-</style>
-</head>
-<body>
-<div id="page-loader"><div class="loader-dot"></div><div class="loader-dot"></div><div class="loader-dot"></div></div>
+      .award-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.65rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: var(--aw-burgundy);
+        margin-bottom: 0.85rem;
+      }
 
-<!-- Navigation -->
-<div class="nav-wrapper">
-  <nav>
-    <a href="index.html" class="nav-logo">
-      <div class="" style="display: none;">
-        <span class="logo-name">Srinivasulu IFS</span>
-        <span class="logo-sub">Indian Forest Service</span>
-      </div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="awards.html">Honours &amp; Awards</a></li>
-      <li class="dropdown">
-        <a href="accomplishments.html">Accomplishments</a>
-        <ul class="dropdown-menu">
-          <li><a href="accomplishments.html?category=kspcb#posts">KSPCB</a></li>
-          <li><a href="accomplishments.html?category=ayush#posts">Ayush</a></li>
-          <li><a href="accomplishments.html?category=karnataka-forest-department#posts">Karnataka Forest Department</a></li>
-          <li><a href="accomplishments.html?category=kali-tiger-reserve#posts">Kali Tiger Reserve</a></li>
-          <li><a href="accomplishments.html?category=nagarhole-national-park#posts">Nagarhole National Park</a></li>
-          <li><a href="accomplishments.html?category=kalaburagi#posts">Kalaburagi</a></li>
-          <li><a href="accomplishments.html?category=chitradurga#posts">Chitradurga</a></li>
-          <li><a href="accomplishments.html?category=shimoga#posts">Shimoga</a></li>
-          <li><a href="accomplishments.html?category=kfcsc#posts">KFCSC</a></li>
-          <li><a href="accomplishments.html?category=academics#posts">Academics</a></li>
-          <li><a href="accomplishments.html?category=adcl#posts">ADCL</a></li>
-          <li><a href="accomplishments.html?category=ecology-environment#posts">Ecology &amp; Environment</a></li>
+      .award-badge::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        background: var(--aw-burgundy);
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .award-title {
+        font-family: "Fraunces", Georgia, serif;
+        font-variation-settings:
+          "opsz" 36,
+          "wght" 460,
+          "SOFT" 40;
+        font-size: 1.35rem;
+        line-height: 1.25;
+        margin-bottom: 0.85rem;
+        color: var(--aw-ink);
+        letter-spacing: -0.012em;
+      }
+
+      .award-title small {
+        display: block;
+        font-family: "Newsreader", Georgia, serif;
+        font-size: 0.95rem;
+        font-style: italic;
+        font-weight: 400;
+        color: var(--aw-gold-deep);
+        margin-top: 0.3rem;
+        letter-spacing: 0;
+      }
+
+      .award-desc {
+        font-family: "Newsreader", Georgia, serif;
+        font-size: 0.98rem;
+        line-height: 1.7;
+        color: #4a4239;
+        font-weight: 380;
+      }
+
+      .award-img-wrap {
+        width: 150px;
+        flex-shrink: 0;
+        position: relative;
+      }
+
+      .award-img {
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+        border: 1px solid rgba(184, 150, 94, 0.4);
+        filter: sepia(0.08) saturate(0.95);
+        transition: filter 0.4s;
+      }
+
+      .award-content:hover .award-img {
+        filter: sepia(0) saturate(1);
+      }
+
+      .award-img-wrap::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: -6px;
+        bottom: -6px;
+        border: 1px solid var(--aw-gold);
+        z-index: -1;
+      }
+
+      /* Mobile awards stack */
+      @media (max-width: 800px) {
+        .award-entry {
+          grid-template-columns: 1fr;
+          gap: 1.25rem;
+        }
+        .award-year-col {
+          position: static;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+        }
+        .award-year-seal {
+          width: 64px;
+          height: 64px;
+          font-size: 1.1rem;
+        }
+        .award-inner {
+          grid-template-columns: 1fr;
+        }
+        .award-img-wrap {
+          width: 100%;
+        }
+        .award-img {
+          height: 180px;
+        }
+        .award-content {
+          padding: 1.25rem 1.25rem;
+        }
+      }
+
+      /* ── REVEAL ANIMATION ─────────────────────────────── */
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1),
+          transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @keyframes heroFadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .page-hero .hero-medallion {
+        animation: heroFadeUp 0.9s ease-out 0.1s both;
+      }
+      .page-hero .hero-eyebrow {
+        animation: heroFadeUp 0.9s ease-out 0.25s both;
+      }
+      .page-hero h1 {
+        animation: heroFadeUp 0.9s ease-out 0.4s both;
+      }
+      .page-hero .hero-lede {
+        animation: heroFadeUp 0.9s ease-out 0.55s both;
+      }
+      .page-hero .hero-stats {
+        animation: heroFadeUp 0.9s ease-out 0.7s both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page-loader">
+      <div class="loader-dot"></div>
+      <div class="loader-dot"></div>
+      <div class="loader-dot"></div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-wrapper">
+      <nav>
+        <a href="index.html" class="nav-logo">
+          <div class="" style="display: none">
+            <span class="logo-name">Srinivasulu IFS</span>
+            <span class="logo-sub">Indian Forest Service</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="awards.html">Honours &amp; Awards</a></li>
+          <li class="dropdown">
+            <a href="accomplishments.html">Accomplishments</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="accomplishments.html?category=kspcb#posts">KSPCB</a>
+              </li>
+              <li>
+                <a href="accomplishments.html?category=ayush#posts">Ayush</a>
+              </li>
+              <li>
+                <a
+                  href="accomplishments.html?category=karnataka-forest-department#posts"
+                  >Karnataka Forest Department</a
+                >
+              </li>
+              <li>
+                <a href="accomplishments.html?category=kali-tiger-reserve#posts"
+                  >Kali Tiger Reserve</a
+                >
+              </li>
+              <li>
+                <a
+                  href="accomplishments.html?category=nagarhole-national-park#posts"
+                  >Nagarhole National Park</a
+                >
+              </li>
+              <li>
+                <a href="accomplishments.html?category=kalaburagi#posts"
+                  >Kalaburagi</a
+                >
+              </li>
+              <li>
+                <a href="accomplishments.html?category=chitradurga#posts"
+                  >Chitradurga</a
+                >
+              </li>
+              <li>
+                <a href="accomplishments.html?category=shimoga#posts"
+                  >Shimoga</a
+                >
+              </li>
+              <li>
+                <a href="accomplishments.html?category=kfcsc#posts">KFCSC</a>
+              </li>
+              <li>
+                <a href="accomplishments.html?category=academics#posts"
+                  >Academics</a
+                >
+              </li>
+              <li>
+                <a href="accomplishments.html?category=adcl#posts">ADCL</a>
+              </li>
+              <li>
+                <a
+                  href="accomplishments.html?category=ecology-environment#posts"
+                  >Ecology &amp; Environment</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="publications.html">Publications</a>
+            <ul class="dropdown-menu">
+              <li><a href="publications.html?category=kspcb">KSPCB</a></li>
+              <li>
+                <a href="publications.html?category=karnataka-forest-department"
+                  >Karnataka Forest Department</a
+                >
+              </li>
+              <li>
+                <a href="publications.html?category=kali-tiger-reserve"
+                  >Kali Tiger Reserve</a
+                >
+              </li>
+              <li>
+                <a href="publications.html?category=nagarhole-national-park"
+                  >Nagarhole National Park</a
+                >
+              </li>
+              <li>
+                <a href="publications.html?category=academics">Academics</a>
+              </li>
+              <li><a href="publications.html?category=adcl">ADCL</a></li>
+              <li>
+                <a href="publications.html?category=ecology-environment"
+                  >Ecology &amp; Environment</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </li>
-      <li class="dropdown">
-        <a href="publications.html">Publications</a>
-        <ul class="dropdown-menu">
-          <li><a href="publications.html?category=kspcb">KSPCB</a></li>
-          <li><a href="publications.html?category=karnataka-forest-department">Karnataka Forest Department</a></li>
-          <li><a href="publications.html?category=kali-tiger-reserve">Kali Tiger Reserve</a></li>
-          <li><a href="publications.html?category=nagarhole-national-park">Nagarhole National Park</a></li>
-          <li><a href="publications.html?category=academics">Academics</a></li>
-          <li><a href="publications.html?category=adcl">ADCL</a></li>
-          <li><a href="publications.html?category=ecology-environment">Ecology &amp; Environment</a></li>
-        </ul>
-      </li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="blog.html" class="active">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-</div>
-<div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
-<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-  <div class="drawer-header">
-    <div class="drawer-logo">
-      <span class="logo-name">Srinivasulu IFS</span>
-      <span class="logo-sub">Indian Forest Service</span>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
     </div>
-    <button class="drawer-close" id="drawer-close" aria-label="Close menu">
-      <svg viewBox="0 0 24 24" fill="none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-  </div>
-  <nav class="drawer-nav" aria-label="Mobile navigation">
-    <span class="drawer-section-label">Navigation</span>
-    <a href="index.html"><span class="dot"></span>Home</a>
-    <a href="cv.html"><span class="dot"></span>CV</a>
-    <a href="awards.html"><span class="dot"></span>Honours &amp; Awards</a>
-    <a href="accomplishments.html"><span class="dot"></span>Accomplishments</a>
-    <a href="publications.html"><span class="dot"></span>Publications</a>
-    <a href="videos.html"><span class="dot"></span>Videos</a>
-    <a href="photos.html"><span class="dot"></span>Photos</a>
-    <a href="blog.html" class="active"><span class="dot"></span>Blog</a>
-    <a href="contact.html"><span class="dot"></span>Contact</a>
-  </nav>
-</div>
-
-<div class="page-hero">
-  <div class="hero-content">
-    <span class="hero-badge reveal">Recognition</span>
-    <h1 class="reveal">Honours &amp;<br>Awards</h1>
-    <p class="reveal">A distinguished career recognized by national and international bodies — from Guinness World Records to state honours.</p>
-  </div>
-  <div class="hero-decoration reveal">
-    <div class="deco-ring-lg"></div>
-    <div class="deco-ring-md"></div>
-    <div class="deco-star">
-      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="100,10 120,76 190,76 134,118 154,185 100,145 46,185 66,118 10,76 80,76" fill="none" stroke="#D97A5C" stroke-width="3" opacity="0.7"/>
-        <polygon points="100,30 116,76 166,76 126,104 140,152 100,124 60,152 74,104 34,76 84,76" fill="rgba(244,228,193,0.6)" stroke="#0F4C5C" stroke-width="1.5"/>
-        <circle cx="100" cy="100" r="22" fill="none" stroke="#1E7F6E" stroke-width="2"/>
-        <circle cx="100" cy="100" r="8" fill="#D97A5C"/>
-      </svg>
-    </div>
-    <div class="deco-dot-1"></div>
-    <div class="deco-dot-2"></div>
-    <div class="deco-dot-3"></div>
-    <div class="deco-bar-1"></div>
-    <div class="deco-bar-2"></div>
-  </div>
-</div>
-
-<section class="awards-section">
-  <div class="container">
-
-    <!-- 2016 State Environment Award -->
-    <div class="award-item reveal">
-      <div class="year-badge">2016</div>
-      <div class="award-card">
-        <div class="award-card-inner">
-          <div>
-            <span class="award-badge-label">State Honour</span>
-            <h3 class="award-title">State Environment Award</h3>
-            <p class="award-desc">Conferred by the Honorable Chief Minister of Karnataka on June 5th, World Environment Day, in recognition of outstanding contributions to environmental protection and forest conservation.</p>
-          </div>
-          <img src="https://static.wixstatic.com/media/f453f3_63e7b89d3aba4f5e9c7fc13f142fe459~mv2.png" alt="State Environment Award" class="award-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1509803874385-db7c23652552?w=200'">
+    <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation menu"
+    >
+      <div class="drawer-header">
+        <div class="drawer-logo">
+          <span class="logo-name">Srinivasulu IFS</span>
+          <span class="logo-sub">Indian Forest Service</span>
         </div>
+        <button class="drawer-close" id="drawer-close" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <span class="drawer-section-label">Navigation</span>
+        <a href="index.html"><span class="dot"></span>Home</a>
+        <a href="cv.html"><span class="dot"></span>CV</a>
+        <a href="awards.html"><span class="dot"></span>Honours &amp; Awards</a>
+        <a href="accomplishments.html"
+          ><span class="dot"></span>Accomplishments</a
+        >
+        <a href="publications.html"><span class="dot"></span>Publications</a>
+        <a href="videos.html"><span class="dot"></span>Videos</a>
+        <a href="photos.html"><span class="dot"></span>Photos</a>
+        <a href="blog.html" class="active"><span class="dot"></span>Blog</a>
+        <a href="contact.html"><span class="dot"></span>Contact</a>
+      </nav>
+    </div>
+
+    <!-- ══════════════ DIVIDER ══════════════ -->
+    <div class="section-divider">
+      <div class="section-divider-inner">
+        <span class="dash"></span>
+        <span>The Register of Honours</span>
+        <span class="dash"></span>
       </div>
     </div>
+    <!-- ══════════════ AWARDS LIST ══════════════ -->
+    <section class="awards-section">
+      <div class="awards-inner">
+        <div class="awards-section-header reveal">
+          <div class="marker">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <circle cx="12" cy="8" r="6" />
+              <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12" />
+            </svg>
+            <span>Inscribed in the Record</span>
+          </div>
+          <h2>Honours conferred <em>over the years</em>.</h2>
+          <p>
+            Recognitions awarded by national and international bodies for
+            outstanding service, innovation, and contribution to environmental
+            governance.
+          </p>
+        </div>
 
-    <!-- 2016 FKCCI Tourism Award -->
-    <div class="award-item reveal">
-      <div class="year-badge">2016</div>
-      <div class="award-card">
-        <div class="award-card-inner">
-          <div>
-            <span class="award-badge-label">Tourism</span>
-            <h3 class="award-title">Best Tourism Award by FKCCI</h3>
-            <p class="award-desc">Conferred for outstanding activities promoting tourism in Dandeli. Presented by the Honorable Tourism Minister for transforming Dandeli into a premier eco-tourism destination.</p>
+        <!-- ── 2016 ── -->
+        <div class="year-section-label reveal">
+          <div class="year-section-label-num">2016</div>
+          <div class="year-section-label-text">
+            <span class="meta">— First Cluster</span>
+            <span class="count">Five honours conferred</span>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- 2016 Holiday IQ & Chuck McDougal -->
-    <div class="award-item reveal">
-      <div class="year-badge">2016</div>
-      <div class="award-card">
-        <div class="award-card-inner">
-          <div>
-            <span class="award-badge-label">Wildlife Tourism</span>
-            <h3 class="award-title">Holiday IQ Award &amp; Dr. Chuck McDougal Memorial Award</h3>
-            <p class="award-desc">Runner-up for the Dr. Chuck McDougal Memorial Award (TOFT Wildlife Tourism Awards) for creating a visitor-friendly wildlife destination. Holiday IQ Award for best tourism and hospitality at Kali Tiger Reserve.</p>
+        <article class="award-entry reveal">
+          <div class="award-year-col">
+            <div class="award-year-seal">2016</div>
           </div>
-          <img src="https://static.wixstatic.com/media/f453f3_2ed3fdf647294ccb9ad483fbfc1a04e3~mv2.jpeg" alt="Holiday IQ Award" class="award-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1477764250597-debb9487a2f4?w=200'">
+          <div class="award-content">
+            <div class="award-inner">
+              <div>
+                <div class="award-badge">State Honour</div>
+                <h3 class="award-title">State Environment Award</h3>
+                <p class="award-desc">
+                  Conferred by the Honourable Chief Minister of Karnataka on
+                  June 5th, World Environment Day, in recognition of outstanding
+                  contributions to environmental protection and forest
+                  conservation.
+                </p>
+              </div>
+              <div class="award-img-wrap">
+                <img
+                  src="https://static.wixstatic.com/media/f453f3_63e7b89d3aba4f5e9c7fc13f142fe459~mv2.png"
+                  alt="State Environment Award"
+                  class="award-img"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1509803874385-db7c23652552?w=300'
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="award-entry reveal">
+          <div class="award-year-col">
+            <div class="award-year-seal">2016</div>
+          </div>
+          <div class="award-content">
+            <div class="award-inner">
+              <div>
+                <div class="award-badge">Tourism</div>
+                <h3 class="award-title">Best Tourism Award &mdash; FKCCI</h3>
+                <p class="award-desc">
+                  Conferred for outstanding activities promoting tourism in
+                  Dandeli. Presented by the Honourable Tourism Minister for
+                  transforming Dandeli into a premier eco-tourism destination.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="award-entry reveal">
+          <div class="award-year-col">
+            <div class="award-year-seal">2016</div>
+          </div>
+          <div class="award-content">
+            <div class="award-inner">
+              <div>
+                <div class="award-badge">Wildlife Tourism</div>
+                <h3 class="award-title">
+                  Holiday IQ Award &amp; Dr. Chuck McDougal Memorial Award
+                </h3>
+                <p class="award-desc">
+                  Runner-up for the Dr. Chuck McDougal Memorial Award (TOFT
+                  Wildlife Tourism Awards) for creating a visitor-friendly
+                  wildlife destination. Holiday IQ Award for best tourism and
+                  hospitality at Kali Tiger Reserve.
+                </p>
+              </div>
+              <div class="award-img-wrap">
+                <img
+                  src="https://static.wixstatic.com/media/f453f3_2ed3fdf647294ccb9ad483fbfc1a04e3~mv2.jpeg"
+                  alt="Holiday IQ Award"
+                  class="award-img"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1477764250597-debb9487a2f4?w=300'
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="award-entry reveal">
+          <div class="award-year-col">
+            <div class="award-year-seal">2016</div>
+          </div>
+          <div class="award-content">
+            <div class="award-inner">
+              <div>
+                <div class="award-badge">International</div>
+                <h3 class="award-title">
+                  Shanthi Samsara — PM Modi, COP21 Paris
+                </h3>
+                <p class="award-desc">
+                  Documentary footage on climate change and clean energy
+                  featured by Hon'ble Prime Minister Narendra Modi at the COP 21
+                  Summit in Paris — bringing global attention to India's forest
+                  conservation efforts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="award-entry reveal">
+          <div class="award-year-col">
+            <div class="award-year-seal">2016</div>
+          </div>
+          <div class="award-content">
+            <div class="award-inner">
+              <div>
+                <div class="award-badge">Film Production</div>
+                <h3 class="award-title">Short Movie Production — ADCL</h3>
+                <p class="award-desc">
+                  Produced a short movie documenting the inspiring success
+                  stories of the Dr. B.R. Ambedkar Development Corporation,
+                  showcasing the impact of welfare programmes on Dalit
+                  communities across Karnataka.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── 2017 ── -->
+        <div class="year-section-label reveal">
+          <div class="year-section-label-num">2017</div>
+          <div class="year-section-label-text">
+            <span class="meta">— Technology Milestone</span>
+            <span class="count">One honour conferred</span>
+          </div>
+        </div>
+
+        <article class="award-entry reveal">
+          <div class="award-year-col">
+            <div class="award-year-seal">2017</div>
+          </div>
+          <div class="award-content">
+            <div class="award-inner">
+              <div>
+                <div class="award-badge">Technology</div>
+                <h3 class="award-title">
+                  Mobile App &ldquo;Kalyana&rdquo; Launch
+                </h3>
+                <p class="award-desc">
+                  Developed the "Kalyana" mobile application for the Social
+                  Welfare Department, Government of Karnataka. Launched by Shri
+                  Rahul Gandhi Ji on 21st July 2017 at the Dr. B.R. Ambedkar
+                  International Conference, Bangalore.
+                </p>
+              </div>
+              <div class="award-img-wrap">
+                <img
+                  src="https://static.wixstatic.com/media/f453f3_5ffb8b42dbc342268f3c6c1d53ef75ef~mv2.png"
+                  alt="Kalyana App"
+                  class="award-img"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300'
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── 2021 ── -->
+        <div class="year-section-label reveal">
+          <div class="year-section-label-num">2021</div>
+          <div class="year-section-label-text">
+            <span class="meta">— Records &amp; Recognition</span>
+            <span class="count">One honour conferred</span>
+          </div>
+        </div>
+
+        <article class="award-entry reveal">
+          <div class="award-year-col">
+            <div class="award-year-seal">2021</div>
+          </div>
+          <div class="award-content">
+            <div class="award-inner">
+              <div>
+                <div class="award-badge">Record</div>
+                <h3 class="award-title">Asia Book of Records</h3>
+                <p class="award-desc">
+                  Asia Book of Records recognition for the largest number of
+                  eco-friendly Turmeric Ganesh idols — a landmark KSPCB
+                  initiative for an eco-friendly Ganesh festival in 2021,
+                  promoting environmental consciousness.
+                </p>
+              </div>
+              <div class="award-img-wrap">
+                <img
+                  src="https://static.wixstatic.com/media/f453f3_fa180d29f02040d38e4a3de81fc2c072~mv2.jpeg"
+                  alt="Asia Book of Records"
+                  class="award-img"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=300'
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ── 2022 ── -->
+        <div class="year-section-label reveal">
+          <div class="year-section-label-num">2022</div>
+          <div class="year-section-label-text">
+            <span class="meta">— A Landmark Year</span>
+            <span class="count">Three honours conferred</span>
+          </div>
+        </div>
+
+        <article class="award-entry reveal">
+          <div class="award-year-col">
+            <div class="award-year-seal">2022</div>
+          </div>
+          <div class="award-content">
+            <div class="award-inner">
+              <div>
+                <div class="award-badge">Environment</div>
+                <h3 class="award-title">
+                  H. V. MuniswamyGowda Environment Award
+                  <small>ಹೆಚ್. ವಿ. ಮುನಿಸ್ವಾಮಿಗೌಡ ಪರಿಸರ ಪ್ರಶಸ್ತಿ</small>
+                </h3>
+                <p class="award-desc">
+                  Awarded for efficient performance and significant
+                  contributions to environmental protection in Karnataka.
+                </p>
+              </div>
+              <div class="award-img-wrap">
+                <img
+                  src="https://static.wixstatic.com/media/f453f3_444d4708b98a4f6d93ef80a1940ffabf~mv2.jpg"
+                  alt="HV MuniswamyGowda Award"
+                  class="award-img"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1509803874385-db7c23652552?w=300'
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="award-entry reveal">
+          <div class="award-year-col">
+            <div class="award-year-seal">2022</div>
+          </div>
+          <div class="award-content">
+            <div class="award-inner">
+              <div>
+                <div class="award-badge">Guinness World Record</div>
+                <h3 class="award-title">
+                  Largest Online Photo Album of Handmade Sculpture
+                </h3>
+                <p class="award-desc">
+                  Guinness World Record for the largest online photo album
+                  featuring handmade sculptures, achieved through a mass
+                  participation initiative under KSPCB.
+                </p>
+              </div>
+              <div class="award-img-wrap">
+                <img
+                  src="https://static.wixstatic.com/media/f453f3_e8dde73dfa6a433e83d414b252269fa5~mv2.jpg"
+                  alt="Guinness World Record Photo Album"
+                  class="award-img"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=300'
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="award-entry reveal">
+          <div class="award-year-col">
+            <div class="award-year-seal">2022</div>
+          </div>
+          <div class="award-content">
+            <div class="award-inner">
+              <div>
+                <div class="award-badge">Guinness World Record</div>
+                <h3 class="award-title">
+                  Most People Sculpting with Modelling Clay Simultaneously
+                </h3>
+                <p class="award-desc">
+                  Guinness World Record for the most people sculpting with
+                  modelling clay simultaneously — a landmark community
+                  engagement achievement under KSPCB's eco-awareness programme.
+                </p>
+              </div>
+              <div class="award-img-wrap">
+                <img
+                  src="https://static.wixstatic.com/media/f453f3_e32a98664393492185d74523a254165e~mv2.jpg"
+                  alt="Guinness World Record Sculpting"
+                  class="award-img"
+                  loading="lazy"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=300'
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div>
+            <div class="footer-logo">Srinivasulu IFS</div>
+            <div class="footer-tagline">
+              Principal Secretary, Ecology &amp; Environment · Karnataka
+            </div>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Overview</a><a href="cv.html">CV</a
+            ><a href="awards.html">Awards</a>
+            <a href="accomplishments.html">Accomplishments</a
+            ><a href="publications.html">Publications</a>
+            <a href="videos.html">Videos</a><a href="photos.html">Photos</a
+            ><a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a
+            href="https://www.youtube.com/@srinivasifs4051"
+            target="_blank"
+            class="social-btn"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8 0 12 0 12s0 4 .5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"
+              />
+            </svg>
+            YouTube
+          </a>
+          <a
+            href="https://www.facebook.com/srinivasulu.krishnamurthy"
+            target="_blank"
+            class="social-btn"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.4c0 .7.6 1.3 1.3 1.3h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1 1.9-4.8 4.7-4.8 1.3 0 2.5.1 2.8.1v3.3h-1.9c-1.5 0-1.8.7-1.8 1.8v2.3h3.6l-.5 3.6h-3.1V24h6.1c.7 0 1.3-.6 1.3-1.3V1.3c0-.7-.6-1.3-1.3-1.3z"
+              />
+            </svg>
+            Facebook
+          </a>
+          <a
+            href="https://www.instagram.com/sriniforest/"
+            target="_blank"
+            class="social-btn"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+            </svg>
+            Instagram
+          </a>
+        </div>
+        <div class="footer-bottom">
+          © 2025 Srinivasulu IFS — Maintained by Vanalok
         </div>
       </div>
-    </div>
-
-    <!-- 2016 COP21 -->
-    <div class="award-item reveal">
-      <div class="year-badge">2016</div>
-      <div class="award-card">
-        <div class="award-card-inner">
-          <div>
-            <span class="award-badge-label">International</span>
-            <h3 class="award-title">Shanthi Samsara — PM Modi, COP21 Paris</h3>
-            <p class="award-desc">Documentary footage on climate change and clean energy featured by Hon'ble Prime Minister Narendra Modi at the COP 21 Summit in Paris — bringing global attention to India's forest conservation efforts.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2016 Short Movie ADCL -->
-    <div class="award-item reveal">
-      <div class="year-badge">2016</div>
-      <div class="award-card">
-        <div class="award-card-inner">
-          <div>
-            <span class="award-badge-label">Film Production</span>
-            <h3 class="award-title">Short Movie Production — ADCL</h3>
-            <p class="award-desc">Produced a short movie documenting the inspiring success stories of the Dr. B.R. Ambedkar Development Corporation, showcasing the impact of welfare programmes on Dalit communities across Karnataka.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 2017 Kalyana App -->
-    <div class="award-item reveal">
-      <div class="year-badge">2017</div>
-      <div class="award-card">
-        <div class="award-card-inner">
-          <div>
-            <span class="award-badge-label">Technology</span>
-            <h3 class="award-title">Mobile App "Kalyana" Launch</h3>
-            <p class="award-desc">Developed the "Kalyana" mobile application for the Social Welfare Department, Government of Karnataka. Launched by Shri Rahul Gandhi Ji on 21st July 2017 at the Dr. B.R. Ambedkar International Conference, Bangalore.</p>
-          </div>
-          <img src="https://static.wixstatic.com/media/f453f3_5ffb8b42dbc342268f3c6c1d53ef75ef~mv2.png" alt="Kalyana App" class="award-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=200'">
-        </div>
-      </div>
-    </div>
-
-    <!-- 2021 Asia Book of Records -->
-    <div class="award-item reveal">
-      <div class="year-badge">2021</div>
-      <div class="award-card">
-        <div class="award-card-inner">
-          <div>
-            <span class="award-badge-label">Record</span>
-            <h3 class="award-title">Asia Book of Records</h3>
-            <p class="award-desc">Asia Book of Records recognition for the largest number of eco-friendly Turmeric Ganesh idols — a landmark KSPCB initiative for an eco-friendly Ganesh festival in 2021, promoting environmental consciousness.</p>
-          </div>
-          <img src="https://static.wixstatic.com/media/f453f3_fa180d29f02040d38e4a3de81fc2c072~mv2.jpeg" alt="Asia Book of Records" class="award-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=200'">
-        </div>
-      </div>
-    </div>
-
-    <!-- 2022 HV MuniswamyGowda -->
-    <div class="award-item reveal">
-      <div class="year-badge">2022</div>
-      <div class="award-card">
-        <div class="award-card-inner">
-          <div>
-            <span class="award-badge-label">Environment</span>
-            <h3 class="award-title">H. V. MuniswamyGowda Environment Award<br><small style="font-size:.85rem;font-weight:400;">ಹೆಚ್. ವಿ. ಮುನಿಸ್ವಾಮಿಗೌಡ ಪರಿಸರ ಪ್ರಶಸ್ತಿ</small></h3>
-            <p class="award-desc">Awarded for efficient performance and significant contributions to environmental protection in Karnataka.</p>
-          </div>
-          <img src="https://static.wixstatic.com/media/f453f3_444d4708b98a4f6d93ef80a1940ffabf~mv2.jpg" alt="HV MuniswamyGowda Award" class="award-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1509803874385-db7c23652552?w=200'">
-        </div>
-      </div>
-    </div>
-
-    <!-- 2022 Guinness Photo Album -->
-    <div class="award-item reveal">
-      <div class="year-badge">2022</div>
-      <div class="award-card">
-        <div class="award-card-inner">
-          <div>
-            <span class="award-badge-label">Guinness World Record</span>
-            <h3 class="award-title">Guinness World Record: Largest Online Photo Album of Handmade Sculpture</h3>
-            <p class="award-desc">Guinness World Record for the largest online photo album featuring handmade sculptures, achieved through a mass participation initiative under KSPCB.</p>
-          </div>
-          <img src="https://static.wixstatic.com/media/f453f3_e8dde73dfa6a433e83d414b252269fa5~mv2.jpg" alt="Guinness World Record Photo Album" class="award-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=200'">
-        </div>
-      </div>
-    </div>
-
-    <!-- 2022 Guinness Sculpting -->
-    <div class="award-item reveal">
-      <div class="year-badge">2022</div>
-      <div class="award-card">
-        <div class="award-card-inner">
-          <div>
-            <span class="award-badge-label">Guinness World Record</span>
-            <h3 class="award-title">Guinness World Record: Most People Sculpting with Modelling Clay Simultaneously</h3>
-            <p class="award-desc">Guinness World Record for the most people sculpting with modelling clay simultaneously — a landmark community engagement achievement under KSPCB's eco-awareness programme.</p>
-          </div>
-          <img src="https://static.wixstatic.com/media/f453f3_e32a98664393492185d74523a254165e~mv2.jpg" alt="Guinness World Record Sculpting" class="award-img" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?w=200'">
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <div class="footer-logo">Srinivasalu IFS</div>
-        <div class="footer-tagline">Principal Secretary, Ecology &amp; Environment · Karnataka</div>
-      </div>
-      <div class="footer-links">
-        <a href="index.html">Overview</a><a href="cv.html">CV</a><a href="awards.html">Awards</a>
-        <a href="accomplishments.html">Accomplishments</a><a href="publications.html">Publications</a>
-        <a href="videos.html">Videos</a><a href="photos.html">Photos</a><a href="contact.html">Contact</a>
-      </div>
-    </div>
-    <div class="footer-social">
-      <a href="https://www.youtube.com/@srinivasifs4051" target="_blank" class="social-btn">▶ YouTube</a>
-      <a href="https://www.facebook.com/srinivasulu.krishnamurthy" target="_blank" class="social-btn">f Facebook</a>
-      <a href="https://www.instagram.com/sriniforest/" target="_blank" class="social-btn">◎ Instagram</a>
-    </div>
-    <div class="footer-bottom">© 2025 Srinivasulu IFS — Maintained by Vanalok</div>
-  </div>
-</footer>
-<script src="main.js"></script>
-</body>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>

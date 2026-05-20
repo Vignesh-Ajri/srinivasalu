@@ -308,6 +308,8 @@ section[style*="background:#F9F3E8"] {
 section[style*="background-color: #72b0da"] {
   background: linear-gradient(135deg, #1a4a6b 0%, #0d3d20 50%, #1a6b3c 100%) !important;
   position: relative;
+  border-top: 4px solid #d4a017;
+  border-bottom: 4px solid #d4a017;
   overflow: hidden;
 }
 section[style*="background-color: #72b0da"]::before {
@@ -315,7 +317,7 @@ section[style*="background-color: #72b0da"]::before {
   position: absolute;
   inset: 0;
   background: url('https://images.unsplash.com/photo-1504173010664-32509aeebb62?w=1600&q=60') center/cover;
-  opacity: 0.08;
+  opacity: 0.48;
 }
 section[style*="background-color: #72b0da"] .section-title { color: #f5c842 !important; }
 .tl-card {
@@ -327,7 +329,7 @@ section[style*="background-color: #72b0da"] .section-title { color: #f5c842 !imp
 .tl-year { color: #e07b39 !important; font-weight: 800 !important; }
 .tl-role { color: #0d3d20 !important; }
 .slider-btn {
-  background: linear-gradient(135deg, #d4a017, #f5c842) !important;
+  
   color: #0d3d20 !important;
   border: none !important;
   font-weight: 800 !important;
@@ -354,6 +356,7 @@ section[style*="background-color: #8d5666"] {
   background: linear-gradient(135deg, #6b2035 0%, #8d3a50 30%, #1a6b3c 100%) !important;
   position: relative;
   overflow: hidden;
+  border-top: 4px solid #17d436;
 }
 section[style*="background-color: #8d5666"]::before {
   content: '';
@@ -459,7 +462,7 @@ section[style*="background-color: #8d5666"] .grid-3 { position: relative; z-inde
 .photo-grid{columns:3;gap:.75rem;}
 .photo-grid img{width:100%;margin-bottom:.75rem;border-radius:var(--radius-sm);break-inside:avoid;}
 /* CTA strip */
-.cta-strip{background:var(--teal-deep);padding:4rem 5vw;text-align:center;color:var(--white);}
+.cta-strip{background:var(--teal-deep);padding:4rem 5vw;text-align:center;color:var(--white);border-top: 4px solid #d4a017;border-bottom: 4px solid #d4a017;}
 .cta-strip h2{font-family:'Playfair Display',serif;color:var(--sand);font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:.75rem;}
 .cta-strip a.mailto{display:block;color:rgba(255,255,255,.8);font-size:1rem;margin-bottom:1.5rem;}
 /* Responsive */

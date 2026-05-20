@@ -7,291 +7,512 @@
 <meta name="description" content="Documents, reports and publications by Srinivasulu IFS across departments including KSPCB, KFD, and Kali Tiger Reserve.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..900,30..100,0..1&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="blog-shared.css">
 <style>
-  /* ── PAGE HERO ─────────────────────────────────────── */
+/* ═══════════════════════════════════════════════════════════
+   PUBLICATIONS — KARNATAKA FIELD ARCHIVE
+   Aesthetic: Library/archive — kingfisher blue + parchment
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  --pub-ink:        #0a2540;
+  --pub-kingfisher: #1B5E7F;
+  --pub-deep-blue:  #143656;
+  --pub-parchment:  #f4ecd8;
+  --pub-parchment-2:#ebe0c5;
+  --pub-paper:      #fbf8f0;
+  --pub-rust:       #a64b2a;
+  --pub-gold:       #b8965e;
+  --pub-charcoal:   #1a1a1a;
+  --pub-shadow:     rgba(10, 37, 64, 0.12);
+}
+
+/* override global body to keep cohesive */
+body {
+  font-family: 'Newsreader', Georgia, serif;
+  background: var(--pub-paper);
+  color: #2a2a2a;
+  font-weight: 380;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
+  letter-spacing: -0.015em;
+  color: var(--pub-ink);
+}
+
+/* ── PAGE HERO ─────────────────────────────────────────── */
 .page-hero {
   position: relative;
-  background: var(--cream);
-  background-color:var(--sdg-6);
-  padding: 9rem 5vw 5rem;
+  background: var(--pub-deep-blue);
+  background-image:
+    radial-gradient(ellipse at 20% 30%, rgba(184,150,94,0.18) 0%, transparent 45%),
+    radial-gradient(ellipse at 80% 70%, rgba(27,94,127,0.5) 0%, transparent 50%),
+    linear-gradient(135deg, var(--pub-deep-blue) 0%, var(--pub-ink) 100%);
+  padding: 9rem 5vw 7rem;
   overflow: hidden;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  margin-bottom: 2rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  margin-bottom: 0;
+  border-radius: 0;
+  display: block;
+  color: #fff;
+  border-bottom: 1px solid rgba(184,150,94,0.3);
 }
 
-/* Content */
-.hero-content {
+/* Topographic line pattern overlay */
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg,
+      transparent 0,
+      transparent 38px,
+      rgba(184,150,94,0.06) 38px,
+      rgba(184,150,94,0.06) 39px),
+    repeating-linear-gradient(90deg,
+      transparent 0,
+      transparent 38px,
+      rgba(184,150,94,0.06) 38px,
+      rgba(184,150,94,0.06) 39px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Subtle noise texture */
+.page-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.7 0 0 0 0 0.6 0 0 0 0 0.4 0 0 0 0.4 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-grid {
   position: relative;
   z-index: 5;
-  max-width: 760px;
-  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: end;
 }
-/* no use */
-.hero-badge { 
-  display: inline-block;
-  background: rgba(217, 122, 92, 0.1);
-  color: var(--terracotta);
-  padding: 0.45rem 1.2rem;
-  border-radius: 30px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 2px;
+
+.hero-text { max-width: 720px; }
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  margin-bottom: 1.4rem;
-  border: 1px solid rgba(217, 122, 92, 0.2);
+  color: var(--pub-gold);
+  margin-bottom: 1.5rem;
+}
+
+.hero-eyebrow-line {
+  width: 48px;
+  height: 1px;
+  background: var(--pub-gold);
+  opacity: 0.6;
 }
 
 .page-hero h1 {
-  font-size: clamp(3rem, 6vw, 5rem);
-  color: rgb(65, 65, 65);
-  margin-bottom: 1rem;
-  line-height: 1.1;
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: "opsz" 144, "wght" 380, "SOFT" 100, "WONK" 1;
+  font-size: clamp(3.4rem, 7vw, 6.2rem);
+  font-weight: 380;
+  color: #fff;
+  line-height: 0.92;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.035em;
 }
 
-.page-hero p {
-  color: white;
-  max-width: 650px;
-  margin: 0 auto;
-  font-size: 1.05rem;
-  line-height: 1.8;
+.page-hero h1 .italic-word {
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "wght" 380, "SOFT" 100, "WONK" 1;
+  color: var(--pub-gold);
+  font-weight: 400;
 }
 
-/* ── Decorative Background ─────────────────────────── */
-.hero-decoration {
+.hero-lede {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.82);
+  max-width: 580px;
+  font-weight: 380;
+}
+
+/* Hero metadata block — looks like a library card */
+.hero-meta-card {
+  background: rgba(245, 239, 224, 0.06);
+  border: 1px solid rgba(184,150,94,0.35);
+  padding: 1.5rem 1.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.05em;
+  min-width: 260px;
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+.hero-meta-card::before {
+  content: '';
   position: absolute;
-  inset: 0;
-  z-index: 1;
+  top: -1px; left: -1px;
+  width: 14px; height: 14px;
+  border-top: 1px solid var(--pub-gold);
+  border-left: 1px solid var(--pub-gold);
+}
+.hero-meta-card::after {
+  content: '';
+  position: absolute;
+  bottom: -1px; right: -1px;
+  width: 14px; height: 14px;
+  border-bottom: 1px solid var(--pub-gold);
+  border-right: 1px solid var(--pub-gold);
+}
+
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px dotted rgba(184,150,94,0.25);
+}
+.meta-row:last-child { border: none; }
+.meta-label { color: rgba(184,150,94,0.85); text-transform: uppercase; }
+.meta-value { color: #fff; font-weight: 500; }
+
+/* Decorative book icon SVG */
+.hero-book-deco {
+  position: absolute;
+  right: 4vw;
+  top: 8rem;
+  width: 180px;
+  height: 180px;
+  opacity: 0.16;
+  z-index: 2;
   pointer-events: none;
 }
 
-/* Large background circle */
-.hero-decoration::before {
-  content: '';
-  position: absolute;
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  border: 2px solid rgba(15, 76, 92, 0.08);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Books */
-.deco-book {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-/* Book 1 */
-.deco-book-1 {
-  width: 110px;
-  height: 145px;
-  background: rgba(15, 76, 92, 0.14);
-  transform: translate(-110px, -50%) rotate(-10deg);
-}
-
-/* Book 2 */
-.deco-book-2 {
-  width: 110px;
-  height: 150px;
-  background: rgba(244, 228, 193, 0.95);
-  border: 2px solid rgba(15, 76, 92, 0.1);
-  transform: translate(-20px, -50%) rotate(2deg);
-}
-
-/* Book 3 */
-.deco-book-3 {
-  width: 110px;
-  height: 145px;
-  background: rgba(217, 122, 92, 0.14);
-  transform: translate(70px, -50%) rotate(10deg);
-}
-
-/* Spine */
-.deco-book::before {
-  content: '';
-  position: absolute;
-  left: 14px;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: rgba(255, 255, 255, 0.35);
-}
-
-/* Text lines */
-.deco-book::after {
-  content: '';
-  position: absolute;
-  left: 28px;
-  right: 18px;
-  top: 34px;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.45);
-  box-shadow:
-    0 12px 0 rgba(255, 255, 255, 0.35),
-    0 24px 0 rgba(255, 255, 255, 0.25);
-}
-
-/* Floating dots */
-.deco-dot-float-1,
-.deco-dot-float-2 {
-  position: absolute;
-  border-radius: 50%;
-}
-
-.deco-dot-float-1 {
-  width: 14px;
-  height: 14px;
-  background: rgba(30, 127, 110, 0.75);
-  top: 28%;
-  left: 58%;
-}
-
-.deco-dot-float-2 {
-  width: 10px;
-  height: 10px;
-  background: rgba(217, 122, 92, 0.75);
-  bottom: 28%;
-  left: 38%;
-}
-
-/* Decorative line */
-.deco-dash {
-  position: absolute;
-  width: 70px;
-  height: 6px;
-  background: rgba(217, 122, 92, 0.18);
-  border-radius: 20px;
-  bottom: 30%;
-  left: 30%;
-  transform: rotate(-18deg);
-}
-
-/* ── Mobile ────────────────────────────────────────── */
 @media (max-width: 900px) {
-  .page-hero {
-    padding: 8rem 5vw 4rem;
-  }
-
-  .page-hero h1 {
-    font-size: 3rem;
-  }
-
-  .hero-decoration::before {
-    width: 180px;
-    height: 180px;
-  }
-
-  .deco-book-1,
-  .deco-book-2,
-  .deco-book-3 {
-    width: 80px;
-    height: 110px;
-  }
-
-  .deco-book-1 {
-    transform: translate(-80px, -50%) rotate(-10deg);
-  }
-
-  .deco-book-2 {
-    transform: translate(-10px, -50%) rotate(2deg);
-  }
-
-  .deco-book-3 {
-    transform: translate(60px, -50%) rotate(10deg);
-  }
+  .page-hero { padding: 7.5rem 5vw 4.5rem; }
+  .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-meta-card { min-width: auto; width: 100%; }
+  .hero-book-deco { display: none; }
 }
 
-/* ── Cards Section ─────────────────────────────────── */
-.cards-section {
-  padding: 5rem 0;
-  background: var(--cream);
+/* ── ARCHIVE BAR — section divider ─────────────────────── */
+.archive-bar {
+  background: var(--pub-paper);
+  border-bottom: 1px solid rgba(20, 54, 86, 0.12);
+  padding: 1.25rem 5vw;
 }
 
-.dept-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-}
-
-.dept-card {
-  background: var(--white);
-  border-radius: var(--radius-md);
-  box-shadow: var(--shadow-md);
-  padding: 2rem 1.5rem;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+.archive-bar-inner {
+  max-width: 1240px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--pub-kingfisher);
+}
+
+.archive-bar-left,
+.archive-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.archive-divider-dots {
+  display: inline-flex;
+  gap: 4px;
+}
+.archive-divider-dots span {
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--pub-gold);
+}
+
+/* ── DEPARTMENT GRID ─────────────────────────────────── */
+.cards-section {
+  padding: 6rem 5vw 5rem;
+  background: var(--pub-paper);
   position: relative;
   overflow: hidden;
 }
 
-.dept-card::after {
-  content: '→';
+.cards-section::before {
+  content: '';
   position: absolute;
-  bottom: 1rem;
-  right: 1.25rem;
-  color: var(--teal-mid);
-  font-size: 1.1rem;
-  opacity: 0;
-  transform: translateX(-6px);
-  transition: 0.3s;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%231B5E7F' stroke-width='0.5' opacity='0.05'%3E%3Cpath d='M0 40h80M40 0v80'/%3E%3Ccircle cx='40' cy='40' r='15'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.cards-inner {
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.section-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: end;
+  margin-bottom: 3.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(20, 54, 86, 0.15);
+}
+
+.section-header-left { max-width: 680px; }
+
+.cards-inner h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: "opsz" 144, "wght" 420, "SOFT" 60;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+  margin-bottom: 0.85rem;
+  color: var(--pub-ink);
+}
+
+.cards-inner h2 em {
+  font-style: italic;
+  color: var(--pub-rust);
+  font-variation-settings: "opsz" 144, "wght" 420, "SOFT" 60, "WONK" 1;
+}
+
+.section-sub {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 1.05rem;
+  color: #4a5060;
+  line-height: 1.65;
+  font-weight: 380;
+}
+
+.dept-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--pub-kingfisher);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: right;
+}
+.dept-count strong {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--pub-ink);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.2rem;
+}
+
+/* The card grid */
+.dept-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  gap: 1.5rem;
+}
+
+.dept-card {
+  background: var(--pub-parchment);
+  border: 1px solid rgba(20, 54, 86, 0.12);
+  padding: 1.75rem 1.5rem 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+/* Decorative spine line */
+.dept-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--pub-kingfisher);
+  transition: width 0.4s ease;
+}
+
+.dept-card::after {
+  content: '';
+  position: absolute;
+  top: 1rem; right: 1rem;
+  width: 30px; height: 1px;
+  background: var(--pub-rust);
+  transition: width 0.3s ease;
 }
 
 .dept-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  background: var(--pub-parchment-2);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px -10px var(--pub-shadow);
+}
+.dept-card:hover::before { width: 6px; }
+.dept-card:hover::after { width: 50px; background: var(--pub-kingfisher); }
+
+.dept-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
-.dept-card:hover::after {
-  opacity: 1;
-  transform: translateX(0);
+.dept-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--pub-kingfisher);
+  letter-spacing: 0.12em;
+  opacity: 0.85;
 }
 
 .dept-logo {
-  width: 80px;
-  height: 80px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.06));
 }
 
 .dept-card h3 {
-  font-size: 1rem;
-  color: var(--charcoal);
-  margin: 0;
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: "opsz" 24, "wght" 480, "SOFT" 50;
+  font-size: 1.18rem;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+  color: var(--pub-ink);
+  letter-spacing: -0.01em;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .dept-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.dept-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px dotted rgba(20, 54, 86, 0.2);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--pub-kingfisher);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-@media (max-width: 500px) {
-  .dept-grid {
+.dept-arrow {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: rgba(27, 94, 127, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pub-kingfisher);
+  transition: all 0.3s;
+}
+.dept-card:hover .dept-arrow {
+  background: var(--pub-kingfisher);
+  color: #fff;
+  transform: translateX(3px);
+}
+.dept-arrow svg { width: 12px; height: 12px; }
+
+/* ── BLOG SECTION OVERRIDES ──────────────────────────── */
+#posts {
+  background: var(--pub-parchment) !important;
+  padding-top: 5rem;
+  border-top: 1px solid rgba(20,54,86,0.1);
+}
+
+#posts .section-title,
+#posts h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-variation-settings: "opsz" 144, "wght" 420, "SOFT" 60;
+  color: var(--pub-ink);
+}
+
+#posts .section-subtitle {
+  font-family: 'Newsreader', Georgia, serif;
+  font-weight: 380;
+}
+
+/* ── REVEAL ANIMATION ─────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s cubic-bezier(0.2, 0.8, 0.2, 1),
+              transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger child reveals */
+.dept-grid .dept-card { transition-delay: 0s; }
+.dept-grid .dept-card.visible:nth-child(1) { transition-delay: 0.05s; }
+.dept-grid .dept-card.visible:nth-child(2) { transition-delay: 0.1s; }
+.dept-grid .dept-card.visible:nth-child(3) { transition-delay: 0.15s; }
+.dept-grid .dept-card.visible:nth-child(4) { transition-delay: 0.2s; }
+.dept-grid .dept-card.visible:nth-child(5) { transition-delay: 0.25s; }
+.dept-grid .dept-card.visible:nth-child(6) { transition-delay: 0.3s; }
+.dept-grid .dept-card.visible:nth-child(7) { transition-delay: 0.05s; }
+.dept-grid .dept-card.visible:nth-child(8) { transition-delay: 0.1s; }
+.dept-grid .dept-card.visible:nth-child(9) { transition-delay: 0.15s; }
+.dept-grid .dept-card.visible:nth-child(10){ transition-delay: 0.2s; }
+.dept-grid .dept-card.visible:nth-child(11){ transition-delay: 0.25s; }
+.dept-grid .dept-card.visible:nth-child(12){ transition-delay: 0.3s; }
+
+/* Hero subtle entrance */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page-hero .hero-eyebrow  { animation: heroFadeUp 0.8s ease-out 0.1s both; }
+.page-hero h1             { animation: heroFadeUp 0.9s ease-out 0.25s both; }
+.page-hero .hero-lede     { animation: heroFadeUp 0.9s ease-out 0.45s both; }
+.page-hero .hero-meta-card{ animation: heroFadeUp 0.9s ease-out 0.6s both; }
+
+/* Decorative book floats gently */
+@keyframes floatBook {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50%      { transform: translateY(-8px) rotate(-1deg); }
+}
+.hero-book-deco { animation: floatBook 7s ease-in-out infinite; }
+
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .section-header {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
+  .dept-count { text-align: left; }
+  .archive-bar-inner { font-size: 0.65rem; }
+  .cards-section { padding: 4rem 5vw 3rem; }
 }
 </style>
 </head>
@@ -329,7 +550,7 @@
         </ul>
       </li>
       <li class="dropdown">
-        <a href="publications.html">Publications</a>
+        <a href="publications.html" class="active">Publications</a>
         <ul class="dropdown-menu">
           <li><a href="publications.html?category=kspcb">KSPCB</a></li>
           <li><a href="publications.html?category=karnataka-forest-department">Karnataka Forest Department</a></li>
@@ -342,7 +563,7 @@
       </li>
       <li><a href="videos.html">Videos</a></li>
       <li><a href="photos.html">Photos</a></li>
-      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -367,92 +588,221 @@
     <a href="cv.html"><span class="dot"></span>CV</a>
     <a href="awards.html"><span class="dot"></span>Honours &amp; Awards</a>
     <a href="accomplishments.html"><span class="dot"></span>Accomplishments</a>
-    <a href="publications.html"><span class="dot"></span>Publications</a>
+    <a href="publications.html" class="active"><span class="dot"></span>Publications</a>
     <a href="videos.html"><span class="dot"></span>Videos</a>
     <a href="photos.html"><span class="dot"></span>Photos</a>
-    <a href="blog.html" class="active"><span class="dot"></span>Blog</a>
+    <a href="blog.html"><span class="dot"></span>Blog</a>
     <a href="contact.html"><span class="dot"></span>Contact</a>
   </nav>
 </div>
 
+<!-- ══════════════ HERO ══════════════ -->
 <div class="page-hero">
-  <div class="hero-content">
-    <h1 class="reveal">Research &amp;<br>Publications</h1>
-    <p class="reveal">Documents, reports and official publications spanning ecology, forest governance, wildlife conservation, and environmental policy.</p>
-  </div>
-  <div class="hero-decoration reveal">
-    <div class="deco-book deco-book-1"></div>
-    <div class="deco-book deco-book-2"></div>
-    <div class="deco-book deco-book-3"></div>
-    <div class="deco-dot-float-1"></div>
-    <div class="deco-dot-float-2"></div>
-    <div class="deco-dash"></div>
+  <!-- Decorative book/manuscript SVG -->
+  <svg class="hero-book-deco" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 40 L30 170 L100 155 L170 170 L170 40 L100 25 Z" stroke="#b8965e" stroke-width="1.5"/>
+    <path d="M100 25 L100 155" stroke="#b8965e" stroke-width="1.5"/>
+    <path d="M45 60 L85 55 M45 75 L85 70 M45 90 L85 85 M45 105 L80 100" stroke="#b8965e" stroke-width="1"/>
+    <path d="M115 55 L155 60 M115 70 L155 75 M115 85 L155 90 M120 100 L155 105" stroke="#b8965e" stroke-width="1"/>
+    <circle cx="100" cy="90" r="6" fill="#b8965e"/>
+  </svg>
+
+  <div class="hero-grid">
+    <div class="hero-text">
+      <h1>Research<br>&amp; <span class="italic-word">Publications</span></h1>
+      <p class="hero-lede">Documents, reports and official publications spanning ecology, forest governance, wildlife conservation and environmental policy — drawn from three decades in Karnataka's public service.</p>
+    </div>
+    <aside class="hero-meta-card">
+      <div class="meta-row">
+        <span class="meta-label">Catalogue</span>
+        <span class="meta-value">/ KAR-IFS</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Subjects</span>
+        <span class="meta-value">12</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Updated</span>
+        <span class="meta-value">2026</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Origin</span>
+        <span class="meta-value">Bengaluru</span>
+      </div>
+    </aside>
   </div>
 </div>
 
+<!-- ══════════════ ARCHIVE BAR ══════════════ -->
+<div class="archive-bar">
+  <div class="archive-bar-inner">
+    <div class="archive-bar-left">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M4 4h6a2 2 0 0 1 2 2v14a2 2 0 0 0-2-2H4z"/>
+        <path d="M20 4h-6a2 2 0 0 0-2 2v14a2 2 0 0 1 2-2h6z"/>
+      </svg>
+      <span>Karnataka Forest &amp; Environment Archive</span>
+    </div>
+    <div class="archive-divider-dots">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="archive-bar-right">
+      <span>Browse by Department</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ DEPARTMENT GRID ══════════════ -->
 <section class="cards-section">
-  <div class="container">
-    <div class="reveal"><h2 class="section-title">Browse Publications</h2><p class="section-subtitle">Select a department to explore reports, research papers and official publications.</p></div>
+  <div class="cards-inner">
+    <div class="section-header reveal">
+      <div class="section-header-left">
+        
+        <h2>Browse the <em>collection</em>.</h2>
+        <p class="section-sub">Each department holds its own body of work — research papers, field reports, technical documents, and official publications produced during postings across Karnataka.</p>
+      </div>
+      <div class="dept-count">
+        <strong>12</strong>
+        <span>Subject Areas</span>
+      </div>
+    </div>
+
     <div class="dept-grid">
       <a href="?category=kspcb#posts" class="dept-card reveal">
+        <div class="dept-card-head">
+          <span class="dept-num">No. 01</span>
+        </div>
         <img src="https://static.wixstatic.com/media/f453f3_4ff3108d8f634e838fab62ca56fffc96~mv2.png" alt="KSPCB" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
         <h3>KSPCB</h3>
+        <div class="dept-card-foot">
+          <span>Pollution Control</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=ecology-environment#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 02</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_62dec11c69ed420589562320bf048c11~mv2.png" alt="Ecology & Environment" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
-        <h3>Ecology &amp; Environment (KFD)</h3>
+        <h3>Ecology &amp; Environment</h3>
+        <div class="dept-card-foot">
+          <span>KFD</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=karnataka-forest-department#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 03</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_904ba0f82df1434ea23d4ac439245283~mv2.png" alt="Karnataka Forest Department" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
         <h3>Karnataka Forest Department</h3>
+        <div class="dept-card-foot">
+          <span>Forestry</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=kali-tiger-reserve#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 04</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_b2ee6a64c7b44f0aaf414f6e13d7beee~mv2.png" alt="Kali Tiger Reserve" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1477764250597-debb9487a2f4?w=100'">
         <h3>Kali Tiger Reserve</h3>
+        <div class="dept-card-foot">
+          <span>Wildlife</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=adcl#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 05</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_7f56d5d0a9664f56bc7c74743d1a0f55~mv2.png" alt="ADCL" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
         <h3>ADCL</h3>
+        <div class="dept-card-foot">
+          <span>Welfare</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=academics#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 06</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_8affe3ef7ad64ffea272c0980e8981e2~mv2.png" alt="Academics" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
         <h3>Academics</h3>
+        <div class="dept-card-foot">
+          <span>Research</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=shimoga#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 07</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_441ae3bd6cdd4bf2a0e8842c7993c960~mv2.png" alt="Shimoga" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
         <h3>Shimoga</h3>
+        <div class="dept-card-foot">
+          <span>District</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=nagarhole-national-park#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 08</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_c96fc0f36f1c41d5bf56dbcf33975446~mv2.jpeg" alt="Nagarhole National Park" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1477764250597-debb9487a2f4?w=100'">
         <h3>Nagarhole National Park</h3>
+        <div class="dept-card-foot">
+          <span>National Park</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=kfcsc#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 09</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_e08ab165d103428989198955bb9d62f3~mv2.png" alt="KFCSC" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
         <h3>KFCSC</h3>
+        <div class="dept-card-foot">
+          <span>Cooperative</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=kalaburagi#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 10</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_1c1354dbeab64557bcc9d5d6ee0096e6~mv2.png" alt="Kalaburagi" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
         <h3>Kalaburagi</h3>
+        <div class="dept-card-foot">
+          <span>District</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=ayush#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 11</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_17e9ae17fcef4f208620014a703c4dd0~mv2.png" alt="Ayush" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=100'">
         <h3>Ayush</h3>
+        <div class="dept-card-foot">
+          <span>Traditional Medicine</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
+
       <a href="?category=chitradurga#posts" class="dept-card reveal">
+        <div class="dept-card-head"><span class="dept-num">No. 12</span></div>
         <img src="https://static.wixstatic.com/media/f453f3_acd8279650af4b8088840c01285ff8a5~mv2.png" alt="Chitradurga" class="dept-logo" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1448375240586-882707db888b?w=100'">
         <h3>Chitradurga</h3>
+        <div class="dept-card-foot">
+          <span>District</span>
+          <span class="dept-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
       </a>
     </div>
   </div>
 </section>
 
 <!-- ── Dynamic Blog Posts section ── -->
-<section class="blog-section section" id="posts" style="background:var(--cream);">
+<section class="blog-section section" id="posts" style="background:var(--pub-parchment);">
   <div class="container">
     <div class="section-header-row reveal">
       <div>
-        <h2 class="section-title">Related Posts</h2>
-        <p class="section-subtitle">Research papers, reports, and publications from the selected department</p>
+        <h2 class="section-title">Related Publications</h2>
+        <p class="section-subtitle">Research papers, reports, and publications from the selected department.</p>
       </div>
       <div class="section-header-tools">
         <div class="search-wrap">
@@ -486,9 +836,18 @@
       </div>
     </div>
     <div class="footer-social">
-      <a href="https://www.youtube.com/@srinivasifs4051" target="_blank" class="social-btn">▶ YouTube</a>
-      <a href="https://www.facebook.com/srinivasulu.krishnamurthy" target="_blank" class="social-btn">f Facebook</a>
-      <a href="https://www.instagram.com/sriniforest/" target="_blank" class="social-btn">◎ Instagram</a>
+      <a href="https://www.youtube.com/@srinivasifs4051" target="_blank" class="social-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8 0 12 0 12s0 4 .5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.8.5-5.8.5-5.8s0-4-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+        YouTube
+      </a>
+      <a href="https://www.facebook.com/srinivasulu.krishnamurthy" target="_blank" class="social-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.7 0H1.3C.6 0 0 .6 0 1.3v21.4c0 .7.6 1.3 1.3 1.3h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1 1.9-4.8 4.7-4.8 1.3 0 2.5.1 2.8.1v3.3h-1.9c-1.5 0-1.8.7-1.8 1.8v2.3h3.6l-.5 3.6h-3.1V24h6.1c.7 0 1.3-.6 1.3-1.3V1.3c0-.7-.6-1.3-1.3-1.3z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/sriniforest/" target="_blank" class="social-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        Instagram
+      </a>
     </div>
     <div class="footer-bottom">© 2025 Srinivasulu IFS — Maintained by Vanalok</div>
   </div>
@@ -506,7 +865,6 @@
       mode:         'section'
     });
   });
-
 </script>
 </body>
 </html>
