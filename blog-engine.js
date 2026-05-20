@@ -372,7 +372,8 @@ const BlogEngine = (function () {
     try {
       const response = await fetch(`${API_BASE}/random-posts`);
       if (!response.ok) throw new Error('Failed to fetch related posts');
-      const posts = await response.json();
+      const data = await response.json();
+      const posts = data.posts || [];
       
       relatedGrid.innerHTML = '';
       posts.forEach(post => {
