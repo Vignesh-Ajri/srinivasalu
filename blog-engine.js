@@ -348,8 +348,8 @@ const BlogEngine = (function () {
     try {
       const response = await fetch(`${API_BASE}/post/${slug}`);
       if (!response.ok) throw new Error('Post not found');
-      const post = await response.json();
-      
+      const data = await response.json();
+      const post = data.post || []      
       renderPostDetail(container, post);
       loadRelatedPosts();
 
