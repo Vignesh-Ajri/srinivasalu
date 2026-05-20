@@ -3,7 +3,7 @@
  * Communicates with the Express API at http://localhost:3000
  */
 
-const API_BASE = 'https://srinivasulu-api.onrender.com/api';
+const API_BASE = 'https://srinivasalu-api.onrender.com/api';
 
 const BlogEngine = (function () {
   let state = {
