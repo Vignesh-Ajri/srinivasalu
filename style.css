@@ -1033,6 +1033,11 @@ footer {
 .slider-btn.prev-btn { left: -22px; }
 .slider-btn.next-btn { right: -22px; }
 
+/* CTA strip */
+.cta-strip{background:var(--teal-deep);padding:4rem 5vw;text-align:center;color:var(--white);border-top: 4px solid #d4a017;border-bottom: 4px solid #d4a017;}
+.cta-strip h2{font-family:'Playfair Display',serif;color:var(--sand);font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:.75rem;}
+.cta-strip a.mailto{display:block;color:rgba(255,255,255,.8);font-size:1rem;margin-bottom:1.5rem;}
+
 /* ---- Responsive ---- */
 /* nav-links/hamburger responsive handled in nav block above */
 @media (max-width: 900px) {

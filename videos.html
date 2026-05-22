@@ -1,1045 +1,169 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Videos — Srinivasulu IFS</title>
-    <meta
-      name="description"
-      content="Documentaries, talks and interviews featuring Srinivasulu IFS on ecology, forest governance and public service."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      /* ── PAGE HERO (shared layout, matches cv.html) ── */
-      .page-hero {
-        position: relative;
-        background: var(--cream);
-        background-color: rgb(255, 235, 132);
-        padding: 10rem 5vw 7rem;
-        text-align: left;
-        overflow: hidden;
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
-        margin-bottom: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
-      }
-      .hero-content {
-        position: relative;
-        z-index: 10;
-        width: 100%;
-      }
-      .hero-badge {
-        display: inline-block;
-        background: rgba(217, 122, 92, 0.1);
-        color: var(--terracotta);
-        padding: 0.4rem 1.2rem;
-        border-radius: 30px;
-        font-size: 0.8rem;
-        font-weight: 700;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        margin-bottom: 1.5rem;
-        border: 1px solid rgba(217, 122, 92, 0.2);
-      }
-      .page-hero h1 {
-        font-size: clamp(3rem, 5vw, 4.5rem);
-        color: rgb(43, 43, 43);
-        margin: 0.5rem 0 1.2rem;
-        line-height: 1.1;
-      }
-      .page-hero p {
-        color: var(--slate-light);
-        text-align: center;
-        font-size: 1.05rem;
-        line-height: 1.7;
-      }
-      /* ── Videos decoration:  ── */
-      /* ── Decorative Background ─────────────────────────── */
-      .hero-decoration {
-        position: absolute;
-        inset: 0;
-        z-index: 1;
-        pointer-events: none;
-      }
-
-      /* Large soft ring */
-      .hero-decoration::before {
-        content: "";
-        position: absolute;
-        width: 260px;
-        height: 260px;
-        border-radius: 50%;
-        border: 2px solid rgba(15, 76, 92, 0.08);
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      /* Video screen */
-      .deco-screen {
-        position: absolute;
-        width: 210px;
-        height: 135px;
-        background: rgba(15, 76, 92, 0.12);
-        backdrop-filter: blur(4px);
-        border-radius: 20px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border: 2px solid rgba(15, 76, 92, 0.08);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-      }
-
-      /* Play button */
-      .deco-play {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-40%, -50%);
-        width: 0;
-        height: 0;
-        border-top: 22px solid transparent;
-        border-bottom: 22px solid transparent;
-        border-left: 34px solid rgba(217, 122, 92, 0.75);
-      }
-
-      /* Floating dots */
-      .deco-film-dot {
-        position: absolute;
-        border-radius: 50%;
-      }
-
-      .deco-film-dot-1 {
-        width: 14px;
-        height: 14px;
-        background: rgba(217, 122, 92, 0.75);
-        top: 28%;
-        left: 58%;
-      }
-
-      .deco-film-dot-2 {
-        width: 10px;
-        height: 10px;
-        background: rgba(30, 127, 110, 0.75);
-        bottom: 28%;
-        left: 38%;
-      }
-
-      .deco-film-dot-3 {
-        width: 8px;
-        height: 8px;
-        background: rgba(15, 76, 92, 0.75);
-        top: 22%;
-        left: 40%;
-      }
-
-      /* Audio wave */
-      .deco-wave {
-        position: absolute;
-        bottom: 30%;
-        left: 30%;
-        display: flex;
-        align-items: flex-end;
-        gap: 5px;
-      }
-
-      .deco-wave span {
-        display: block;
-        width: 6px;
-        border-radius: 20px;
-        background: rgba(30, 127, 110, 0.25);
-      }
-
-      .deco-wave span:nth-child(1) {
-        height: 14px;
-      }
-      .deco-wave span:nth-child(2) {
-        height: 26px;
-      }
-      .deco-wave span:nth-child(3) {
-        height: 18px;
-      }
-      .deco-wave span:nth-child(4) {
-        height: 34px;
-      }
-      .deco-wave span:nth-child(5) {
-        height: 22px;
-      }
-
-      /* Mobile */
-      @media (max-width: 900px) {
-        .hero-decoration::before {
-          width: 180px;
-          height: 180px;
-        }
-
-        .deco-screen {
-          width: 160px;
-          height: 100px;
-        }
-
-        .deco-play {
-          border-top: 16px solid transparent;
-          border-bottom: 16px solid transparent;
-          border-left: 26px solid rgba(217, 122, 92, 0.75);
-        }
-      }
-
-      .videos-section {
-        padding: 6rem 0;
-        background: var(--cream);
-      }
-
-      .video-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        gap: 2.5rem;
-        margin-top: 3rem;
-      }
-
-      .video-card {
-        background: var(--white);
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        overflow: hidden;
-        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-        display: flex;
-        flex-direction: column;
-        border: 1px solid rgba(0, 0, 0, 0.03);
-      }
-
-      .video-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(15, 76, 92, 0.12);
-      }
-
-      .video-thumb-container {
-        position: relative;
-        padding-top: 56.25%; /* 16:9 */
-        background: var(--charcoal);
-        cursor: pointer;
-        overflow: hidden;
-      }
-
-      .video-thumb {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.6s ease;
-      }
-
-      .video-card:hover .video-thumb {
-        transform: scale(1.05);
-      }
-
-      .video-overlay {
-        position: absolute;
-        inset: 0;
-        background: rgba(15, 76, 92, 0.3);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      .video-card:hover .video-overlay {
-        opacity: 1;
-      }
-
-      .play-btn-circle {
-        width: 64px;
-        height: 64px;
-        background: var(--white);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--teal-deep);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        transform: scale(0.8);
-        transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      }
-
-      .video-card:hover .play-btn-circle {
-        transform: scale(1);
-      }
-
-      .video-body {
-        padding: 1.75rem;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .video-body h3 {
-        font-family: "Playfair Display", serif;
-        font-size: 1.2rem;
-        color: var(--charcoal);
-        margin-bottom: 1rem;
-        line-height: 1.4;
-        font-weight: 700;
-      }
-
-      .video-footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: auto;
-        padding-top: 1.25rem;
-        border-top: 1px solid rgba(0, 0, 0, 0.05);
-      }
-
-      .video-actions {
-        display: flex;
-        gap: 0.75rem;
-      }
-
-      .video-btn {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-        font-weight: 700;
-        border-radius: 30px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: all 0.2s ease;
-        border: 1px solid rgba(15, 76, 92, 0.1);
-        background: #f8f9fa;
-        color: var(--teal-deep);
-      }
-
-      .video-btn:hover {
-        background: var(--teal-deep);
-        color: var(--white);
-        border-color: var(--teal-deep);
-      }
-
-      .video-btn.primary {
-        background: var(--terracotta);
-        color: var(--white);
-        border-color: var(--terracotta);
-      }
-
-      .video-btn.primary:hover {
-        background: #c25e40;
-      }
-
-      @media (max-width: 900px) {
-        .video-grid {
-          grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-          gap: 1.5rem;
-        }
-      }
-
-      .video-toolbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 3rem;
-        gap: 2rem;
-        flex-wrap: wrap;
-      }
-
-      .video-search-wrap {
-        position: relative;
-        max-width: 450px;
-        width: 100%;
-      }
-
-      .video-search-input {
-        width: 100%;
-        padding: 1rem 1.5rem 1rem 3.5rem;
-        border-radius: 40px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background: var(--white);
-        font-size: 1rem;
-        transition: all 0.3s;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-      }
-
-      .video-search-input:focus {
-        outline: none;
-        border-color: var(--teal-mid);
-        box-shadow: 0 8px 25px rgba(15, 76, 92, 0.1);
-      }
-
-      .search-icon-svg {
-        position: absolute;
-        left: 1.25rem;
-        top: 50%;
-        transform: translateY(-50%);
-        color: var(--slate-light);
-        pointer-events: none;
-      }
-
-      .video-stats {
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: var(--slate-light);
-      }
-
-      /* Modal Styles */
-      .video-modal {
-        position: fixed;
-        inset: 0;
-        z-index: 2000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.4s;
-        padding: 2rem;
-      }
-
-      .video-modal.active {
-        opacity: 1;
-        visibility: visible;
-      }
-
-      .modal-overlay {
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.9);
-        backdrop-filter: blur(5px);
-      }
-
-      .modal-content {
-        position: relative;
-        width: 100%;
-        max-width: 1000px;
-        background: #000;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
-        transform: translateY(30px);
-        transition: transform 0.4s;
-      }
-
-      .video-modal.active .modal-content {
-        transform: translateY(0);
-      }
-
-      .modal-close {
-        position: absolute;
-        top: -40px;
-        right: 0;
-        background: none;
-        border: none;
-        color: var(--white);
-        font-size: 1.5rem;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
-
-      .modal-ratio {
-        padding-top: 56.25%;
-        position: relative;
-      }
-
-      .modal-ratio iframe {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .load-more-wrap {
-        text-align: center;
-        margin-top: 4rem;
-      }
-
-      .btn-load-more {
-        padding: 1rem 2.5rem;
-        border-radius: 40px;
-        background: var(--teal-deep);
-        color: var(--white);
-        font-weight: 700;
-        border: none;
-        cursor: pointer;
-        transition: all 0.3s;
-        box-shadow: 0 10px 20px rgba(15, 76, 92, 0.15);
-      }
-
-      .btn-load-more:hover {
-        background: var(--teal-mid);
-        transform: translateY(-3px);
-        box-shadow: 0 15px 30px rgba(15, 76, 92, 0.25);
-      }
-
-      .btn-load-more:disabled {
-        background: var(--slate-light);
-        cursor: not-allowed;
-        transform: none;
-      }
-      /* ── Subscribe CTA ───────────────────────────────── */
-      .cta-strip {
-        position: relative;
-        overflow: hidden;
-
-        background: linear-gradient(135deg, #0f4c5c 0%, #1e7f6e 100%);
-
-        padding: 5rem 5vw;
-        text-align: center;
-        border-radius: 40px 40px 0 0;
-      }
-
-      .cta-strip::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-
-        background:
-          radial-gradient(
-            circle at top left,
-            rgba(255, 255, 255, 0.08),
-            transparent 35%
-          ),
-          radial-gradient(
-            circle at bottom right,
-            rgba(217, 122, 92, 0.15),
-            transparent 35%
-          );
-
-        pointer-events: none;
-      }
-
-      .cta-strip h2 {
-        position: relative;
-        z-index: 2;
-
-        font-family: "Playfair Display", serif;
-        font-size: clamp(2rem, 4vw, 3rem);
-        color: #fff;
-
-        margin-bottom: 1rem;
-      }
-
-      .cta-strip p {
-        position: relative;
-        z-index: 2;
-
-        color: rgba(255, 255, 255, 0.82);
-        font-size: 1.05rem;
-
-        margin-bottom: 2rem;
-      }
-
-      .btn-white {
-        position: relative;
-        z-index: 2;
-
-        display: inline-flex;
-        align-items: center;
-        gap: 0.65rem;
-
-        background: #fff;
-        color: var(--teal-deep);
-
-        padding: 1rem 1.8rem;
-        border-radius: 40px;
-
-        font-weight: 700;
-        text-decoration: none;
-
-        transition: 0.3s ease;
-
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
-      }
-
-      .btn-white:hover {
-        transform: translateY(-4px);
-
-        background: #fde9c7;
-
-        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
-      }
-
-      /* Error States */
-      .error-msg,
-      .no-results {
-        grid-column: 1/-1;
-
-        background: #fff;
-        border-radius: 20px;
-
-        padding: 3rem 2rem;
-        text-align: center;
-
-        color: var(--slate-light);
-
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      }
-    </style>
-  </head>
-  <body>
-    <div id="page-loader">
-      <div class="loader-dot"></div>
-      <div class="loader-dot"></div>
-      <div class="loader-dot"></div>
-    </div>
-
-    <!-- Navigation -->
-    <div class="nav-wrapper">
-      <nav>
-        <a href="index.html" class="nav-logo">
-          <div class="" style="display: none">
-            <span class="logo-name">Srinivasulu IFS</span>
-            <span class="logo-sub">Indian Forest Service</span>
-          </div>
-        </a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="awards.html">Honours &amp; Awards</a></li>
-          <li class="dropdown">
-            <a href="accomplishments.html">Accomplishments</a>
-            <ul class="dropdown-menu">
-              <li><a href="accomplishments.html?category=kspcb">KSPCB</a></li>
-              <li><a href="accomplishments.html?category=ayush">Ayush</a></li>
-              <li>
-                <a
-                  href="accomplishments.html?category=karnataka-forest-department"
-                  >Karnataka Forest Department</a
-                >
-              </li>
-              <li>
-                <a href="accomplishments.html?category=kali-tiger-reserve"
-                  >Kali Tiger Reserve</a
-                >
-              </li>
-              <li>
-                <a href="accomplishments.html?category=nagarhole-national-park"
-                  >Nagarhole National Park</a
-                >
-              </li>
-              <li>
-                <a href="accomplishments.html?category=kalaburagi"
-                  >Kalaburagi</a
-                >
-              </li>
-              <li>
-                <a href="accomplishments.html?category=chitradurga"
-                  >Chitradurga</a
-                >
-              </li>
-              <li>
-                <a href="accomplishments.html?category=shimoga">Shimoga</a>
-              </li>
-              <li><a href="accomplishments.html?category=kfcsc">KFCSC</a></li>
-              <li>
-                <a href="accomplishments.html?category=academics">Academics</a>
-              </li>
-              <li><a href="accomplishments.html?category=adcl">ADCL</a></li>
-              <li>
-                <a href="accomplishments.html?category=ecology-environment"
-                  >Ecology &amp; Environment</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="publications.html">Publications</a>
-            <ul class="dropdown-menu">
-              <li><a href="publications.html?category=kspcb">KSPCB</a></li>
-              <li>
-                <a href="publications.html?category=karnataka-forest-department"
-                  >Karnataka Forest Department</a
-                >
-              </li>
-              <li>
-                <a href="publications.html?category=kali-tiger-reserve"
-                  >Kali Tiger Reserve</a
-                >
-              </li>
-              <li>
-                <a href="publications.html?category=nagarhole-national-park"
-                  >Nagarhole National Park</a
-                >
-              </li>
-              <li>
-                <a href="publications.html?category=academics">Academics</a>
-              </li>
-              <li><a href="publications.html?category=adcl">ADCL</a></li>
-              <li>
-                <a href="publications.html?category=ecology-environment"
-                  >Ecology &amp; Environment</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li><a href="videos.html">Videos</a></li>
-          <li><a href="photos.html">Photos</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button
-          class="hamburger"
-          id="hamburger"
-          aria-label="Open menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <span></span><span></span><span></span>
-        </button>
-      </nav>
-    </div>
-    <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
-    <div
-      class="mobile-menu"
-      id="mobile-menu"
-      role="dialog"
-      aria-modal="true"
-      aria-label="Navigation menu"
-    >
-      <div class="drawer-header">
-        <div class="drawer-logo">
-          <span class="logo-name">Srinivasulu IFS</span>
-          <span class="logo-sub">Indian Forest Service</span>
-        </div>
-        <button class="drawer-close" id="drawer-close" aria-label="Close menu">
-          <svg viewBox="0 0 24 24" fill="none">
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </button>
-      </div>
-      <nav class="drawer-nav" aria-label="Mobile navigation">
-        <span class="drawer-section-label">Navigation</span>
-        <a href="index.html"><span class="dot"></span>Home</a>
-        <a href="cv.html"><span class="dot"></span>CV</a>
-        <a href="awards.html"><span class="dot"></span>Honours &amp; Awards</a>
-        <a href="accomplishments.html"
-          ><span class="dot"></span>Accomplishments</a
-        >
-        <a href="publications.html"><span class="dot"></span>Publications</a>
-        <a href="videos.html"><span class="dot"></span>Videos</a>
-        <a href="photos.html"><span class="dot"></span>Photos</a>
-        <a href="blog.html" class="active"><span class="dot"></span>Blog</a>
-        <a href="contact.html"><span class="dot"></span>Contact</a>
-      </nav>
-    </div>
-
-    <div class="page-hero">
-      <div class="hero-content">
-        <span class="hero-badge reveal">Media & Features</span>
-        <h1 class="reveal">Video Gallery &<br />Dialogs</h1>
-        <p class="reveal">
-          Documentaries, public talks, and media interviews featuring
-          Srinivasulu IFS.
-        </p>
-      </div>
-      <div class="hero-decoration reveal">
-        <div class="deco-screen">
-          <div class="deco-play"></div>
-        </div>
-        <div class="deco-film-dot deco-film-dot-1"></div>
-        <div class="deco-film-dot deco-film-dot-2"></div>
-        <div class="deco-film-dot deco-film-dot-3"></div>
-        <div class="deco-wave">
-          <span></span><span></span><span></span><span></span><span></span>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Videos — Srinivasulu IFS</title>
+  <meta name="description" content="Documentaries, talks, interviews and public-service videos featuring Srinivasulu IFS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Kannada:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="design-system.css">
+  <style>
+    .video-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:var(--s-4); }
+    @media (max-width:1024px){ .video-grid{ grid-template-columns:repeat(3,1fr); } }
+    @media (max-width:768px){ .video-grid{ grid-template-columns:repeat(2,1fr); } }
+    @media (max-width:480px){ .video-grid{ grid-template-columns:1fr; } }
+    .video-card{
+      background:var(--surface); border:1px solid var(--line); border-radius:var(--r-md);
+      overflow:hidden; transition:transform var(--d), box-shadow var(--d), border-color var(--d);
+      cursor:pointer; text-align:left; display:flex; flex-direction:column;
+    }
+    .video-card:hover{ transform:translateY(-3px); box-shadow:var(--e2); border-color:var(--line-2); }
+    .video-thumb{
+      position:relative; aspect-ratio:16/9; background:var(--paper-2); overflow:hidden;
+    }
+    .video-thumb img{ width:100%; height:100%; object-fit:cover; transition:transform var(--d-slow); }
+    .video-card:hover .video-thumb img{ transform:scale(1.05); }
+    .video-play{
+      position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+      width:54px; height:54px; border-radius:50%;
+      background:rgba(15,26,20,.78); color:#fff;
+      display:grid; place-items:center;
+      transition:transform var(--d-fast), background var(--d-fast);
+    }
+    .video-card:hover .video-play{ transform:translate(-50%,-50%) scale(1.1); background:var(--brand); }
+    .video-play [data-lucide]{ width:24px; height:24px; margin-left:2px; }
+    .video-lang{
+      position:absolute; bottom:8px; left:8px;
+    }
+    .video-body{ padding:var(--s-4); display:flex; flex-direction:column; gap:6px; flex:1; }
+    .video-title{
+      font-family:var(--f-display); font-size:var(--t-16); font-weight:600;
+      line-height:1.3; color:var(--ink);
+      display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+    }
+    .video-meta{ font-size:var(--t-12); color:var(--ink-3); display:flex; gap:8px; margin-top:auto; }
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="sr-chrome-top"></div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container reveal">
+      <div class="breadcrumb"><a href="index.html">Home</a> <i data-lucide="chevron-right" class="icon-sm"></i> <a href="#">Media</a> <i data-lucide="chevron-right" class="icon-sm"></i> <span>Videos</span></div>
+      <h1>Videos</h1>
+      <p class="lede">Documentaries, talks, interviews and public-service films — across English and Kannada.</p>
+      <div class="page-hero-stats">
+        <div class="page-hero-stat"><div class="num" id="vCount">—</div><div class="lbl">Total videos</div></div>
+        <div class="page-hero-stat"><div class="num" id="vYears">—</div><div class="lbl">Span</div></div>
       </div>
     </div>
+  </section>
 
-    <section class="videos-section">
-      <div class="container">
-        <div class="video-toolbar">
-          <div class="video-search-wrap">
-            <svg
-              class="search-icon-svg"
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-            <input
-              type="text"
-              id="videoSearch"
-              class="video-search-input"
-              placeholder="Search by title or keyword..."
-            />
-          </div>
-          <div class="video-stats">
-            Showing <span id="currentCount">0</span> of
-            <span id="totalCount">0</span> videos
-          </div>
-        </div>
-
-        <div class="video-grid" id="videoGrid">
-          <!-- Videos will be injected here via JavaScript -->
-        </div>
-
-        <div class="load-more-wrap" id="loadMoreContainer">
-          <button id="loadMoreBtn" class="btn-load-more">
-            Load More Videos
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Video Modal -->
-    <div class="video-modal" id="videoModal">
-      <div class="modal-overlay" id="modalOverlay"></div>
-      <div class="modal-content">
-        <button class="modal-close" id="modalClose">
-          <span>Close</span>
-          <svg
-            width="24"
-            height="24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-          >
-            <line x1="18" y1="6" x2="6" y2="18"></line>
-            <line x1="6" y1="6" x2="18" y2="18"></line>
-          </svg>
-        </button>
-        <div class="modal-ratio" id="modalVideoContainer">
-          <!-- Iframe injected here -->
-        </div>
+  <div class="filter-bar">
+    <div class="container" style="display:flex;gap:var(--s-4);align-items:center;width:100%;flex-wrap:wrap;">
+      <div class="filter-chips" id="vFilter">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="documentary">Documentaries</button>
+        <button class="chip" data-filter="talk">Talks</button>
+        <button class="chip" data-filter="interview">Interviews</button>
+        <button class="chip" data-filter="tedx">TEDx</button>
+        <button class="chip" data-filter="kn">ಕನ್ನಡ</button>
+        <button class="chip" data-filter="en">English</button>
       </div>
     </div>
+  </div>
 
-    <!-- Subscribe CTA -->
-    <div class="cta-strip reveal">
-      <h2>Subscribe for More</h2>
-      <p>Nature, ecology, and governance content — directly from the field.</p>
-      <a
-        href="https://www.youtube.com/@srinivasifs4051"
-        target="_blank"
-        class="btn btn-white"
-        >▶ Subscribe on YouTube</a
-      >
+  <section class="section">
+    <div class="container">
+      <div class="video-grid" id="videoGrid"></div>
     </div>
+  </section>
 
-    <footer>
-      <div class="footer-inner">
-        <div class="footer-top">
-          <div>
-            <div class="footer-logo">Srinivasulu IFS</div>
-            <div class="footer-tagline">
-              Principal Secretary, Ecology &amp; Environment · Karnataka
-            </div>
-          </div>
-          <div class="footer-links">
-            <a href="index.html">Overview</a><a href="cv.html">CV</a
-            ><a href="awards.html">Awards</a>
-            <a href="accomplishments.html">Accomplishments</a
-            ><a href="publications.html">Publications</a>
-            <a href="videos.html">Videos</a><a href="photos.html">Photos</a
-            ><a href="contact.html">Contact</a>
-          </div>
-        </div>
-        <div class="footer-social">
-          <a
-            href="https://www.youtube.com/@srinivasifs4051"
-            target="_blank"
-            class="social-btn"
-            >▶ YouTube</a
-          >
-          <a
-            href="https://www.facebook.com/srinivasulu.krishnamurthy"
-            target="_blank"
-            class="social-btn"
-            >f Facebook</a
-          >
-          <a
-            href="https://www.instagram.com/sriniforest/"
-            target="_blank"
-            class="social-btn"
-            >◎ Instagram</a
-          >
-        </div>
-        <div class="footer-bottom">
-          © 2025 Srinivasulu IFS — Maintained by Vanalok
-        </div>
-      </div>
-    </footer>
-    <script src="main.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const videoGrid = document.getElementById("videoGrid");
-        const searchInput = document.getElementById("videoSearch");
-        const currentCountSpan = document.getElementById("currentCount");
-        const totalCountSpan = document.getElementById("totalCount");
-        const loadMoreBtn = document.getElementById("loadMoreBtn");
-        const videoModal = document.getElementById("videoModal");
-        const modalClose = document.getElementById("modalClose");
-        const modalOverlay = document.getElementById("modalOverlay");
-        const modalVideoContainer = document.getElementById(
-          "modalVideoContainer",
-        );
+</main>
 
-        let allVideos = [];
-        let filteredVideos = [];
-        let currentIndex = 0;
-        const itemsPerPage = 12;
+<div id="sr-chrome-footer"></div>
 
-        // Load Data
-        fetch("videos.json")
-          .then((response) => {
-            if (!response.ok) {
-              throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            return response.json();
-          })
-          .then((videos) => {
-            allVideos = videos;
-            filteredVideos = videos;
-            totalCountSpan.textContent = allVideos.length;
-            renderVideos();
-          })
-          .catch((err) => {
-            console.error("Error loading videos:", err);
-            videoGrid.innerHTML = `<div class="error-msg">Failed to load videos.</div>`;
-          });
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="chrome.js"></script>
+<script src="app.js"></script>
+<script>
+fetch('videos.json').then(r => r.json()).then(videos => {
+  // Detect Kannada by title characters
+  videos.forEach(v => {
+    v.isKannada = /[\u0C80-\u0CFF]/.test(v.title);
+    const t = v.title.toLowerCase();
+    if (t.includes('tedx')) v.kind = 'tedx';
+    else if (t.includes('interview') || t.includes('ಸಂದರ್ಶನ')) v.kind = 'interview';
+    else if (t.includes('talk') || t.includes('lecture') || t.includes('keynote')) v.kind = 'talk';
+    else v.kind = 'documentary';
+  });
 
-        function renderVideos(append = false) {
-          if (!append) {
-            videoGrid.innerHTML = "";
-            currentIndex = 0;
-          }
+  document.getElementById('vCount').textContent = videos.length;
+  document.getElementById('vYears').textContent = '2018–2025';
 
-          const nextBatch = filteredVideos.slice(
-            currentIndex,
-            currentIndex + itemsPerPage,
-          );
+  const grid = document.getElementById('videoGrid');
+  const chips = document.querySelectorAll('#vFilter .chip');
+  let filter = 'all';
 
-          if (nextBatch.length === 0 && !append) {
-            videoGrid.innerHTML =
-              '<div class="no-results">No videos found matching your search.</div>';
-            document.getElementById("loadMoreContainer").style.display = "none";
-            currentCountSpan.textContent = "0";
-            return;
-          }
-
-          nextBatch.forEach((video, index) => {
-            const card = document.createElement("div");
-            card.className = "video-card";
-            card.innerHTML = `
-        <div class="video-thumb-container" data-id="${video.videoId}">
-          <img
-            src="https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg"
-            class="video-thumb"
-            alt="${video.title}"
-            loading="lazy"
-            onerror="this.src='https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg'"
-          >
-          <div class="video-overlay">
-            <div class="play-btn-circle">
-              <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            </div>
-          </div>
+  function render(){
+    const list = videos.filter(v => {
+      if (filter === 'all') return true;
+      if (filter === 'kn') return v.isKannada;
+      if (filter === 'en') return !v.isKannada;
+      return v.kind === filter;
+    });
+    if (!list.length){
+      grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1;"><i data-lucide="film"></i><p>No videos in this category.</p></div>';
+      window.SrIcons && window.SrIcons(); return;
+    }
+    grid.innerHTML = list.map((v, i) => `
+      <button class="video-card" data-i="${videos.indexOf(v)}" aria-label="Play: ${v.title.replace(/"/g,'')}">
+        <div class="video-thumb">
+          <img src="https://i.ytimg.com/vi/${v.videoId}/hqdefault.jpg" alt="" loading="lazy">
+          <div class="video-play"><i data-lucide="play"></i></div>
+          <span class="video-lang lang-flag ${v.isKannada?'kn':'en'}">${v.isKannada?'KN':'EN'}</span>
         </div>
         <div class="video-body">
-          <h3>${video.title}</h3>
-          <div class="video-footer">
-            <div class="video-actions">
-              <button class="video-btn copy-btn" data-url="${video.url}">
-                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-                <span>Copy</span>
-              </button>
-              <button class="video-btn primary play-now" data-id="${video.videoId}">
-                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                <span>Play Now</span>
-              </button>
-            </div>
-          </div>
+          <div class="video-title">${v.title}</div>
+          <div class="video-meta"><i data-lucide="youtube" class="icon-sm"></i> YouTube · ${v.kind}</div>
         </div>
-      `;
-            videoGrid.appendChild(card);
-            currentIndex++;
-          });
+      </button>`).join('');
+    window.SrIcons && window.SrIcons();
 
-          currentCountSpan.textContent = currentIndex;
-
-          // Toggle Load More
-          if (currentIndex >= filteredVideos.length) {
-            document.getElementById("loadMoreContainer").style.display = "none";
-          } else {
-            document.getElementById("loadMoreContainer").style.display =
-              "block";
-          }
-
-          // Refresh reveal animations
-          if (window.ScrollReveal) ScrollReveal().sync();
-        }
-
-        // Search Logic
-        searchInput.addEventListener("input", (e) => {
-          const term = e.target.value.toLowerCase();
-          filteredVideos = allVideos.filter((v) =>
-            v.title.toLowerCase().includes(term),
-          );
-          renderVideos();
-        });
-
-        // Load More
-        loadMoreBtn.addEventListener("click", () => renderVideos(true));
-
-        // Play Video (Modal)
-        videoGrid.addEventListener("click", (e) => {
-          const playTarget =
-            e.target.closest(".video-thumb-container") ||
-            e.target.closest(".play-now");
-          if (playTarget) {
-            const videoId = playTarget.getAttribute("data-id");
-            openModal(videoId);
-          }
-
-          const copyBtn = e.target.closest(".copy-btn");
-          if (copyBtn) {
-            const url = copyBtn.getAttribute("data-url");
-            const span = copyBtn.querySelector("span");
-            navigator.clipboard.writeText(url).then(() => {
-              const originalText = span.textContent;
-              span.textContent = "Copied!";
-              setTimeout(() => (span.textContent = originalText), 2000);
-            });
-          }
-        });
-
-        function openModal(id) {
-          modalVideoContainer.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-          videoModal.classList.add("active");
-          document.body.style.overflow = "hidden";
-        }
-
-        function closeModal() {
-          videoModal.classList.remove("active");
-          modalVideoContainer.innerHTML = "";
-          document.body.style.overflow = "";
-        }
-
-        modalClose.addEventListener("click", closeModal);
-        modalOverlay.addEventListener("click", closeModal);
-        document.addEventListener("keydown", (e) => {
-          if (e.key === "Escape") closeModal();
-        });
+    grid.querySelectorAll('.video-card').forEach(el => {
+      el.addEventListener('click', () => {
+        const list = videos.map(v => ({ videoId: v.videoId, title: v.title, url: 'https://www.youtube.com/watch?v=' + v.videoId }));
+        VideoViewer.open(list, parseInt(el.dataset.i, 10));
       });
-    </script>
-  </body>
+    });
+  }
+
+  chips.forEach(c => c.addEventListener('click', () => {
+    chips.forEach(x => x.classList.remove('is-active'));
+    c.classList.add('is-active');
+    filter = c.dataset.filter; render();
+  }));
+
+  render();
+
+  // Direct deep-link via hash
+  if (location.hash){
+    const id = location.hash.slice(1);
+    const idx = videos.findIndex(v => v.videoId === id);
+    if (idx >= 0){
+      setTimeout(() => {
+        const list = videos.map(v => ({ videoId: v.videoId, title: v.title, url: 'https://www.youtube.com/watch?v=' + v.videoId }));
+        VideoViewer.open(list, idx);
+      }, 300);
+    }
+  }
+});
+</script>
+</body>
 </html>

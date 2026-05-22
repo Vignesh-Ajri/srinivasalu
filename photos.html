@@ -1,481 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Photos — Srinivasulu IFS</title>
-<meta name="description" content="Photo gallery of Srinivasulu IFS — moments from field, forest, wildlife and public service across Karnataka.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<style>
-/* ── PAGE HERO ─────────────────────────────────────── */
-.page-hero {
-  position: relative;
-  background: linear-gradient(
-    145deg,
-    #FFF7E2 0%,
-    #FDE9C7 45%,
-    #F7DFC0 100%
-  );
-
-  padding: 9rem 5vw 5rem;
-  overflow: hidden;
-
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-
-  margin-bottom: 2rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-}
-
-/* Soft background glow */
-.page-hero::before{
-  content:'';
-  position:absolute;
-  inset:0;
-
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(30,127,110,0.08),
-      transparent 35%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(217,122,92,0.08),
-      transparent 35%
-    );
-
-  pointer-events:none;
-}
-
-/* Content */
-.hero-content {
-  position: relative;
-  z-index: 5;
-  max-width: 760px;
-  width: 100%;
-}
-
-/* no use */
-.hero-badge {
-  display: inline-block;
-
-  background: rgba(217, 122, 92, 0.1);
-  color: var(--terracotta);
-
-  padding: 0.45rem 1.2rem;
-
-  border-radius: 30px;
-
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-
-  text-transform: uppercase;
-
-  margin-bottom: 1.4rem;
-
-  border: 1px solid rgba(217, 122, 92, 0.2);
-}
-
-.page-hero h1 {
-  font-size: clamp(3rem, 6vw, 5rem);
-  color: var(--charcoal);
-
-  margin-bottom: 1rem;
-  line-height: 1.1;
-}
-
-.page-hero p {
-  color: rgb(0, 0, 0);
-
-  max-width: 650px;
-  margin: 0 auto;
-
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
-
-/* ── Decorative Background ─────────────────────────── */
-.hero-decoration {
-  position: absolute;
-  inset: 0;
-
-  z-index: 1;
-  pointer-events: none;
-}
-
-/* Large ring */
-.hero-decoration::before{
-  content:'';
-  position:absolute;
-
-  width:280px;
-  height:280px;
-
-  border-radius:50%;
-  border:2px solid rgba(15,76,92,0.08);
-
-  top:50%;
-  left:50%;
-
-  transform:translate(-50%,-50%);
-}
-
-/* Polaroid Frames */
-.deco-frame {
-  position: absolute;
-
-  background: rgba(255,255,255,0.88);
-
-  padding: 10px 10px 34px;
-
-  border-radius: 10px;
-
-  backdrop-filter: blur(4px);
-
-  box-shadow:
-    0 20px 40px rgba(15,76,92,0.10),
-    0 6px 18px rgba(0,0,0,0.06);
-
-  overflow: hidden;
-}
-
-/* Inner color */
-.deco-frame-inner {
-  width: 100%;
-  height: 100%;
-  border-radius: 6px;
-}
-
-/* Frame 1 */
-.deco-frame-1 {
-  width: 140px;
-  height: 170px;
-
-  top: 50%;
-  left: 50%;
-
-  transform:
-    translate(-140px,-55%)
-    rotate(-12deg);
-
-  z-index: 2;
-}
-
-.deco-frame-1 .deco-frame-inner{
-  background:
-    linear-gradient(
-      135deg,
-      rgba(15,76,92,0.75),
-      rgba(30,127,110,0.45)
-    );
-}
-
-/* Frame 2 */
-.deco-frame-2 {
-  width: 160px;
-  height: 190px;
-
-  top: 50%;
-  left: 50%;
-
-  transform:
-    translate(10px,-45%)
-    rotate(8deg);
-
-  z-index: 3;
-}
-
-.deco-frame-2 .deco-frame-inner{
-  background:
-    linear-gradient(
-      135deg,
-      rgba(217,122,92,0.78),
-      rgba(255,180,120,0.55)
-    );
-}
-
-/* Frame 3 */
-.deco-frame-3 {
-  width: 120px;
-  height: 145px;
-
-  top: 50%;
-  left: 50%;
-
-  transform:
-    translate(120px,-90%)
-    rotate(18deg);
-
-  opacity: .75;
-
-  z-index: 1;
-}
-
-.deco-frame-3 .deco-frame-inner{
-  background:
-    linear-gradient(
-      135deg,
-      rgba(30,127,110,0.65),
-      rgba(244,228,193,0.85)
-    );
-}
-
-/* ── Mobile ────────────────────────────────────────── */
-@media (max-width: 900px) {
-
-  .page-hero{
-    padding:8rem 5vw 4rem;
-  }
-
-  .page-hero h1{
-    font-size:3rem;
-  }
-
-  .hero-decoration::before{
-    width:180px;
-    height:180px;
-  }
-
-  .deco-frame-1{
-    width:90px;
-    height:110px;
-
-    transform:
-      translate(-80px,-55%)
-      rotate(-12deg);
-  }
-
-  .deco-frame-2{
-    width:105px;
-    height:125px;
-
-    transform:
-      translate(0px,-45%)
-      rotate(8deg);
-  }
-
-  .deco-frame-3{
-    width:80px;
-    height:95px;
-
-    transform:
-      translate(70px,-90%)
-      rotate(18deg);
-  }
-}
-
-.gallery-section{padding:5rem 0;background:var(--cream);}
-/* Filter tabs */
-.filter-tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.5rem;}
-.filter-tab{padding:.4rem 1rem;border-radius:30px;font-size:.8rem;font-weight:600;border:2px solid var(--teal-deep);color:var(--teal-deep);background:transparent;cursor:pointer;transition:.25s;text-decoration:none;}
-.filter-tab:hover,.filter-tab.active{background:var(--teal-deep);color:var(--white);}
-/* Masonry grid */
-.photo-grid{columns:3;gap:1rem;}
-.photo-grid img{width:100%;margin-bottom:1rem;border-radius:var(--radius-sm);break-inside:avoid;display:block;transition:transform .3s,box-shadow .3s;}
-.photo-grid img:hover{transform:scale(1.02);box-shadow:var(--shadow-lg);}
-.gallery-note{text-align:center;margin-top:2rem;font-size:.85rem;color:var(--slate-light);font-style:italic;}
-@media(max-width:768px){.photo-grid{columns:2;}}
-@media(max-width:480px){.photo-grid{columns:1;}}
-/* Load More Button */
-.load-more-btn{
-
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-
-  margin:3rem auto 0;
-
-  padding:1rem 1.8rem;
-
-  border:none;
-  border-radius:40px;
-
-  background:var(--teal-deep);
-  color:#fff;
-
-  font-weight:700;
-  font-size:.95rem;
-
-  cursor:pointer;
-
-  transition:.3s ease;
-
-  box-shadow:
-    0 10px 25px rgba(15,76,92,0.18);
-}
-
-.load-more-btn:hover{
-
-  transform:translateY(-3px);
-
-  background:var(--terracotta);
-
-  box-shadow:
-    0 18px 40px rgba(217,122,92,0.22);
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Photos — Srinivasulu IFS</title>
+  <meta name="description" content="Photo gallery — field visits, events, family and official engagements.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Kannada:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="design-system.css">
+  <style>
+    /* View toggle */
+    .view-toggle{
+      display:inline-flex; border:1px solid var(--line); border-radius:var(--r-pill); padding:3px;
+      background:var(--surface);
+    }
+    .view-toggle button{
+      height:30px; padding:0 12px; border-radius:var(--r-pill);
+      font-size:var(--t-13); font-weight:600; color:var(--ink-3);
+      transition:all var(--d-fast);
+      display:inline-flex; align-items:center; gap:6px;
+    }
+    .view-toggle button.is-active{ background:var(--brand); color:#fff; }
+
+    /* Album cards */
+    .album-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:var(--s-4); }
+    @media (max-width:1024px){ .album-grid{ grid-template-columns:repeat(3,1fr); } }
+    @media (max-width:768px){ .album-grid{ grid-template-columns:repeat(2,1fr); } }
+    @media (max-width:480px){ .album-grid{ grid-template-columns:1fr; } }
+    .album-card{
+      position:relative; aspect-ratio:1/1; border-radius:var(--r-md);
+      overflow:hidden; background:var(--paper-2); cursor:pointer;
+      transition:transform var(--d);
+    }
+    .album-card:hover{ transform:translateY(-3px); }
+    .album-card img{ width:100%; height:100%; object-fit:cover; transition:transform var(--d-slow); }
+    .album-card:hover img{ transform:scale(1.05); }
+    .album-card::after{
+      content:''; position:absolute; inset:0;
+      background:linear-gradient(180deg, transparent 45%, rgba(15,26,20,.85));
+    }
+    .album-cap{
+      position:absolute; left:var(--s-4); right:var(--s-4); bottom:var(--s-4);
+      color:#fff; z-index:2;
+    }
+    .album-cap h3{ color:#fff; font-size:var(--t-18); margin-bottom:4px; }
+    .album-cap .count{ font-family:var(--f-mono); font-size:var(--t-12); color:#D8D2C0; }
+
+    /* Masonry tile */
+    .photo-tile{
+      width:100%; border-radius:var(--r-sm); overflow:hidden;
+      cursor:pointer; background:var(--paper-2);
+      transition:transform var(--d), box-shadow var(--d);
+    }
+    .photo-tile:hover{ transform:scale(1.02); box-shadow:var(--e2); }
+    .photo-tile img{ width:100%; display:block; }
+  </style>
 </head>
 <body>
-<div id="page-loader"><div class="loader-dot"></div><div class="loader-dot"></div><div class="loader-dot"></div></div>
 
-<!-- Navigation -->
-<div class="nav-wrapper">
-  <nav>
-    <a href="index.html" class="nav-logo">
-      <div class="" style="display: none;">
-        <span class="logo-name">Srinivasulu IFS</span>
-        <span class="logo-sub">Indian Forest Service</span>
-      </div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="awards.html">Honours &amp; Awards</a></li>
-      <li class="dropdown">
-        <a href="accomplishments.html">Accomplishments</a>
-        <ul class="dropdown-menu">
-          <li><a href="accomplishments.html?category=kspcb#posts">KSPCB</a></li>
-          <li><a href="accomplishments.html?category=ayush#posts">Ayush</a></li>
-          <li><a href="accomplishments.html?category=karnataka-forest-department#posts">Karnataka Forest Department</a></li>
-          <li><a href="accomplishments.html?category=kali-tiger-reserve#posts">Kali Tiger Reserve</a></li>
-          <li><a href="accomplishments.html?category=nagarhole-national-park#posts">Nagarhole National Park</a></li>
-          <li><a href="accomplishments.html?category=kalaburagi#posts">Kalaburagi</a></li>
-          <li><a href="accomplishments.html?category=chitradurga#posts">Chitradurga</a></li>
-          <li><a href="accomplishments.html?category=shimoga#posts">Shimoga</a></li>
-          <li><a href="accomplishments.html?category=kfcsc#posts">KFCSC</a></li>
-          <li><a href="accomplishments.html?category=academics#posts">Academics</a></li>
-          <li><a href="accomplishments.html?category=adcl#posts">ADCL</a></li>
-          <li><a href="accomplishments.html?category=ecology-environment#posts">Ecology &amp; Environment</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="publications.html">Publications</a>
-        <ul class="dropdown-menu">
-          <li><a href="publications.html?category=kspcb">KSPCB</a></li>
-          <li><a href="publications.html?category=karnataka-forest-department">Karnataka Forest Department</a></li>
-          <li><a href="publications.html?category=kali-tiger-reserve">Kali Tiger Reserve</a></li>
-          <li><a href="publications.html?category=nagarhole-national-park">Nagarhole National Park</a></li>
-          <li><a href="publications.html?category=academics">Academics</a></li>
-          <li><a href="publications.html?category=adcl">ADCL</a></li>
-          <li><a href="publications.html?category=ecology-environment">Ecology &amp; Environment</a></li>
-        </ul>
-      </li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="blog.html" class="active">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-</div>
-<div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
-<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-  <div class="drawer-header">
-    <div class="drawer-logo">
-      <span class="logo-name">Srinivasulu IFS</span>
-      <span class="logo-sub">Indian Forest Service</span>
-    </div>
-    <button class="drawer-close" id="drawer-close" aria-label="Close menu">
-      <svg viewBox="0 0 24 24" fill="none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-  </div>
-  <nav class="drawer-nav" aria-label="Mobile navigation">
-    <span class="drawer-section-label">Navigation</span>
-    <a href="index.html"><span class="dot"></span>Home</a>
-    <a href="cv.html"><span class="dot"></span>CV</a>
-    <a href="awards.html"><span class="dot"></span>Honours &amp; Awards</a>
-    <a href="accomplishments.html"><span class="dot"></span>Accomplishments</a>
-    <a href="publications.html"><span class="dot"></span>Publications</a>
-    <a href="videos.html"><span class="dot"></span>Videos</a>
-    <a href="photos.html"><span class="dot"></span>Photos</a>
-    <a href="blog.html" class="active"><span class="dot"></span>Blog</a>
-    <a href="contact.html"><span class="dot"></span>Contact</a>
-  </nav>
-</div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="sr-chrome-top"></div>
 
-<div class="page-hero">
-  <div class="hero-content">
-    <h1 class="reveal">Photo Gallery</h1>
-    <p class="reveal">Moments from the field, forest conservation, wildlife management, and public service across Karnataka.</p>
-  </div>
-  <div class="hero-decoration reveal">
-    <div class="deco-frame deco-frame-1"><div class="deco-frame-inner"></div></div>
-    <div class="deco-frame deco-frame-2"><div class="deco-frame-inner"></div></div>
-    <div class="deco-frame deco-frame-3"><div class="deco-frame-inner"></div></div>
-  </div>
-</div>
+<main id="main">
 
-<section class="gallery-section">
-  <div class="container">
-    <div class="reveal"><h2 class="section-title">Photo Gallery</h2></div>
-
-    <!-- Filter Tabs (CSS-only, anchor-based) -->
-    <div class="filter-tabs reveal">
-      <a href="#all" class="filter-tab active" id="tab-all">All</a>
-      <a href="#wildlife" class="filter-tab" id="tab-forest">KFD Wildlife</a>
-      <a href="#ayush" class="filter-tab" id="tab-ayush">Ayush</a>
-      <a href="#kspcb" class="filter-tab" id="tab-kspcb">KSPCB</a>
-      <a href="#chitradurga" class="filter-tab" id="tab-chitradurga">Chitradurga</a>
-      <a href="#shimoga" class="filter-tab" id="tab-shimoga">Shimoga</a>
-      <a href="#forest" class="filter-tab" id="tab-forest">Forest Dept</a>
-      <a href="#academics" class="filter-tab" id="tab-academics">Academics </a>
-      <a href="#adcl" class="filter-tab" id="tab-adcl">ADCL</a>
-      <a href="#kali" class="filter-tab" id="tab-kali">Kali Tiger Reserve</a>
-      <a href="#family" class="filter-tab" id="tab-family">Family</a>
-      <a href="#interests" class="filter-tab" id="tab-interests">Interests</a>
-    </div>
-
-    <!-- Photo Grid -->
-    <div class="photo-grid reveal" id="photoGrid"></div>
-
-    <p class="gallery-note reveal">More photos available from Wix Media Manager — to be added</p>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div>
-        <div class="footer-logo">Srinivasulu IFS</div>
-        <div class="footer-tagline">Principal Secretary, Ecology &amp; Environment · Karnataka</div>
-      </div>
-      <div class="footer-links">
-        <a href="index.html">Overview</a><a href="cv.html">CV</a><a href="awards.html">Awards</a>
-        <a href="accomplishments.html">Accomplishments</a><a href="publications.html">Publications</a>
-        <a href="videos.html">Videos</a><a href="photos.html">Photos</a><a href="contact.html">Contact</a>
+  <section class="page-hero">
+    <div class="container reveal">
+      <div class="breadcrumb"><a href="index.html">Home</a> <i data-lucide="chevron-right" class="icon-sm"></i> <a href="#">Media</a> <i data-lucide="chevron-right" class="icon-sm"></i> <span>Photos</span></div>
+      <h1>Photos</h1>
+      <p class="lede">Visual archive of field visits, events, conferences, family moments and official engagements.</p>
+      <div class="page-hero-stats">
+        <div class="page-hero-stat"><div class="num" id="pCount">—</div><div class="lbl">Total photos</div></div>
+        <div class="page-hero-stat"><div class="num" id="pAlbums">—</div><div class="lbl">Albums</div></div>
       </div>
     </div>
-    <div class="footer-social">
-      <a href="https://www.youtube.com/@srinivasifs4051" target="_blank" class="social-btn">▶ YouTube</a>
-      <a href="https://www.facebook.com/srinivasulu.krishnamurthy" target="_blank" class="social-btn">f Facebook</a>
-      <a href="https://www.instagram.com/sriniforest/" target="_blank" class="social-btn">◎ Instagram</a>
-    </div>
-    <div class="footer-bottom">© 2025 Srinivasulu IFS — Maintained by Vanalok</div>
-  </div>
-</footer>
+  </section>
 
-<script src="main.js"></script>
+  <div class="filter-bar">
+    <div class="container" style="display:flex;gap:var(--s-4);align-items:center;width:100%;flex-wrap:wrap;">
+      <div class="view-toggle" id="viewToggle">
+        <button class="is-active" data-view="albums"><i data-lucide="layout-grid" class="icon-sm"></i> Albums</button>
+        <button data-view="all"><i data-lucide="image" class="icon-sm"></i> All photos</button>
+      </div>
+      <div class="filter-chips" id="catChips" style="display:none;">
+        <button class="chip is-active" data-cat="all">All</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div id="albumsView" class="album-grid"></div>
+      <div id="allView" class="masonry" style="display:none;"></div>
+    </div>
+  </section>
+
+</main>
+
+<div id="sr-chrome-footer"></div>
+
+<!-- Photos data (preserves the original photos.js list) -->
 <script src="photos.js"></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="chrome.js"></script>
+<script src="app.js"></script>
 <script>
-// Tab active state on click
-document.querySelectorAll('.filter-tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
+// Resolve photos array (existing photos.js exposes `photos`)
+const PHOTOS = (typeof photos !== 'undefined') ? photos : [];
+
+// Friendly category names
+const CAT_NAMES = {
+  'family':'Family','kspcb-photos':'KSPCB','academics':'Academics','shimoga':'Shimoga',
+  'honours':'Honours','ayush-photos':'AYUSH','adcl':'ADCL','forestdeptphotos':'Forest Dept',
+  'kali':'Kali Tiger Reserve','chitradurga':'Chitradurga'
+};
+
+// Group by category
+const ALBUMS = {};
+PHOTOS.forEach(p => {
+  ALBUMS[p.category] = ALBUMS[p.category] || [];
+  ALBUMS[p.category].push(p);
+});
+
+document.getElementById('pCount').textContent = PHOTOS.length;
+document.getElementById('pAlbums').textContent = Object.keys(ALBUMS).length;
+
+// Render albums view
+function renderAlbums(){
+  const root = document.getElementById('albumsView');
+  // Sort albums by count desc
+  const cats = Object.keys(ALBUMS).sort((a,b) => ALBUMS[b].length - ALBUMS[a].length);
+  root.innerHTML = cats.map(cat => {
+    const list = ALBUMS[cat];
+    const cover = list[0].src;
+    return `
+      <button class="album-card" data-cat="${cat}" aria-label="Open album: ${CAT_NAMES[cat] || cat}">
+        <img src="${cover}" alt="" loading="lazy">
+        <div class="album-cap">
+          <h3>${CAT_NAMES[cat] || cat}</h3>
+          <div class="count">${list.length} photo${list.length>1?'s':''}</div>
+        </div>
+      </button>`;
+  }).join('');
+
+  root.querySelectorAll('.album-card').forEach(c => {
+    c.addEventListener('click', () => {
+      const cat = c.dataset.cat;
+      const list = ALBUMS[cat].map(p => ({ src:p.src, alt:CAT_NAMES[cat] || cat, category:CAT_NAMES[cat] || cat }));
+      PhotoViewer.open(list, 0);
+    });
+  });
+}
+
+// Render all photos masonry
+function renderAll(cat){
+  const root = document.getElementById('allView');
+  const list = (cat && cat !== 'all') ? ALBUMS[cat] : PHOTOS;
+  root.innerHTML = list.map((p, i) => `
+    <button class="photo-tile" data-i="${i}" aria-label="Open photo">
+      <img src="${p.src}" alt="${CAT_NAMES[p.category] || p.category}" loading="lazy">
+    </button>
+  `).join('');
+
+  root.querySelectorAll('.photo-tile').forEach(t => {
+    t.addEventListener('click', () => {
+      const items = list.map(p => ({ src:p.src, alt:CAT_NAMES[p.category] || p.category, category:CAT_NAMES[p.category] || p.category }));
+      PhotoViewer.open(items, parseInt(t.dataset.i, 10));
+    });
+  });
+}
+
+// Build category chips for "All photos" view
+function buildChips(){
+  const chips = document.getElementById('catChips');
+  const cats = Object.keys(ALBUMS).sort();
+  chips.innerHTML = '<button class="chip is-active" data-cat="all">All</button>' +
+    cats.map(c => `<button class="chip" data-cat="${c}">${CAT_NAMES[c] || c} (${ALBUMS[c].length})</button>`).join('');
+  chips.querySelectorAll('.chip').forEach(ch => {
+    ch.addEventListener('click', () => {
+      chips.querySelectorAll('.chip').forEach(x => x.classList.remove('is-active'));
+      ch.classList.add('is-active');
+      renderAll(ch.dataset.cat);
+    });
+  });
+}
+
+// View toggle
+document.querySelectorAll('#viewToggle button').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('#viewToggle button').forEach(x => x.classList.remove('is-active'));
+    b.classList.add('is-active');
+    const view = b.dataset.view;
+    document.getElementById('albumsView').style.display = view === 'albums' ? '' : 'none';
+    document.getElementById('allView').style.display = view === 'all' ? '' : 'none';
+    document.getElementById('catChips').style.display = view === 'all' ? '' : 'none';
+    if (view === 'all') renderAll('all');
   });
 });
+
+renderAlbums();
+buildChips();
 </script>
 </body>
 </html>

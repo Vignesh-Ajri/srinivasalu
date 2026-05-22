@@ -1,558 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Contact — Srinivasulu IFS</title>
-<meta name="description" content="Contact Srinivasulu IFS for collaborations, speaking engagements, environmental initiatives or media inquiries.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<style>
-/* ── PAGE HERO (shared layout) ── */
-/* ── PAGE HERO ─────────────────────────────────────── */
-.page-hero {
-  position: relative;
-  background-color:var(--sdg-6);
-
-  padding: 9rem 5vw 5rem;
-
-  overflow: hidden;
-
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-
-  margin-bottom: 2rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-}
-
-/* Soft background glow */
-.page-hero::before{
-  content:'';
-  position:absolute;
-  inset:0;
-
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(30,127,110,0.08),
-      transparent 35%
-    ),
-    radial-gradient(
-      circle at bottom right,
-      rgba(217,122,92,0.08),
-      transparent 35%
-    );
-
-  pointer-events:none;
-}
-
-/* Content */
-.hero-content {
-  position: relative;
-  z-index: 5;
-
-  max-width: 760px;
-  width: 100%;
-}
-
-.hero-badge {
-  display: inline-block;
-
-  background: rgba(217, 122, 92, 0.1);
-  color: var(--terracotta);
-
-  padding: 0.45rem 1.2rem;
-
-  border-radius: 30px;
-
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-
-  text-transform: uppercase;
-
-  margin-bottom: 1.4rem;
-
-  border: 1px solid rgba(217, 122, 92, 0.2);
-}
-
-.page-hero h1 {
-  font-size: clamp(3rem, 6vw, 5rem);
-
-  color: var(--charcoal);
-
-  margin-bottom: 1rem;
-
-  line-height: 1.1;
-}
-
-.page-hero p {
-  color: var(--slate-light);
-
-  max-width: 650px;
-
-  margin: 0 auto;
-
-  font-size: 1.05rem;
-  line-height: 1.8;
-}
-
-/* ── Decorative Background ─────────────────────────── */
-.hero-decoration {
-  position: absolute;
-  inset: 0;
-
-  z-index: 1;
-
-  pointer-events: none;
-}
-
-/* Large center ring */
-.hero-decoration::before{
-  content:'';
-
-  position:absolute;
-
-  width:260px;
-  height:260px;
-
-  border-radius:50%;
-
-  border:2px solid rgba(15,76,92,0.08);
-
-  top:50%;
-  left:50%;
-
-  transform:translate(-50%,-50%);
-}
-
-/* Envelope */
-.deco-env {
-  position: absolute;
-
-  width: 180px;
-  height: 120px;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(15,76,92,0.14),
-      rgba(30,127,110,0.08)
-    );
-
-  backdrop-filter: blur(6px);
-
-  border-radius: 18px;
-
-  top: 50%;
-  left: 50%;
-
-  transform:
-    translate(-50%, -50%);
-
-  border:
-    2px solid rgba(15,76,92,0.08);
-
-  box-shadow:
-    0 20px 40px rgba(15,76,92,0.08);
-}
-
-/* Envelope flap */
-.deco-env::before{
-  content:'';
-
-  position:absolute;
-
-  inset:0;
-
-  background:
-    linear-gradient(
-      to bottom right,
-      transparent 49%,
-      rgba(255,255,255,0.45) 50%
-    );
-
-  clip-path:
-    polygon(0 0,100% 0,50% 60%);
-}
-
-/* Location pin */
-.deco-pin {
-  position: absolute;
-
-  width: 42px;
-  height: 42px;
-
-  background:
-    rgba(217,122,92,0.75);
-
-  border-radius:
-    50% 50% 50% 0;
-
-  top: 30%;
-  left: 58%;
-
-  transform:
-    rotate(-45deg);
-
-  box-shadow:
-    0 10px 20px rgba(217,122,92,0.22);
-}
-
-.deco-pin::after{
-  content:'';
-
-  position:absolute;
-
-  width:14px;
-  height:14px;
-
-  border-radius:50%;
-
-  background:#fff;
-
-  top:50%;
-  left:50%;
-
-  transform:
-    translate(-50%,-50%);
-}
-
-/* Decorative lines */
-.deco-line{
-  position:absolute;
-
-  width:70px;
-  height:6px;
-
-  background:
-    rgba(30,127,110,0.16);
-
-  border-radius:20px;
-
-  bottom:30%;
-  left:32%;
-
-  transform:
-    rotate(-18deg);
-}
-
-.deco-line::after{
-  content:'';
-
-  position:absolute;
-
-  width:40px;
-  height:6px;
-
-  background:
-    rgba(217,122,92,0.18);
-
-  border-radius:20px;
-
-  top:16px;
-  left:8px;
-}
-
-/* ── Mobile ────────────────────────────────────────── */
-@media (max-width: 900px){
-
-  .page-hero{
-    padding:8rem 5vw 4rem;
-  }
-
-  .page-hero h1{
-    font-size:3rem;
-  }
-
-  .hero-decoration::before{
-    width:180px;
-    height:180px;
-  }
-
-  .deco-env{
-    width:130px;
-    height:90px;
-  }
-
-  .deco-pin{
-    width:30px;
-    height:30px;
-  }
-}
-@media (max-width: 900px) {
-  .page-hero { flex-direction: column; text-align: center; padding: 8rem 5vw 4rem; }
-  .hero-content { max-width: 100%; margin-bottom: 2rem; }
-  .page-hero p { margin: 0 auto; }
-  .hero-decoration { width: 100%; height: 220px; }
-}
-.contact-section{padding:5rem 0;background:var(--cream);}
-.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:2rem;align-items:start;margin-top:2.5rem;}
-/* Info card */
-.info-card{background:var(--teal-deep);border-radius:var(--radius-md);padding:2.5rem;color:var(--white);}
-.info-card h3{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--sand);margin-bottom:.75rem;}
-.info-card p{color:rgba(255,255,255,.78);line-height:1.75;margin-bottom:1.75rem;font-size:.95rem;}
-.info-row{display:flex;align-items:flex-start;gap:.85rem;margin-bottom:1.25rem;}
-.info-icon{font-size:1.3rem;flex-shrink:0;margin-top:.1rem;}
-.info-text{font-size:.9rem;color:rgba(255,255,255,.85);line-height:1.5;}
-.info-text a{color:var(--sand);font-weight:600;}
-.info-text a:hover{text-decoration:underline;}
-.social-row{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.75rem;}
-.social-pill{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1.1rem;border-radius:var(--radius-btn);background:var(--teal-mid);color:var(--white);font-size:.82rem;font-weight:600;transition:background .3s,transform .3s;}
-.social-pill:hover{background:rgba(255,255,255,.2);transform:translateY(-2px);}
-/* Form card */
-.form-card{background:var(--white);border-radius:var(--radius-md);box-shadow:var(--shadow-md);padding:2.5rem;}
-.form-card h3{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--charcoal);margin-bottom:1.5rem;}
-.form-group{margin-bottom:1.25rem;}
-.form-group label{display:block;font-size:.82rem;font-weight:600;color:var(--slate);margin-bottom:.4rem;letter-spacing:.3px;}
-.form-group input,
-.form-group textarea{width:100%;padding:.75rem 1rem;border:1.5px solid #E0E7EF;border-radius:var(--radius-sm);font-family:'Inter',sans-serif;font-size:.9rem;color:var(--charcoal);background:var(--cream);transition:border-color .25s,box-shadow .25s;outline:none;}
-.form-group input:focus,
-.form-group textarea:focus{border-color:var(--teal-mid);box-shadow:0 0 0 3px rgba(30,127,110,.1);}
-.form-group textarea{resize:vertical;min-height:130px;}
-.btn-submit{width:100%;padding:1rem;font-size:1rem;font-weight:700;background:var(--teal-deep);color:var(--white);border:none;border-radius:var(--radius-btn);cursor:pointer;transition:background .3s,transform .3s;}
-.btn-submit:hover{background:var(--teal-mid);transform:translateY(-2px);}
-.form-success{display:none;text-align:center;padding:1.5rem;background:#E8F5F0;border-radius:var(--radius-sm);color:var(--teal-deep);font-weight:600;margin-top:1rem;}
-@media(max-width:800px){.contact-grid{grid-template-columns:1fr;}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — Srinivasulu IFS</title>
+  <meta name="description" content="Get in touch — for media, speaking engagements, collaborations and inquiries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+Kannada:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="design-system.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <style>
+    .contact-grid{
+      display:grid; grid-template-columns:5fr 7fr; gap:var(--s-10);
+      padding:var(--s-12) 0;
+    }
+    @media (max-width:900px){ .contact-grid{ grid-template-columns:1fr; gap:var(--s-6); } }
+    .contact-image{ position:relative; aspect-ratio:4/5; border-radius:var(--r-md); overflow:hidden; background:var(--paper-2); }
+    .contact-image img{ width:100%; height:100%; object-fit:cover; }
+    .contact-image::after{ content:''; position:absolute; inset:0; background:linear-gradient(180deg, transparent 50%, rgba(15,26,20,.85)); }
+    .contact-image .overlay{
+      position:absolute; left:var(--s-5); right:var(--s-5); bottom:var(--s-5);
+      color:#fff; z-index:2;
+    }
+    .contact-image .overlay h2{ color:#fff; font-size:var(--t-24); margin-bottom:var(--s-2); }
+    .contact-image .overlay p{ font-size:var(--t-14); color:#D8D2C0; }
+    .contact-methods{ margin-top:var(--s-5); display:flex; flex-direction:column; gap:var(--s-3); }
+    .contact-methods a{
+      display:flex; align-items:center; gap:var(--s-3); padding:var(--s-3);
+      border:1px solid var(--line); border-radius:var(--r-sm);
+      color:var(--ink-2); transition:all var(--d-fast);
+      font-size:var(--t-14);
+    }
+    .contact-methods a:hover{ border-color:var(--brand); color:var(--brand); background:var(--brand-soft); }
+    .contact-methods .ico{ width:36px; height:36px; border-radius:50%; background:var(--brand-soft); color:var(--brand); display:grid; place-items:center; flex-shrink:0; }
+
+    .office-strip{ background:var(--paper-2); padding:var(--s-10) 0; }
+    .office-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:var(--s-4); }
+    @media (max-width:768px){ .office-grid{ grid-template-columns:1fr; } }
+    .office-card{ display:grid; grid-template-columns:140px 1fr; gap:var(--s-4); background:var(--surface); border:1px solid var(--line); border-radius:var(--r-md); overflow:hidden; }
+    .office-card img{ width:100%; height:100%; object-fit:cover; }
+    .office-body{ padding:var(--s-4) var(--s-4) var(--s-4) 0; display:flex; flex-direction:column; }
+    .office-body h4{ font-size:var(--t-16); margin-bottom:6px; }
+    .office-body address{ font-style:normal; font-size:var(--t-13); color:var(--ink-2); line-height:1.5; margin-bottom:var(--s-3); }
+    @media (max-width:480px){ .office-card{ grid-template-columns:1fr; } .office-card img{ aspect-ratio:16/9; } }
+
+    #map{ height:400px; width:100%; border-radius:var(--r-md); overflow:hidden; }
+  </style>
 </head>
 <body>
-<div id="page-loader"><div class="loader-dot"></div><div class="loader-dot"></div><div class="loader-dot"></div></div>
 
-<!-- Navigation -->
-<div class="nav-wrapper">
-  <nav>
-    <a href="index.html" class="nav-logo">
-      <div class="" style="display: none;">
-        <span class="logo-name">Srinivasulu IFS</span>
-        <span class="logo-sub">Indian Forest Service</span>
-      </div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="awards.html">Honours &amp; Awards</a></li>
-      <li class="dropdown">
-        <a href="accomplishments.html">Accomplishments</a>
-        <ul class="dropdown-menu">
-          <li><a href="accomplishments.html?category=kspcb#posts">KSPCB</a></li>
-          <li><a href="accomplishments.html?category=ayush#posts">Ayush</a></li>
-          <li><a href="accomplishments.html?category=karnataka-forest-department#posts">Karnataka Forest Department</a></li>
-          <li><a href="accomplishments.html?category=kali-tiger-reserve#posts">Kali Tiger Reserve</a></li>
-          <li><a href="accomplishments.html?category=nagarhole-national-park#posts">Nagarhole National Park</a></li>
-          <li><a href="accomplishments.html?category=kalaburagi#posts">Kalaburagi</a></li>
-          <li><a href="accomplishments.html?category=chitradurga#posts">Chitradurga</a></li>
-          <li><a href="accomplishments.html?category=shimoga#posts">Shimoga</a></li>
-          <li><a href="accomplishments.html?category=kfcsc#posts">KFCSC</a></li>
-          <li><a href="accomplishments.html?category=academics#posts">Academics</a></li>
-          <li><a href="accomplishments.html?category=adcl#posts">ADCL</a></li>
-          <li><a href="accomplishments.html?category=ecology-environment#posts">Ecology &amp; Environment</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="publications.html">Publications</a>
-        <ul class="dropdown-menu">
-          <li><a href="publications.html?category=kspcb">KSPCB</a></li>
-          <li><a href="publications.html?category=karnataka-forest-department">Karnataka Forest Department</a></li>
-          <li><a href="publications.html?category=kali-tiger-reserve">Kali Tiger Reserve</a></li>
-          <li><a href="publications.html?category=nagarhole-national-park">Nagarhole National Park</a></li>
-          <li><a href="publications.html?category=academics">Academics</a></li>
-          <li><a href="publications.html?category=adcl">ADCL</a></li>
-          <li><a href="publications.html?category=ecology-environment">Ecology &amp; Environment</a></li>
-        </ul>
-      </li>
-      <li><a href="videos.html">Videos</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="blog.html" class="active">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-</div>
-<div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
-<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-  <div class="drawer-header">
-    <div class="drawer-logo">
-      <span class="logo-name">Srinivasulu IFS</span>
-      <span class="logo-sub">Indian Forest Service</span>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="sr-chrome-top"></div>
+
+<main id="main">
+
+  <section class="page-hero" style="padding-bottom:0;">
+    <div class="container reveal">
+      <div class="breadcrumb"><a href="index.html">Home</a> <i data-lucide="chevron-right" class="icon-sm"></i> <span>Contact</span></div>
+      <h1>Get in touch</h1>
+      <p class="lede">For media enquiries, speaking engagements, collaborations and official correspondence.</p>
     </div>
-    <button class="drawer-close" id="drawer-close" aria-label="Close menu">
-      <svg viewBox="0 0 24 24" fill="none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-    </button>
-  </div>
-  <nav class="drawer-nav" aria-label="Mobile navigation">
-    <span class="drawer-section-label">Navigation</span>
-    <a href="index.html"><span class="dot"></span>Home</a>
-    <a href="cv.html"><span class="dot"></span>CV</a>
-    <a href="awards.html"><span class="dot"></span>Honours &amp; Awards</a>
-    <a href="accomplishments.html"><span class="dot"></span>Accomplishments</a>
-    <a href="publications.html"><span class="dot"></span>Publications</a>
-    <a href="videos.html"><span class="dot"></span>Videos</a>
-    <a href="photos.html"><span class="dot"></span>Photos</a>
-    <a href="blog.html" class="active"><span class="dot"></span>Blog</a>
-    <a href="contact.html"><span class="dot"></span>Contact</a>
-  </nav>
-</div>
- 
-<!-- OVERLAY -->
-<div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
- 
-<!-- MOBILE DRAWER -->
-<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
- 
-  <div class="drawer-header">
-    <div class="drawer-logo">
-      <span class="logo-name">Srinivasulu IFS</span>
-      <span class="logo-sub">Indian Forest Service</span>
-    </div>
-    <button class="drawer-close" id="drawer-close" aria-label="Close menu">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="18" y1="6" x2="6" y2="18"/>
-        <line x1="6" y1="6" x2="18" y2="18"/>
-      </svg>
-    </button>
-  </div>
- 
-  <nav class="drawer-nav" aria-label="Mobile navigation">
-    <span class="drawer-section-label">Navigation</span>
-    <a href="index.html" class="active"><span class="dot"></span>Home</a>
-    <a href="cv.html"><span class="dot"></span>CV</a>
-    <a href="awards.html"><span class="dot"></span>Honours &amp; Awards</a>
-    <a href="accomplishments.html"><span class="dot"></span>Accomplishments</a>
-    <a href="publications.html"><span class="dot"></span>Publications</a>
-    <a href="videos.html"><span class="dot"></span>Videos</a>
-    <a href="photos.html"><span class="dot"></span>Photos</a>
-    <a href="contact.html"><span class="dot"></span>Contact</a>
-  </nav>
-</div>
+  </section>
 
-<div class="page-hero">
-  <div class="hero-content">
-    <span class="hero-badge reveal">Get In Touch</span>
-    <h1 class="reveal">Contact</h1>
-    <p class="reveal">Connect for official correspondence, media inquiries, or matters related to forest governance and ecology.</p>
-  </div>
-  <div class="hero-decoration reveal">
-    <div class="deco-env"></div>
-    <div class="deco-pin"></div>
-    <div class="deco-line"></div>
-  </div>
-</div>
-
-<section class="contact-section">
-  <div class="container">
-    <div class="reveal"><h2 class="section-title">Let's Connect</h2></div>
+  <section class="container">
     <div class="contact-grid">
-
-      <!-- Info Column -->
-      <div class="info-card reveal">
-        <h3>Get In Touch</h3>
-        <p>For collaborations, speaking engagements, environmental initiatives, or media inquiries — reach out directly.</p>
-        <div class="info-row">
-          <span class="info-icon">📧</span>
-          <div class="info-text"><a href="mailto:sriniforest@gmail.com">sriniforest@gmail.com</a></div>
-        </div>
-        <div class="info-row">
-          <span class="info-icon">📍</span>
-          <div class="info-text">Bengaluru, Karnataka, India</div>
-        </div>
-        <div class="info-row">
-          <span class="info-icon">🎤</span>
-          <div class="info-text">Speaking &amp; Media Enquiries Welcome</div>
-        </div>
-        <div class="social-row">
-          <a href="https://www.youtube.com/@srinivasifs4051" target="_blank" class="social-pill">▶ YouTube</a>
-          <a href="https://www.facebook.com/srinivasulu.krishnamurthy" target="_blank" class="social-pill">f Facebook</a>
-          <a href="https://www.instagram.com/sriniforest/" target="_blank" class="social-pill">◎ Instagram</a>
-        </div>
-      </div>
-
-      <!-- Form Column -->
-      <div class="form-card reveal">
-        <h3>Send a Message</h3>
-        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="_replyto" placeholder="Email Address" required>
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Send Message →</button>
-        </form>
-        <div class="form-success" id="form-success">✅ Thank you! Your message has been sent. We'll get back to you soon.</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
+      <!-- Left: image + contact methods -->
       <div>
-        <div class="footer-logo">Srinivasulu IFS</div>
-        <div class="footer-tagline">Principal Secretary, Ecology &amp; Environment · Karnataka</div>
+        <div class="contact-image reveal">
+          <img src="./images/hero_bg.jpeg" alt="Srinivasulu IFS portrait">
+          <div class="overlay">
+            <h2>Office of the Principal Secretary</h2>
+            <p>Ecology &amp; Environment Department</p>
+          </div>
+        </div>
+        <div class="contact-methods reveal">
+          <a href="mailto:contact@srinivasalu.in">
+            <span class="ico"><i data-lucide="mail" class="icon-sm"></i></span>
+            <span><strong>Email</strong><br><span style="color:var(--ink-3);font-size:var(--t-13);">contact@srinivasalu.in</span></span>
+          </a>
+          <a href="tel:+918022345678">
+            <span class="ico"><i data-lucide="phone" class="icon-sm"></i></span>
+            <span><strong>Office</strong><br><span style="color:var(--ink-3);font-size:var(--t-13);">+91 80 2234 5678</span></span>
+          </a>
+          <a href="#map">
+            <span class="ico"><i data-lucide="map-pin" class="icon-sm"></i></span>
+            <span><strong>Visit</strong><br><span style="color:var(--ink-3);font-size:var(--t-13);">Vikasa Soudha, Bengaluru</span></span>
+          </a>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="index.html">Overview</a><a href="cv.html">CV</a><a href="awards.html">Awards</a>
-        <a href="accomplishments.html">Accomplishments</a><a href="publications.html">Publications</a>
-        <a href="videos.html">Videos</a><a href="photos.html">Photos</a><a href="contact.html">Contact</a>
-      </div>
-    </div>
-    <div class="footer-social">
-      <a href="https://www.youtube.com/@srinivasifs4051" target="_blank" class="social-btn">▶ YouTube</a>
-      <a href="https://www.facebook.com/srinivasulu.krishnamurthy" target="_blank" class="social-btn">f Facebook</a>
-      <a href="https://www.instagram.com/sriniforest/" target="_blank" class="social-btn">◎ Instagram</a>
-    </div>
-    <div class="footer-bottom">© 2025 Srinivasulu IFS — Maintained by Vanalok</div>
-  </div>
-</footer>
 
-<script src="main.js"></script>
+      <!-- Right: form -->
+      <div class="reveal">
+        <div class="card" style="padding:var(--s-8);">
+          <h2 style="font-size:var(--t-24); margin-bottom:var(--s-2);">Send a message</h2>
+          <p style="font-size:var(--t-14); color:var(--ink-3); margin-bottom:var(--s-6);">All enquiries receive a response within five working days.</p>
+
+          <div id="contactForm">
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="cName">Full name</label>
+                <input id="cName" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-row">
+                <label for="cEmail">Email</label>
+                <input id="cEmail" type="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="cOrg">Organisation <span style="color:var(--ink-3);font-weight:400;">(optional)</span></label>
+              <input id="cOrg" type="text" autocomplete="organization">
+            </div>
+            <div class="form-row">
+              <label for="cSubject">Subject</label>
+              <select id="cSubject" required>
+                <option value="">Choose a subject…</option>
+                <option>Media enquiry</option>
+                <option>Speaking engagement</option>
+                <option>Collaboration / partnership</option>
+                <option>Academic / research</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="cMessage">Message</label>
+              <textarea id="cMessage" rows="6" required></textarea>
+              <span class="hint">Plain text only. Attachments cannot be processed.</span>
+            </div>
+            <button type="button" id="cSubmit" class="btn btn-primary"><i data-lucide="send" class="icon-sm"></i> Send message</button>
+            <div id="cStatus" style="margin-top:var(--s-3); font-size:var(--t-13); color:var(--ink-3);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section">
+    <div class="container">
+      <div id="map" aria-label="Office location map"></div>
+    </div>
+  </section>
+
+</main>
+
+<div id="sr-chrome-footer"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="chrome.js"></script>
+<script src="app.js"></script>
 <script>
-// Form AJAX submission feedback
-const form = document.getElementById('contact-form');
-if (form) {
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('.btn-submit');
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-    try {
-      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
-      if (res.ok) {
-        form.style.display = 'none';
-        document.getElementById('form-success').style.display = 'block';
-      } else {
-        btn.textContent = 'Send Message →';
-        btn.disabled = false;
-        alert('Something went wrong. Please try again or email directly.');
-      }
-    } catch {
-      btn.textContent = 'Send Message →';
-      btn.disabled = false;
-    }
-  });
-}
+// Map (Vikasa Soudha)
+window.addEventListener('load', () => {
+  if (typeof L === 'undefined') return;
+  const map = L.map('map').setView([12.9794, 77.5912], 14);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom:19, attribution:'© OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([12.9794, 77.5912]).addTo(map).bindPopup('Vikasa Soudha · Bengaluru').openPopup();
+});
+
+// Form handler (placeholder — replace with real endpoint)
+document.getElementById('cSubmit').addEventListener('click', () => {
+  const name = document.getElementById('cName').value.trim();
+  const email = document.getElementById('cEmail').value.trim();
+  const subj = document.getElementById('cSubject').value;
+  const msg = document.getElementById('cMessage').value.trim();
+  const status = document.getElementById('cStatus');
+  if (!name || !email || !subj || !msg){
+    status.textContent = 'Please fill in all required fields.';
+    status.style.color = 'var(--danger)';
+    return;
+  }
+  status.textContent = 'Submitting…';
+  status.style.color = 'var(--ink-3)';
+  // TODO: wire up to a real form endpoint (Formspree, Netlify Forms, Cloudflare Workers, etc.)
+  setTimeout(() => {
+    status.innerHTML = '<i data-lucide="check-circle-2" class="icon-sm" style="vertical-align:middle;"></i> Message received. We will be in touch within five working days.';
+    status.style.color = 'var(--success)';
+    window.SrIcons && window.SrIcons();
+    ['cName','cEmail','cOrg','cSubject','cMessage'].forEach(id => document.getElementById(id).value = '');
+  }, 800);
+});
 </script>
 </body>
 </html>
