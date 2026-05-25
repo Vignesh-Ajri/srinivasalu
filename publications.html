@@ -24,6 +24,79 @@
     .pub-meta{ font-size:var(--t-12); color:var(--ink-3); display:flex; gap:8px; flex-wrap:wrap; margin-bottom:6px; }
     .pub-actions{ display:flex; gap:6px; margin-top:auto; }
     .pub-actions .btn{ height:30px; padding:0 12px; font-size:var(--t-12); }
+
+    /* Compact grid overrides for 6 columns and fitting in view without scrolling */
+    .page-hero {
+      padding: var(--s-3) 0 !important;
+    }
+    .page-hero h1 {
+      font-size: var(--t-24) !important;
+      margin-bottom: var(--s-1) !important;
+    }
+    .page-hero .breadcrumb {
+      margin-bottom: var(--s-1) !important;
+    }
+    .page-hero-stat {
+      display: flex;
+      align-items: baseline;
+      gap: var(--s-2);
+    }
+    .page-hero-stat .num {
+      font-size: var(--t-20) !important;
+    }
+    .page-hero-stat .lbl {
+      font-size: var(--t-12) !important;
+      margin-top: 0 !important;
+    }
+    .section {
+      padding: var(--s-3) 0 !important;
+    }
+    .dept-grid {
+      grid-template-columns: repeat(6, 1fr) !important;
+      gap: var(--s-3) !important;
+    }
+    .dept-card {
+      padding: var(--s-2) !important;
+      min-height: 180px !important;
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center !important;
+    }
+    .dept-logo {
+      width: 72px !important;
+      height: 72px !important;
+      margin-bottom: var(--s-2) !important;
+      padding: 2px !important;
+    }
+    .dept-card h3 {
+      font-size: var(--t-12) !important;
+      margin-bottom: 0 !important;
+      font-weight: 500 !important;
+      line-height: 1.25 !important;
+    }
+    .dept-meta {
+      display: none !important;
+    }
+    .dept-arrow {
+      display: none !important;
+    }
+    .dept-card:hover {
+      transform: none !important;
+    }
+    @media (max-width: 1024px) {
+      .dept-grid { grid-template-columns: repeat(6, 1fr) !important; }
+      .dept-card { min-height: 140px !important; }
+      .dept-logo { width: 44px !important; height: 44px !important; }
+    }
+    @media (max-width: 820px) {
+      .dept-grid { grid-template-columns: repeat(4, 1fr) !important; } /* 3 rows on small tablets */
+    }
+    @media (max-width: 600px) {
+      .dept-grid { grid-template-columns: repeat(3, 1fr) !important; }
+    }
+    @media (max-width: 400px) {
+      .dept-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    }
   </style>
 </head>
 <body>
@@ -37,8 +110,6 @@
     <div class="container reveal">
       <div class="breadcrumb"><a href="index.html">Home</a> <i data-lucide="chevron-right" class="icon-sm"></i> <span>Publications</span></div>
       <h1>Publications</h1>
-      <p class="lede">Reports, policy briefs, technical documents and research papers — organised by department in CV chronological order.</p>
-
       <div style="display:flex; gap:var(--s-3); margin-top:var(--s-6); flex-wrap:wrap;">
         <div class="search-input" style="flex:1; max-width:420px;">
           <i data-lucide="search" class="icon-sm"></i>
@@ -79,12 +150,6 @@ window.addEventListener('load', () => {
       <button class="dept-card" data-slug="${d.slug}" aria-label="${d.name}">
         <img class="dept-logo" src="${logos[d.slug] || ''}" alt="" loading="lazy">
         <h3>${d.name}</h3>
-        <div class="dept-meta">
-          <span class="period">${d.period}</span>
-          <span class="dot"></span>
-          <span><i data-lucide="file-text" class="icon-sm"></i> Documents</span>
-        </div>
-        <span class="dept-arrow"><i data-lucide="arrow-up-right"></i></span>
       </button>
     `).join('');
     window.SrIcons && window.SrIcons();

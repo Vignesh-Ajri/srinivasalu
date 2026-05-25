@@ -164,10 +164,10 @@
           <div class="footer-col">
             <h4>Government</h4>
             <ul>
-              <li><a href="#">Sitemap</a></li>
-              <li><a href="#">Accessibility</a></li>
-              <li><a href="#">Privacy &amp; Disclaimer</a></li>
-              <li><a href="#">Help</a></li>
+              <li><a href="contact.html#map">Sitemap</a></li>
+              <li style="display:none;"><a href="#">Accessibility</a></li>
+              <li style="display:none;"><a href="#">Privacy &amp; Disclaimer</a></li>
+              <li style="display:none;"><a href="#">Help</a></li>
             </ul>
           </div>
         </div>

@@ -24,363 +24,242 @@
     <div id="sr-chrome-top"></div>
 
     <main id="main">
-      <!-- ============ HERO ============ -->
-      <section
-        class="home-hero"
-        style="
-          background-image:
-            linear-gradient(
-              180deg,
-              rgba(15, 26, 20, 0.2) 0%,
-              rgba(15, 26, 20, 0.5) 100%
-            ),
-            url(&quot;./images/hero_bg.jpeg&quot;);
-        "
-      >
-        <div class="container home-hero-content reveal">
+      <!-- ============ HERO SPLIT ============ -->
+      <section class="hero-split" id="hero-section">
+        <div class="hero-split-text reveal">
           <span class="tag">IFS · 1997 Batch · Karnataka</span>
           <h1>Srinivasulu IFS</h1>
-          <p class="role">
-            Principal Secretary, Ecology &amp; Environment · Government of
-            Karnataka. Three decades of forest governance, wildlife management
-            and climate policy.
+          <p class="hero-role">
+            Principal Secretary, Forest, Ecology &amp; Environment · Government of Karnataka.
+            Three decades of forest governance, wildlife management and climate policy.
           </p>
 
-          <div class="stats" role="list">
-            <div role="listitem">
-              <div class="num">Gold</div>
-              <div class="lbl">University Medal · UAS</div>
-            </div>
-            <div role="listitem">
-              <div class="num">27+</div>
-              <div class="lbl">Years of Service</div>
-            </div>
-            <div role="listitem">
-              <div class="num">COP21</div>
-              <div class="lbl">Paris Climate Summit</div>
-            </div>
-            <div role="listitem">
-              <div class="num">Top 10</div>
-              <div class="lbl">All-India Academic Rank</div>
-            </div>
+          <div class="hero-quote">
+            <span class="leaf-icon"><i data-lucide="leaf" style="width:14px;height:14px;"></i></span>
+            <p>"The solution lies in nature, choose sustainable lifestyle. Be Eco friendly."</p>
           </div>
 
-          <div
-            style="display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap"
-          >
-            <a class="btn btn-primary" href="cv.html"
-              >View Profile <i data-lucide="arrow-right" class="icon-sm"></i
-            ></a>
-            <a
-              class="btn btn-outline"
-              style="color: #fff; border-color: #fff"
-              href="accomplishments.html"
-              >Accomplishments</a
-            >
+          <div class="hero-split-btns">
+            <a class="btn btn-primary" href="cv.html">View Profile <i data-lucide="arrow-right" class="icon-sm"></i></a>
+            <a class="btn btn-outline" href="accomplishments.html">Accomplishments</a>
+          </div>
+        </div>
+        <div class="hero-split-img">
+          <img src="./images/cv_bg.jpeg" alt="Srinivasulu IFS — Principal Secretary, Forest, Ecology & Environment" />
+        </div>
+      </section>
+
+      <!-- ============ STATS STRIP ============ -->
+      <section class="stats-strip" id="stats-section">
+        <div class="container stats-strip-inner reveal">
+          <div class="stat-item">
+            <div class="stat-num">27+</div>
+            <div class="stat-lbl">Years of Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">12</div>
+            <div class="stat-lbl">Leadership Postings</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">25</div>
+            <div class="stat-lbl">Honours &amp; Awards</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">COP21</div>
+            <div class="stat-lbl">Paris Summit</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100+</div>
+            <div class="stat-lbl">Publications</div>
           </div>
         </div>
       </section>
 
-      <!-- ============ EXPLORE HUB ============ -->
-      <section class="section">
+      <!-- ============ SPEECH / ABOUT ============ -->
+      <section class="speech-section" id="speech-section">
+        <div class="container">
+          <div class="speech-grid">
+            <!-- Left: What others say -->
+            <div class="speech-quote-card reveal">
+              <div class="section-eyebrow">Testimonial</div>
+              <h2>What others say<br/><span>about me</span></h2>
+              <p class="speech-quote-text">
+                Srinivasulu is a dedicated and remarkable individual whose steadfast commitment to the environment, forest and wildlife conservation truly sets him apart. As an exceptional officer, he has gone far beyond routine responsibilities, immersing himself in the protection of nature and natural resources. His efforts reflect not only professional excellence but also a deep personal passion for safeguarding the planet and promoting the well-being of its people.
+              </p>
+            </div>
+
+            <!-- Right: Academic & Service -->
+            <div class="speech-bio-card reveal">
+              <!-- Academic Badges -->
+              <div>
+                <div class="section-eyebrow">Academic Distinction</div>
+                <h3 style="font-size:var(--t-24); margin-bottom:var(--s-4);">Academic Excellence</h3>
+                <div class="academic-badges">
+                  <div class="acad-badge">
+                    <span class="badge-icon gold"><i data-lucide="medal" style="width:14px;height:14px;"></i></span>
+                    Gold Medalist · UAS
+                  </div>
+                  <div class="acad-badge">
+                    <span class="badge-icon green"><i data-lucide="trophy" style="width:14px;height:14px;"></i></span>
+                    10th Rank · IFS Exams
+                  </div>
+                  <div class="acad-badge">
+                    <span class="badge-icon blue"><i data-lucide="graduation-cap" style="width:14px;height:14px;"></i></span>
+                    PG · Molecular Biology
+                  </div>
+                  <div class="acad-badge">
+                    <span class="badge-icon orange"><i data-lucide="award" style="width:14px;height:14px;"></i></span>
+                    2nd Rank · All India IARI
+                  </div>
+                </div>
+              </div>
+
+              <!-- Service Summary -->
+              <div class="service-summary">
+                <h3>Services, Initiatives &amp; Contributions</h3>
+                <p>
+                  Srinivasulu, an Indian Forest Service officer from the 1997 batch, currently serves as the Principal Secretary of Forest, Ecology, and Environment, Government of Karnataka. His distinguished career began at Nagarahole National Park and expanded across several districts, including Bengaluru Rural, Mysuru, Kalaburagi, Koppal, and Chitradurga.
+                </p>
+                <p>
+                  As Director of the Tiger Project at Kali Tiger Reserve in Dandeli, he introduced key conservation measures that significantly improved the lives of tigers. His documentary on the River Kali received international acclaim, with select segments released by Hon'ble Prime Minister Narendra Modi at the COP 21 Summit in Paris.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ THREE DECADES OF IMPACT — Horizontal Timeline ============ -->
+      <section class="impact-timeline-section" id="timeline-section">
+        <div class="container">
+          <div class="impact-timeline-header reveal">
+            <div class="section-eyebrow" style="justify-content:center;">Distinguished Service</div>
+            <h2>Three Decades of <span>Impact</span></h2>
+          </div>
+
+          <div class="impact-timeline-track reveal">
+            <div class="impact-timeline-line">
+              <div class="impact-stage">
+                <div class="impact-dot"></div>
+                <div class="impact-stage-label">1999–2002</div>
+                <div class="impact-stage-title">Chitradurga · District Forest</div>
+              </div>
+              <div class="impact-stage">
+                <div class="impact-dot"></div>
+                <div class="impact-stage-label">2002–2005</div>
+                <div class="impact-stage-title">Shimoga · District Forest</div>
+              </div>
+              <div class="impact-stage">
+                <div class="impact-dot"></div>
+                <div class="impact-stage-label">2005–2010</div>
+                <div class="impact-stage-title">Kalaburagi &amp; Academics</div>
+              </div>
+              <div class="impact-stage">
+                <div class="impact-dot"></div>
+                <div class="impact-stage-label">2010–2014</div>
+                <div class="impact-stage-title">ADCL &amp; KFCSC Welfare</div>
+              </div>
+              <div class="impact-stage">
+                <div class="impact-dot"></div>
+                <div class="impact-stage-label">2013–2017</div>
+                <div class="impact-stage-title">Kali Tiger Reserve &amp; KSPCB</div>
+              </div>
+              <div class="impact-stage">
+                <div class="impact-dot"></div>
+                <div class="impact-stage-label">2017–2022</div>
+                <div class="impact-stage-title">Forest Dept &amp; AYUSH</div>
+              </div>
+              <div class="impact-stage">
+                <div class="impact-dot active"></div>
+                <div class="impact-stage-label">2022–Present</div>
+                <div class="impact-stage-title">Principal Secretary · Ecology &amp; Environment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ AREAS OF WORK — Horizontal Scrolling Cards ============ -->
+      <section class="areas-section" id="areas-section">
         <div class="container">
           <div class="section-head reveal">
             <div>
-              <div class="section-eyebrow">Portfolio</div>
-              <h2>Explore the Record</h2>
+              <div class="section-eyebrow">Areas of Work</div>
+              <h2>Career Postings</h2>
             </div>
-            <a href="cv.html" class="btn btn-ghost btn-sm"
-              >Full CV <i data-lucide="arrow-right" class="icon-sm"></i
-            ></a>
+            <a href="cv.html#career" class="btn btn-ghost btn-sm">Full Timeline <i data-lucide="arrow-right" class="icon-sm"></i></a>
           </div>
-
-          <div class="explore reveal">
-            <a href="honours.html">
-              <img
-                src="./images/honours/IMG_2176.HEIC.jpeg"
-                alt="Awards and certificates"
-                loading="lazy"
-              />
-              <div class="explore-cap">
-                <div>
-                  <span class="count">25 records</span>
-                  <h3>Honours &amp; Awards</h3>
-                </div>
-                <i data-lucide="arrow-right"></i>
-              </div>
-            </a>
-            <a href="accomplishments.html">
-              <img
-                src="./images/kspcb-Photos/IMG_0850.HEIC.jpeg"
-                alt="Forest field work"
-                loading="lazy"
-              />
-              <div class="explore-cap">
-                <div>
-                  <span class="count">12 departments</span>
-                  <h3>Accomplishments</h3>
-                </div>
-                <i data-lucide="arrow-right"></i>
-              </div>
-            </a>
-            <a href="photos.html">
-              <img
-                src="./images/kspcb-Photos/A C 4.jpg"
-                alt="Photo gallery"
-                loading="lazy"
-              />
-              <div class="explore-cap">
-                <div>
-                  <span class="count">185 photos · 32 videos</span>
-                  <h3>Media Library</h3>
-                </div>
-                <i data-lucide="arrow-right"></i>
-              </div>
-            </a>
+          <p style="color:var(--ink-3); font-size:var(--t-14); margin-bottom:var(--s-4);">
+            <i data-lucide="arrow-right" class="icon-sm"></i> Scroll horizontally to explore all postings
+          </p>
+          <div class="areas-track reveal" id="areasTrack">
+            <!-- Populated by JS from SR_DEPTS_CV -->
           </div>
         </div>
       </section>
 
-      <!-- BIOGRAPHY -->
-      <section class="section bio-section" style="background: var(--cream)">
-        <div
-          class="container"
-          style="
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 5rem;
-            align-items: start;
-          "
-        >
-          <div class="reveal">
-            <div
-              style="
-                font-size: 0.65rem;
-                font-weight: 800;
-                color: var(--terracotta);
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                margin-bottom: 1rem;
-              "
-            >
-              DISTINGUISHED SERVICE
-            </div>
-            <h2
-              class="section-title"
-              style="
-                margin-bottom: 1.5rem;
-                text-align: left;
-                font-size: 3rem;
-                line-height: 1.2;
-              "
-            >
-              Three Decades<br />of
-              <span style="color: var(--terracotta)">Impact</span>
-            </h2>
-            <p
-              style="
-                color: var(--slate-light);
-                margin-bottom: 2rem;
-                font-size: 1.05rem;
-                line-height: 1.7;
-              "
-            >
-              Leading forest governance, climate action, and ecological
-              transformation across Karnataka's most critical natural landscapes
-              and environmental policy corridors.
-            </p>
-            <ul
-              style="
-                color: var(--charcoal);
-                font-weight: 500;
-                font-size: 0.95rem;
-                line-height: 1.8;
-              "
-            >
-              <li>✓ Currently serving as Principal Secretary</li>
-              <li>✓ 12+ leadership positions across Karnataka</li>
-              <li>✓ Global recognition at COP21 Paris Summit</li>
-            </ul>
-          </div>
-
-          <div class="timeline-vertical reveal">
-            <div class="timeline-item-v">
-              <div class="timeline-dot"></div>
-              <div class="timeline-tag">Present</div>
-              <h3 class="timeline-role">
-                Principal Secretary — Forest, Ecology &amp; Environment
-              </h3>
-              <p class="timeline-desc">
-                Government of Karnataka. Leading state environmental policy,
-                forest governance, and ecological conservation at the highest
-                administrative level.
-              </p>
-            </div>
-            <div class="timeline-item-v">
-              <div class="timeline-dot"></div>
-              <div class="timeline-tag">Previous Role</div>
-              <h3 class="timeline-role">Commissioner — AYUSH, Karnataka</h3>
-              <p class="timeline-desc">
-                Revolutionized public health systems and traditional medicine
-                frameworks, integrating Ayurveda and Yoga into state health
-                policy.
-              </p>
-            </div>
-            <div class="timeline-item-v">
-              <div class="timeline-dot"></div>
-              <div class="timeline-tag">COP21 Recognition</div>
-              <h3 class="timeline-role">
-                Director — Kali Tiger Reserve, Dandeli
-              </h3>
-              <p class="timeline-desc">
-                Conservation documentary featured by PM Modi at the COP21 Paris
-                Climate Summit. Transformed Dandeli-Anshi into a globally
-                recognized tiger habitat.
-              </p>
-            </div>
-            <div class="timeline-item-v">
-              <div class="timeline-dot"></div>
-              <div class="timeline-tag">Regulation</div>
-              <h3 class="timeline-role">Member Secretary — KSPCB</h3>
-              <p class="timeline-desc">
-                Karnataka State Pollution Control Board. Strengthened
-                environmental regulation frameworks and industrial compliance
-                across the state.
-              </p>
-            </div>
-            <div class="timeline-item-v">
-              <div class="timeline-dot"></div>
-              <div class="timeline-tag">Foundation</div>
-              <h3 class="timeline-role">
-                Divisional Forest Officer — Multiple Divisions
-              </h3>
-              <p class="timeline-desc">
-                Built grassroots forest management expertise across Karnataka's
-                diverse ecological zones, from coastal to high-altitude
-                ecosystems.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- TESTIMONIAL -->
-      <section class="testimonial-strip reveal">
-        <p class="testimonial-quote">
-          A distinguished Indian Forest Service(IFS) officer with over two
-          decades of leadership in forestry, wildlife management, environmental
-          governance, and public administration.
-        </p>
-      </section>
-
-      <!-- ============ FEATURED ============ -->
-      <section class="section" style="background: var(--paper-2)">
+      <!-- ============ RECENT POSTS ============ -->
+      <section class="section" style="background: var(--paper);" id="recent-posts">
         <div class="container">
           <div class="section-head reveal">
             <div>
-              <div class="section-eyebrow">Latest</div>
-              <h2>Featured Work</h2>
+              <div class="section-eyebrow">Latest Updates</div>
+              <h2>Recent Posts</h2>
             </div>
-            <div style="display: flex; gap: 8px">
-              <a href="blog.html" class="chip">Blog</a>
-              <a href="videos.html" class="chip">Videos</a>
-              <a href="publications.html" class="chip">Publications</a>
-            </div>
+            <a href="blog.html" class="btn btn-ghost btn-sm">View all posts <i data-lucide="arrow-right" class="icon-sm"></i></a>
           </div>
-
-          <div class="scroll-row reveal" id="featuredRow">
-            <!-- featured cards inserted by JS -->
+          <div class="blog-grid reveal" id="homeBlogGrid">
+            <!-- Populated by JS -->
           </div>
         </div>
       </section>
 
-      <!-- ============ PRESS STRIP ============ -->
-      <section class="section">
-        <div class="container">
-          <div class="section-eyebrow reveal">Press &amp; recognition</div>
-          <div
-            class="reveal"
-            style="
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-              gap: 24px;
-              align-items: center;
-              padding: 24px 0;
-              border-top: 1px solid var(--line);
-              border-bottom: 1px solid var(--line);
-            "
-          >
-            <div
-              style="
-                text-align: center;
-                font-family: var(--f-display);
-                font-size: var(--t-18);
-                color: var(--ink-3);
-              "
-            >
-              COP21 · Paris
-            </div>
-            <div
-              style="
-                text-align: center;
-                font-family: var(--f-display);
-                font-size: var(--t-18);
-                color: var(--ink-3);
-              "
-            >
-              TEDx
-            </div>
-            <div
-              style="
-                text-align: center;
-                font-family: var(--f-display);
-                font-size: var(--t-18);
-                color: var(--ink-3);
-              "
-            >
-              PIB India
-            </div>
-            <div
-              style="
-                text-align: center;
-                font-family: var(--f-display);
-                font-size: var(--t-18);
-                color: var(--ink-3);
-              "
-            >
-              The Hindu
-            </div>
-            <div
-              style="
-                text-align: center;
-                font-family: var(--f-display);
-                font-size: var(--t-18);
-                color: var(--ink-3);
-              "
-            >
-              Deccan Herald
-            </div>
-            <div
-              style="
-                text-align: center;
-                font-family: var(--f-display);
-                font-size: var(--t-18);
-                color: var(--ink-3);
-              "
-            >
-              Doordarshan
-            </div>
+      <!-- ============ CONTACT FORM ============ -->
+      <section class="section" id="contact-form-section">
+        <div class="container reveal">
+          <div class="card" style="padding:var(--s-8); max-width:800px; margin:0 auto;">
+            <div class="section-eyebrow">Get in touch</div>
+            <h2 style="font-size:var(--t-24); margin-bottom:var(--s-2);">Send a message</h2>
+            <p style="font-size:var(--t-14); color:var(--ink-3); margin-bottom:var(--s-6);">All enquiries receive a response within five working days.</p>
+
+            <form id="homeContactForm" onsubmit="event.preventDefault(); submitWixForm();">
+              <div class="form-grid">
+                <div class="form-row">
+                  <label for="hName">Full name</label>
+                  <input id="hName" type="text" autocomplete="name" required>
+                </div>
+                <div class="form-row">
+                  <label for="hEmail">Email</label>
+                  <input id="hEmail" type="email" autocomplete="email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <label for="hSubject">Subject</label>
+                <select id="hSubject" required>
+                  <option value="">Choose a subject…</option>
+                  <option>Media enquiry</option>
+                  <option>Speaking engagement</option>
+                  <option>Collaboration / partnership</option>
+                  <option>Academic / research</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="hMessage">Message</label>
+                <textarea id="hMessage" rows="5" required></textarea>
+              </div>
+              <button type="submit" id="hSubmit" class="btn btn-primary"><i data-lucide="send" class="icon-sm"></i> Send message</button>
+              <div id="hStatus" style="margin-top:var(--s-3); font-size:var(--t-13); color:var(--ink-3);"></div>
+            </form>
           </div>
         </div>
       </section>
 
-      <!-- CONTACT CTA -->
-      <div class="cta-strip reveal">
+      <!-- ============ CONTACT CTA ============ -->
+      <div class="cta-strip-v2 reveal" id="contact-cta">
         <h2>Get In Touch</h2>
-        <a href="mailto:sriniforest@gmail.com" class="mailto"
-          >sriniforest@gmail.com</a
-        >
-        <a href="contact.html" class="btn btn-white">Contact</a>
+        <a href="mailto:sriniforest@gmail.com" class="cta-email">sriniforest@gmail.com</a>
+        <a href="contact.html" class="btn">Contact <i data-lucide="arrow-right" class="icon-sm"></i></a>
       </div>
     </main>
 
@@ -390,43 +269,73 @@
     <script src="chrome.js"></script>
     <script src="app.js"></script>
     <script>
-      // Featured row — pulls latest video + 2 placeholders for blog/publication
-      fetch("videos.json")
-        .then((r) => r.json())
-        .then((videos) => {
-          const row = document.getElementById("featuredRow");
-          if (!row) return;
-          const items = [];
+      // Areas of Work — built from CV chronological order (same data as cv.html career timeline)
+      window.addEventListener('load', () => {
+        const track = document.getElementById('areasTrack');
+        if (!track) return;
+        const data = window.SR_DEPTS_CV || [];
+        const logos = window.SR_LOGOS || {};
+        track.innerHTML = data.map(d => `
+          <article>
+            <a href="accomplishments.html?dept=${d.slug}" class="area-card">
+              <div class="area-card-img">
+                <img src="${logos[d.slug] || ''}" alt="${d.name}" loading="lazy">
+              </div>
+              <div class="area-card-body">
+                <div class="area-card-period">${d.period}</div>
+                <div class="area-card-name">${d.name}</div>
+                <div class="area-card-kind">${d.kind}</div>
+              </div>
+            </a>
+          </article>
+        `).join('');
 
-          // 1 blog placeholder (cover comes from real images you provide later)
-          items.push(`
-    <a class="card" href="blog.html" style="text-decoration:none;color:inherit;">
-      <div class="card-media"><span class="tag" style="position:absolute;top:12px;left:12px;">Blog</span>
-        <img src="https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=600" alt="Latest blog post" loading="lazy">
-      </div>
-      <div class="card-body">
-        <div class="card-title">Latest field notes &amp; updates</div>
-        <div class="card-meta"><i data-lucide="clock" class="icon-sm"></i> Updated regularly</div>
-      </div>
-    </a>`);
+        // Fetch recent 3 blog posts
+        fetch('https://srinivasalu-api.onrender.com/api/posts?page=1&limit=3')
+          .then(res => res.json())
+          .then(data => {
+            const grid = document.getElementById('homeBlogGrid');
+            if (grid && data.posts) {
+              grid.innerHTML = data.posts.map(post => {
+                const imgUrl = post.image || 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80';
+                const dateStr = post.date ? new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+                return \`
+                  <a href="post.html?slug=\${post.slug}" class="b-card">
+                    <div class="b-card-img"><img src="\${imgUrl}" alt="\${post.title.replace(/"/g, '&quot;')}" loading="lazy"></div>
+                    <div class="b-card-body">
+                      <h3 class="b-card-title">\${post.title}</h3>
+                      <div class="b-card-foot">
+                        <div class="b-date">\${dateStr}</div>
+                        <span class="b-read-more">Read</span>
+                      </div>
+                    </div>
+                  </a>\`;
+              }).join('');
+              window.SrIcons && window.SrIcons();
+            }
+          })
+          .catch(err => console.error('Error fetching recent posts:', err));
 
-          // 2-3 featured videos
-          videos.slice(0, 3).forEach((v, i) => {
-            items.push(`
-      <a class="card" href="videos.html#${v.videoId}" style="text-decoration:none;color:inherit;">
-        <div class="card-media"><span class="tag tag-accent" style="position:absolute;top:12px;left:12px;">Video</span>
-          <img src="https://i.ytimg.com/vi/${v.videoId}/hqdefault.jpg" alt="${v.title.replace(/"/g, "")}" loading="lazy">
-          <span class="meta-overlay" style="position:absolute;bottom:12px;right:12px;"><i data-lucide="play-circle" style="color:#fff;filter:drop-shadow(0 2px 4px rgba(0,0,0,.5));"></i></span>
-        </div>
-        <div class="card-body">
-          <div class="card-title" style="font-size:var(--t-16);">${v.title}</div>
-          <div class="card-meta"><i data-lucide="youtube" class="icon-sm"></i> YouTube</div>
-        </div>
-      </a>`);
-          });
-          row.innerHTML = items.join("");
+        window.SrIcons && window.SrIcons();
+      });
+
+      // Wix Studio Form Submission Placeholder
+      function submitWixForm() {
+        const status = document.getElementById('hStatus');
+        status.textContent = 'Submitting...';
+        status.style.color = 'var(--ink-3)';
+        
+        // TODO: Wire up Wix Studio API endpoint here
+        // Example: fetch('YOUR_WIX_ENDPOINT', { method: 'POST', body: JSON.stringify({...}) })
+        
+        setTimeout(() => {
+          status.innerHTML = '<i data-lucide="check-circle-2" class="icon-sm" style="vertical-align:middle;color:var(--success);"></i> Message received. We will be in touch within five working days.';
+          status.style.color = 'var(--success)';
           window.SrIcons && window.SrIcons();
-        });
+          document.getElementById('homeContactForm').reset();
+        }, 1000);
+      }
+    </script>
     </script>
   </body>
 </html>
