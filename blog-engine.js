@@ -1,8 +1,8 @@
 /**
  * Blog Engine - Handles fetching, filtering, and pagination for blog posts.
  */
-const API_BASE =  'https://srinivasalu-api.onrender.com/api';
-''
+const API_BASE = 'https://www.srinivasifs.com/_functions';
+
 const BlogEngine = (function () {
   let state = {
     mode: 'all',
@@ -33,7 +33,7 @@ const BlogEngine = (function () {
     'nagarhole-national-park': 'Nagarhole National Park',
     'kalaburagi': 'Kalaburagi',
     'chitradurga': 'Chitradurga',
-    'shimoga': 'Shimoga',
+    'shimoga': 'Shivamogga',
     'kfcsc': 'KFCSC',
     'academics': 'Academics',
     'adcl': 'ADCL',
@@ -41,11 +41,49 @@ const BlogEngine = (function () {
     'All': 'All'
   };
 
-  function getCategoryName(slug) {
-    // If it's not in the map, try to format it nicely (e.g. 'kspcb' -> 'Kspcb')
-    if (categoryNames[slug]) return categoryNames[slug];
-    if (!slug) return '';
-    return slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  const DEPT_MAP = {
+    'kspcb': ['5f685d9f798880001769b5d8', '5f55f4804fa8d200183c946f', '5fd31d3ffd9730001751de07'],
+    'ayush': ['65b5289accb9cf28f47214d3', '65b526619dd3756237b9b7ee'],
+    'karnataka-forest-department': ['5f97fa8fdff7a40017edb91d', '5f55f5abc8940c001755f2ee', '5f685e54e559920017e23d71'],
+    'kali-tiger-reserve': ['5f685e7ce559920017e23da4', '5f55f55ba82e030017925d50'],
+    'nagarhole-national-park': ['5f71c99d8ba8ed001735f4ae'],
+    'kalaburagi': ['5f71b70fef645c0017546304'],
+    'chitradurga': ['5f55f5d45ab2290017dc1d1b'],
+    'shimoga': ['5f71c2b5a1adb500178ffd39'],
+    'academics': ['5f7188fa84bb8700189bea03'],
+    'adcl': ['5fb383bc5cc48c001707e767', '5f55f543ac304100173210eb'],
+    'ecology-environment': ['6894a872361afb873d30f5d9']
+  };
+
+  const CATEGORY_TO_DEPT = {};
+  for (const dept in DEPT_MAP) {
+    DEPT_MAP[dept].forEach(id => {
+      CATEGORY_TO_DEPT[id] = dept;
+    });
+  }
+
+  function getWixImageUrl(wixUrl) {
+    if (!wixUrl) return 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80';
+    if (wixUrl.startsWith('wix:image://v1/')) {
+      const parts = wixUrl.replace('wix:image://v1/', '').split('/');
+      if (parts.length > 0) {
+        return 'https://static.wixstatic.com/media/' + parts[0];
+      }
+    }
+    if (wixUrl.startsWith('http://') || wixUrl.startsWith('https://')) {
+      return wixUrl;
+    }
+    return 'https://static.wixstatic.com/media/' + wixUrl;
+  }
+
+  function getCategoryName(catIdOrSlug) {
+    if (CATEGORY_TO_DEPT[catIdOrSlug]) {
+      const deptSlug = CATEGORY_TO_DEPT[catIdOrSlug];
+      return categoryNames[deptSlug] || deptSlug;
+    }
+    if (categoryNames[catIdOrSlug]) return categoryNames[catIdOrSlug];
+    if (!catIdOrSlug) return '';
+    return catIdOrSlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
   }
 
   async function init(options) {
@@ -93,33 +131,69 @@ const BlogEngine = (function () {
     renderSkeletons();
 
     try {
-      let url = `${API_BASE}/posts?page=${state.currentPage}&limit=${state.limit}`;
-      
-      // If a specific category is selected, append it
-      if (state.currentCategory !== 'All') {
-        url += `&category=${encodeURIComponent(state.currentCategory)}`;
-      }
+      let postsToRender = [];
+      let totalPosts = 0;
+      let totalPages = 1;
 
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error('Failed to fetch posts');
-      }
-      const data = await response.json();
-      
-      // Client-side search filtering (since the provided API doesn't seem to have a search param)
-      let postsToRender = data.posts || [];
-      if (state.searchQuery) {
-        postsToRender = postsToRender.filter(post => 
-          (post.title && post.title.toLowerCase().includes(state.searchQuery)) ||
-          (post.excerpt && post.excerpt.toLowerCase().includes(state.searchQuery))
-        );
-        // Note: Real client-side search across pagination is tricky without backend support.
-        // We'll just filter the current page for now.
+      if (state.currentCategory === 'All') {
+        let url = `${API_BASE}/posts?page=${state.currentPage}&limit=${state.limit}`;
+        if (state.searchQuery) {
+          url += `&search=${encodeURIComponent(state.searchQuery)}`;
+        }
+        const response = await fetch(url);
+        if (!response.ok) throw new Error('Failed to fetch posts');
+        const data = await response.json();
+        postsToRender = data.posts || [];
+        totalPosts = data.totalPosts || data.totalItems || postsToRender.length;
+        totalPages = data.totalPages || 1;
+      } else {
+        // Fetch posts from all category IDs mapped to this department
+        const categoryIds = DEPT_MAP[state.currentCategory] || [];
+        if (categoryIds.length === 0) {
+          postsToRender = [];
+          totalPosts = 0;
+          totalPages = 1;
+        } else {
+          const fetchPromises = categoryIds.map(id => {
+            let url = `${API_BASE}/posts?category=${id}&limit=100`;
+            if (state.searchQuery) {
+              url += `&search=${encodeURIComponent(state.searchQuery)}`;
+            }
+            return fetch(url).then(res => res.ok ? res.json() : { posts: [] });
+          });
+          const results = await Promise.all(fetchPromises);
+          
+          let combinedPosts = [];
+          results.forEach(res => {
+            if (res.posts) {
+              combinedPosts = combinedPosts.concat(res.posts);
+            }
+          });
+
+          // Deduplicate by ID
+          const seen = new Set();
+          combinedPosts = combinedPosts.filter(post => {
+            const duplicate = seen.has(post.id);
+            seen.add(post.id);
+            return !duplicate;
+          });
+
+          // Sort by publishedDate descending
+          combinedPosts.sort((a, b) => new Date(b.publishedDate || 0) - new Date(a.publishedDate || 0));
+
+          totalPosts = combinedPosts.length;
+          totalPages = Math.max(1, Math.ceil(totalPosts / state.limit));
+
+          // Slice for current page pagination
+          const startIndex = (state.currentPage - 1) * state.limit;
+          const endIndex = startIndex + state.limit;
+          postsToRender = combinedPosts.slice(startIndex, endIndex);
+        }
       }
 
       state.posts = postsToRender;
-      state.totalPosts = data.totalPosts || postsToRender.length;
-      state.totalPages = data.totalPages || 1;
+      state.totalPosts = totalPosts;
+      state.totalPages = totalPages;
 
       renderGrid();
       renderPagination();
@@ -213,8 +287,8 @@ const BlogEngine = (function () {
 
     state.posts.forEach(post => {
       // Determine image to show
-      const imgUrl = post.image || 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80';
-      const dateStr = formatDate(post.date);
+      const imgUrl = getWixImageUrl(post.coverImage);
+      const dateStr = formatDate(post.publishedDate);
       const categoryTag = post.categories && post.categories.length > 0 ? getCategoryName(post.categories[0]) : 'Update';
       const excerpt = post.excerpt || '';
       
@@ -346,7 +420,7 @@ const BlogEngine = (function () {
     renderPostSkeleton(container);
 
     try {
-      const response = await fetch(`${API_BASE}/post/${slug}`);
+      const response = await fetch(`${API_BASE}/post?slug=${slug}`);
       if (!response.ok) throw new Error('Post not found');
       const data = await response.json();
       const post = data.post || []      
@@ -370,14 +444,14 @@ const BlogEngine = (function () {
     if (!relatedGrid) return;
 
     try {
-      const response = await fetch(`${API_BASE}/random-posts`);
+      const response = await fetch(`${API_BASE}/randomPosts`);
       if (!response.ok) throw new Error('Failed to fetch related posts');
       const data = await response.json();
       const posts = data.posts || [];
       
       relatedGrid.innerHTML = '';
       posts.forEach(post => {
-        const imgUrl = post.image || 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80';
+        const imgUrl = getWixImageUrl(post.coverImage);
         const card = document.createElement('a');
         card.href = `post.html?slug=${post.slug}`;
         card.className = 'b-card';

@@ -129,56 +129,6 @@
         </div>
       </section>
 
-      <!-- ============ THREE DECADES OF IMPACT — Horizontal Timeline ============ -->
-      <section class="impact-timeline-section" id="timeline-section">
-        <div class="container">
-          <div class="impact-timeline-header reveal">
-            <div class="section-eyebrow" style="justify-content:center;">Distinguished Service</div>
-            <h2>Three Decades of <span>Impact</span></h2>
-          </div>
-
-          <div class="impact-timeline-track reveal">
-            <div class="impact-timeline-line">
-              <div class="impact-stage">
-                <div class="impact-dot"></div>
-                <div class="impact-stage-label">1999–2002</div>
-                <div class="impact-stage-title">Chitradurga · District Forest</div>
-              </div>
-              <div class="impact-stage">
-                <div class="impact-dot"></div>
-                <div class="impact-stage-label">2002–2005</div>
-                <div class="impact-stage-title">Shimoga · District Forest</div>
-              </div>
-              <div class="impact-stage">
-                <div class="impact-dot"></div>
-                <div class="impact-stage-label">2005–2010</div>
-                <div class="impact-stage-title">Kalaburagi &amp; Academics</div>
-              </div>
-              <div class="impact-stage">
-                <div class="impact-dot"></div>
-                <div class="impact-stage-label">2010–2014</div>
-                <div class="impact-stage-title">ADCL &amp; KFCSC Welfare</div>
-              </div>
-              <div class="impact-stage">
-                <div class="impact-dot"></div>
-                <div class="impact-stage-label">2013–2017</div>
-                <div class="impact-stage-title">Kali Tiger Reserve &amp; KSPCB</div>
-              </div>
-              <div class="impact-stage">
-                <div class="impact-dot"></div>
-                <div class="impact-stage-label">2017–2022</div>
-                <div class="impact-stage-title">Forest Dept &amp; AYUSH</div>
-              </div>
-              <div class="impact-stage">
-                <div class="impact-dot active"></div>
-                <div class="impact-stage-label">2022–Present</div>
-                <div class="impact-stage-title">Principal Secretary · Ecology &amp; Environment</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- ============ AREAS OF WORK — Horizontal Scrolling Cards ============ -->
       <section class="areas-section" id="areas-section">
         <div class="container">
@@ -290,26 +240,41 @@
           </article>
         `).join('');
 
-        // Fetch recent 3 blog posts
-        fetch('https://srinivasalu-api.onrender.com/api/posts?page=1&limit=3')
+        // Helper to convert wix image URI or path to CDN URL
+        function getWixImageUrl(wixUrl) {
+          if (!wixUrl) return 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80';
+          if (wixUrl.startsWith('wix:image://v1/')) {
+            const parts = wixUrl.replace('wix:image://v1/', '').split('/');
+            if (parts.length > 0) {
+              return 'https://static.wixstatic.com/media/' + parts[0];
+            }
+          }
+          if (wixUrl.startsWith('http://') || wixUrl.startsWith('https://')) {
+            return wixUrl;
+          }
+          return 'https://static.wixstatic.com/media/' + wixUrl;
+        }
+
+        // Fetch recent 3 blog posts from the new API
+        fetch('https://www.srinivasifs.com/_functions/recentPosts?limit=3')
           .then(res => res.json())
           .then(data => {
             const grid = document.getElementById('homeBlogGrid');
             if (grid && data.posts) {
               grid.innerHTML = data.posts.map(post => {
-                const imgUrl = post.image || 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80';
-                const dateStr = post.date ? new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
-                return \`
-                  <a href="post.html?slug=\${post.slug}" class="b-card">
-                    <div class="b-card-img"><img src="\${imgUrl}" alt="\${post.title.replace(/"/g, '&quot;')}" loading="lazy"></div>
+                const imgUrl = getWixImageUrl(post.coverImage);
+                const dateStr = post.publishedDate ? new Date(post.publishedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) : '';
+                return `
+                  <a href="post.html?slug=${post.slug}" class="b-card">
+                    <div class="b-card-img"><img src="${imgUrl}" alt="${post.title.replace(/"/g, '&quot;')}" loading="lazy"></div>
                     <div class="b-card-body">
-                      <h3 class="b-card-title">\${post.title}</h3>
+                      <h3 class="b-card-title">${post.title}</h3>
                       <div class="b-card-foot">
-                        <div class="b-date">\${dateStr}</div>
+                        <div class="b-date">${dateStr}</div>
                         <span class="b-read-more">Read</span>
                       </div>
                     </div>
-                  </a>\`;
+                  </a>`;
               }).join('');
               window.SrIcons && window.SrIcons();
             }

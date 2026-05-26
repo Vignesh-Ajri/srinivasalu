@@ -198,22 +198,82 @@ window.addEventListener('load', () => {
     loadPosts(slug);
   }
 
+  const DEPT_MAP = {
+    'kspcb': ['5f685d9f798880001769b5d8', '5f55f4804fa8d200183c946f', '5fd31d3ffd9730001751de07'],
+    'ayush': ['65b5289accb9cf28f47214d3', '65b526619dd3756237b9b7ee'],
+    'karnataka-forest-department': ['5f97fa8fdff7a40017edb91d', '5f55f5abc8940c001755f2ee', '5f685e54e559920017e23d71'],
+    'kali-tiger-reserve': ['5f685e7ce559920017e23da4', '5f55f55ba82e030017925d50'],
+    'nagarhole-national-park': ['5f71c99d8ba8ed001735f4ae'],
+    'kalaburagi': ['5f71b70fef645c0017546304'],
+    'chitradurga': ['5f55f5d45ab2290017dc1d1b'],
+    'shimoga': ['5f71c2b5a1adb500178ffd39'],
+    'academics': ['5f7188fa84bb8700189bea03'],
+    'adcl': ['5fb383bc5cc48c001707e767', '5f55f543ac304100173210eb'],
+    'ecology-environment': ['6894a872361afb873d30f5d9'],
+    'kfcsc': []
+  };
+
   function loadPosts(slug){
     const target = document.getElementById('postList-' + slug);
     const cnt = document.getElementById('cnt-posts-' + slug);
     if (!target) return;
-    fetch(`https://srinivasalu-api.onrender.com/api/posts?category=${slug}&limit=20&page=1`)
-      .then(r => r.json())
-      .then(data => {
-        const posts = (data.posts || data.items || []);
-        if (cnt) cnt.textContent = posts.length || 0;
-        if (!posts.length){
+    
+    const categoryIds = DEPT_MAP[slug] || [];
+    if (categoryIds.length === 0) {
+      if (cnt) cnt.textContent = 0;
+      target.innerHTML = `<div class="empty">No posts yet for this department.</div>`;
+      return;
+    }
+
+    const fetchPromises = categoryIds.map(id => 
+      fetch(`https://www.srinivasifs.com/_functions/posts?category=${id}&limit=20&page=1`)
+        .then(r => r.ok ? r.json() : { posts: [] })
+    );
+
+    Promise.all(fetchPromises)
+      .then(results => {
+        let combinedPosts = [];
+        results.forEach(res => {
+          if (res.posts) {
+            combinedPosts = combinedPosts.concat(res.posts);
+          }
+        });
+
+        // Deduplicate
+        const seen = new Set();
+        combinedPosts = combinedPosts.filter(p => {
+          const duplicate = seen.has(p.id);
+          seen.add(p.id);
+          return !duplicate;
+        });
+
+        // Sort descending by date
+        combinedPosts.sort((a, b) => new Date(b.publishedDate || 0) - new Date(a.publishedDate || 0));
+
+        if (cnt) cnt.textContent = combinedPosts.length || 0;
+        if (!combinedPosts.length){
           target.innerHTML = `<div class="empty">No posts yet for this department.</div>`;
           return;
         }
-        target.innerHTML = posts.map(p => {
-          const img = (p.media && (p.media.url || (p.media.wixMedia && p.media.wixMedia.image && p.media.wixMedia.image.url) || (p.media.thumbnail && p.media.thumbnail.url))) || '';
-          const date = p.firstPublishedDate ? new Date(p.firstPublishedDate).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}) : '';
+
+        // Helper to convert wix image URI or path to CDN URL
+        function getWixImageUrl(wixUrl) {
+          if (!wixUrl) return 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80';
+          if (wixUrl.startsWith('wix:image://v1/')) {
+            const parts = wixUrl.replace('wix:image://v1/', '').split('/');
+            if (parts.length > 0) {
+              return 'https://static.wixstatic.com/media/' + parts[0];
+            }
+          }
+          if (wixUrl.startsWith('http://') || wixUrl.startsWith('https://')) {
+            return wixUrl;
+          }
+          return 'https://static.wixstatic.com/media/' + wixUrl;
+        }
+
+        target.innerHTML = combinedPosts.map(p => {
+          const img = getWixImageUrl(p.coverImage);
+          const date = p.publishedDate ? new Date(p.publishedDate).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}) : '';
           return `
             <a class="item-card" href="post.html?slug=${p.slug || p.id}">
               <div class="item-card-img">${img ? `<img src="${img}" alt="" loading="lazy">` : ''}</div>
@@ -221,8 +281,8 @@ window.addEventListener('load', () => {
                 <div class="item-card-title">${p.title}</div>
                 <div class="item-card-meta">
                   <span><i data-lucide="calendar" class="icon-sm"></i> ${date}</span>
-                  ${p.minutesToRead ? `<span><i data-lucide="clock" class="icon-sm"></i> ${p.minutesToRead} min</span>` : ''}
-                  ${p.metrics && p.metrics.views ? `<span><i data-lucide="eye" class="icon-sm"></i> ${p.metrics.views}</span>` : ''}
+                  ${p.timeToRead ? `<span><i data-lucide="clock" class="icon-sm"></i> ${p.timeToRead} min</span>` : ''}
+                  ${p.viewCount ? `<span><i data-lucide="eye" class="icon-sm"></i> ${p.viewCount}</span>` : ''}
                 </div>
               </div>
             </a>`;

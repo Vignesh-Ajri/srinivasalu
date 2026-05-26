@@ -223,7 +223,7 @@
    - Renders only what's present; empty image areas are never shown.
    ========================================================================= */
 
-const API = 'https://srinivasalu-api.onrender.com/api';
+const API = 'https://www.srinivasifs.com/_functions';
 const WIX_CDN = 'https://static.wixstatic.com/media/';
 
 const params = new URLSearchParams(location.search);
@@ -239,7 +239,7 @@ if (!slug){
 /* ---- 1. FETCH SINGLE POST -------------------------------------------- */
 
 function loadPost(slug){
-  fetch(`${API}/post/${slug}`)
+  fetch(`${API}/post?slug=${slug}`)
     .then(r => {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
@@ -260,7 +260,7 @@ function loadPost(slug){
 }
 
 function loadRelatedPosts(){
-  fetch(`${API}/random-posts`)
+  fetch(`${API}/randomPosts?limit=3`)
     .then(r => r.ok ? r.json() : Promise.reject())
     .then(data => {
       const list = (data && (data.posts || data.items || data.results)) || [];
@@ -303,7 +303,12 @@ function normalize(raw){
 /* ---- 3. MEDIA URL RESOLVER (handles all 3 variants + bare IDs) ------- */
 
 function resolveCoverMedia(post){
-  if (!post || !post.media) return null;
+  if (!post) return null;
+  if (post.coverImage) {
+    const url = resolveWixUrl(post.coverImage);
+    if (url) return { kind:'image', url, alt:post.title || '' };
+  }
+  if (!post.media) return null;
   const m = post.media;
   // Engine convention: only show cover when displayed === true (skip if absent)
   if (m.displayed === false) return null;
@@ -336,6 +341,12 @@ function resolveWixUrl(obj){
   if (!obj) return '';
   // Already a string?
   if (typeof obj === 'string'){
+    if (obj.startsWith('wix:image://v1/')) {
+      const parts = obj.replace('wix:image://v1/', '').split('/');
+      if (parts.length > 0) {
+        return WIX_CDN + parts[0];
+      }
+    }
     return /^https?:\/\//.test(obj) ? obj : (WIX_CDN + obj);
   }
   // .url field present and is a full URL?
@@ -355,13 +366,19 @@ function resolveWixUrl(obj){
 
 function resolveCategoryLabel(post, categoriesList){
   if (post.categories && post.categories[0]){
-    return post.categories[0].label || post.categories[0].title || post.categories[0].slug || 'Post';
+    const c = post.categories[0];
+    // Categories can be objects with label/title, or plain string IDs
+    if (typeof c === 'object') return c.label || c.title || c.slug || 'Post';
+    // string ID — can't display, fall through
   }
   if (post.tags && post.tags[0]){
-    return post.tags[0].label || post.tags[0].title || 'Post';
+    const t = post.tags[0];
+    if (typeof t === 'object') return t.label || t.title || 'Post';
+    if (typeof t === 'string') return t;
   }
   if (categoriesList && categoriesList[0]){
-    return categoriesList[0].label || categoriesList[0].title || 'Post';
+    const c = categoriesList[0];
+    if (typeof c === 'object') return c.label || c.title || 'Post';
   }
   if (post.hashtags && post.hashtags[0]) return '#' + post.hashtags[0];
   return 'Post';
@@ -396,7 +413,9 @@ function renderPost(data){
   document.getElementById('stickyTitle').textContent = p.title || '';
   document.getElementById('postCatA').textContent = category;
   document.getElementById('postCatB').textContent = category;
-  document.getElementById('postCatBreadcrumb').textContent = category;
+  // postCatBreadcrumb may not exist in every layout variant
+  const breadcrumbEl = document.getElementById('postCatBreadcrumb');
+  if (breadcrumbEl) breadcrumbEl.textContent = category;
 
   // Build meta row (used in both modes)
   const metaHtml = buildMetaHtml(p, owner);
@@ -436,17 +455,18 @@ function buildMetaHtml(p, owner){
       parts.push(`<span><i data-lucide="calendar" class="icon-sm"></i> ${d.toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'})}</span>`);
     }
   }
-  // Reading time
-  if (p.minutesToRead){
-    parts.push(`<span><i data-lucide="clock" class="icon-sm"></i> ${p.minutesToRead} min read</span>`);
+  // Reading time (API may use minutesToRead or timeToRead)
+  const readTime = p.minutesToRead || p.timeToRead;
+  if (readTime){
+    parts.push(`<span><i data-lucide="clock" class="icon-sm"></i> ${readTime} min read</span>`);
   }
   // Language flag (only if explicitly set)
   if (p.language){
     const lang = p.language.toLowerCase();
     parts.push(`<span><span class="lang-flag ${lang}">${lang === 'kn' ? 'KN' : lang.toUpperCase()}</span></span>`);
   }
-  // Views (only if > 0)
-  const views = (p.metrics && p.metrics.views) || 0;
+  // Views (only if > 0) — API may nest under metrics.views or use flat viewCount
+  const views = (p.metrics && p.metrics.views) || p.viewCount || 0;
   if (views > 0){
     parts.push(`<span><i data-lucide="eye" class="icon-sm"></i> ${views}</span>`);
   }
@@ -628,13 +648,15 @@ function renderRelated(list){
   const grid = document.getElementById('relatedGrid');
   grid.innerHTML = items.map(rp => {
     // Related-list shape: `image` is a flat URL on each item
+    const coverMedia = resolveCoverMedia(rp);
     const imgUrl = (rp.image && /^https?:\/\//.test(rp.image) ? rp.image : '') ||
-                   (rp.media && resolveCoverMedia(rp).url) || '';
+                   (rp.coverImage && resolveWixUrl(rp.coverImage)) ||
+                   (coverMedia && coverMedia.url) || '';
     const cat = resolveCategoryLabel(rp, []);
-    const date = rp.firstPublishedDate || rp.lastPublishedDate;
+    const date = rp.firstPublishedDate || rp.publishedDate || rp.lastPublishedDate;
     const dateStr = date ? new Date(date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'}) : '';
     return `
-      <a class="b-card" href="post.html?slug=${encodeURIComponent(rp.slug || rp.id)}" style="text-decoration:none;color:inherit;">
+      <a class="b-card" href="post.html?slug=${encodeURIComponent(rp.slug || rp._id || rp.id)}" style="text-decoration:none;color:inherit;">
         ${imgUrl ? `<div class="b-card-img"><img src="${escapeAttr(imgUrl)}" alt="" loading="lazy" onerror="this.parentElement.remove()"></div>` : ''}
         <div class="b-card-body">
           <span class="b-tag">${escapeHtml(cat)}</span>
