@@ -125,7 +125,7 @@
           <h1>Honours and Awards</h1>
           <p class="lede">
             International, national and state recognition for forest
-            conservation, wildlife management, environmental policy, and
+            conservation, wildlife management, environmental policy and
             academic distinction.
           </p>
 
@@ -230,100 +230,65 @@
     <script src="chrome.js"></script>
     <script src="app.js"></script>
     <script>
-      // Awards data (newest first per req #11)
+      // Awards data (newest first)
       const AWARDS = [
-        {
-          year: 2022,
-          cat: "international",
-          title: "Guinness World Record",
-          body: "Mass plantation drive recognition",
-          img: "./images/honours/",
-        },
-        {
-          year: 2022,
-          cat: "national",
-          title: "Asia Book of Records",
-          body: "Environmental leadership citation",
-          img: "https://images.unsplash.com/photo-1521336575822-6da63fb45455?w=900",
-        },
-        {
-          year: 2022,
-          cat: "state",
-          title: "Karnataka Rajyotsava Award",
-          body: "State civilian honour",
-          img: "https://images.unsplash.com/photo-1599689019338-b97a78cd86e9?w=900",
-        },
-        {
-          year: 2021,
-          cat: "national",
-          title: "Best Forest Officer Award",
-          body: "Ministry of Environment, Forest and Climate Change",
-          img: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=900",
-        },
-        {
-          year: 2020,
-          cat: "international",
-          title: "COP21 Recognition · Paris",
-          body: "Documentary featured by PM Modi",
-          img: "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=900",
-        },
-        {
-          year: 2019,
-          cat: "state",
-          title: "Karnataka Environment Award",
-          body: "For pollution control initiatives",
-          img: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=900",
-        },
-        {
-          year: 2018,
-          cat: "national",
-          title: "IFS Service Medal",
-          body: "25 years of distinguished service",
-          img: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=900",
-        },
-        {
-          year: 2017,
-          cat: "state",
-          title: "Best Department Award",
-          body: "KSPCB digital transformation",
-          img: "https://images.unsplash.com/photo-1599689019338-b97a78cd86e9?w=900",
-        },
-        {
-          year: 2016,
-          cat: "state",
-          title: "State Environment Award",
-          body: "Innovative pollution control approaches",
-          img: "https://images.unsplash.com/photo-1574482620811-1aa16ffe3c82?w=900",
-        },
-        {
-          year: 2015,
-          cat: "national",
-          title: "Wildlife Conservation Award",
-          body: "Kali Tiger Reserve transformation",
-          img: "https://images.unsplash.com/photo-1497206365907-f5e630693df0?w=900",
-        },
-        {
-          year: 2010,
-          cat: "academic",
-          title: "Best Research Paper",
-          body: "Forest biodiversity studies",
-          img: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=900",
-        },
-        {
-          year: 2008,
-          cat: "state",
-          title: "District Excellence Award",
-          body: "Shimoga district administration",
-          img: "https://images.unsplash.com/photo-1448375240586-882707db888b?w=900",
-        },
-        {
-          year: 2002,
-          cat: "academic",
-          title: "Gold Medal · UAS",
-          body: "University Topper · Agricultural Sciences",
-          img: "https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=900",
-        },
-      ];
+{
+  year: 2022,
+  cat: "international",
+  title: "Guinness World Record",
+  body: "Largest online photo album of handmade sculpture.",
+  img: "./images/honours/A C 1.jpg"
+},
+{
+  year: 2021,
+  cat: "international",
+  title: "Asia Book of Records",
+  body: "Largest number of eco-friendly turmeric Ganesh idols.",
+  img: "./images/honours/Asia Book of Records (1).jpeg"
+},
+{
+  year: 2022,
+  cat: "state",
+  title: "H. V. Muniswamy Gowda Environment Award",
+  body: "Awarded for contribution to environmental protection.",
+  img: "./images/honours/AMZ_0183.jpg"
+},
+{
+  year: 2017,
+  cat: "state",
+  title: "Kalyana Mobile App Launch",
+  body: "Citizen service app launched during Dr. B.R. Ambedkar International Conference.",
+  img: "./images/honours/Picture 22.png"
+},
+{
+  year: 2016,
+  cat: "state",
+  title: "State Environment Award",
+  body: "Conferred by the Chief Minister of Karnataka.",
+  img: "./images/honours/Picture 2.png"
+},
+{
+  year: 2016,
+  cat: "national",
+  title: "Best Tourism Award by FKCCI",
+  body: "For promoting tourism in Dandeli.",
+  img: "./images/honours/WhatsApp Image 2020-09-01 at 17_28_31 (2).jpeg"
+},
+{
+  year: 2016,
+  cat: "national",
+  title: "Dr. Chuck McDougal Memorial Award (Runner-up)",
+  body: "TOFT Wildlife Tourism Awards.",
+  img: "./images/honours/WhatsApp Image 2020-09-01 at 17_28_31 (2).jpeg"
+},
+{
+  year: 2016,
+  cat: "national",
+  title: "Holiday IQ Award – Kali Tiger Reserve",
+  body: "Best tourism and hospitality activities.",
+  img: "./images/honours/WhatsApp Image 2020-09-01 at 17_28_31 (2).jpeg"
+}
+];
 
       const grid = document.getElementById("awardGrid");
       const chips = document.querySelectorAll("#filterChips .chip");
